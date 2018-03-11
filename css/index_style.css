@@ -1,0 +1,21 @@
+#topbar-title {
+	color: white;
+	height: 50px;
+	width: 200px;
+	font-size: 20px; 
+	vertical-align:middle;
+	text-align: center;
+	padding-top: 15px;
+ 	/*background-color: #fff;*/
+}
+.flypanels-topbar-news{
+	height:20px;
+		right: 100px;
+	  position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+	color: white;
+}
+.flypanels-topbar-news a{
+	font-size: 15px;
+}
