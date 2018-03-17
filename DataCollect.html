@@ -16,8 +16,8 @@
 	<div class="flypanels-container preload">
 		<div class="offcanvas flypanels-left">
 			<div id="topbar-title">
-				功能清单
-			</div>
+					功能清单
+				</div>
 			<div class="panelcontent" data-panel="treemenu">
 				<nav class="flypanels-treemenu" role="navigation">
 					<ul>
@@ -40,7 +40,8 @@
 
 						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-database leftbar-icon"></i>数据管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
 							<ul>
-								<li><div><a href="#" class="link">Example menu item</a></div></li>
+								<li><div><a href="DataCollect.html" class="link">数据采集</a></div></li>
+								<li><div><a href="CustomCollect.html" class="link">自定义采集</a></div></li>
 							</ul>
 						</li>
 						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>加工管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
@@ -110,22 +111,84 @@
 									</div>
 									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 										<div class="panel-body">
-											<div class="row">
-												<div class="col-md-offset-1 col-md-10 collect-setting-base">
-													<div class="collect-setting-base-item">
-														<div class="collect-setting-base-item-name">项目名称：</div>
-														<input type="text" class="collect-setting-base-item-input">
-													</div>
-													<div class="collect-setting-base-item">
-														<div class="collect-setting-base-item-name">存放路径：</div>
-														<input type="text" class="collect-setting-base-item-input">
-													</div>
-													
-												</div>
+											<!-- 基础项目设置 -->
+									<div class="content-box-title content-basesetting">
+										<div class="basesetting-item">
+											<div class="basesetting-item-name">
+												项目名称：
+											</div>
+											<div class="basesetting-item-value">
+												<input type="text">
 											</div>
 										</div>
-										
+										<div class="basesetting-item">
+											<div class="basesetting-item-name">
+												存放路径：
+											</div>
+											<div class="basesetting-item-value">
+												<input type="text">
+											</div>
+										</div>
+										<div class="basesetting-item">
+											<div class="basesetting-item-name">
+												所属类别：
+											</div>
+											<div class="basesetting-item-value-small">
+												<select class="type-selector">
+												  <option value ="quick">快捷项目</option>
+												  <option value ="other">其他项目</option>
+												</select>
+											</div>
+											<div class="basesetting-item-name-small">
+												访问间隔（s）：
+											</div>
+											<div class="basesetting-item-value-small2">
+												<input type="text">
+											</div>
+										</div>
+										<div class="basesetting-collect-content">
+											<div class="basesetting-item-name">
+												采集内容：
+											</div>
+											<div class=" basesetting-collect-content-right">
+												<p><input type="checkbox" class="collecr-content-type"> 标题</p>
+												<p><input type="checkbox" class="collecr-content-type"> 时间</p>
+												<p><input type="checkbox" class="collecr-content-type"> 作者</p>
+												<p><input type="checkbox" class="collecr-content-type"> 正文</p>
+												<p><input type="checkbox" class="collecr-content-type"> 来源</p>
+											</div>
+										</div>
+										<!-- 定时更新 -->
+										<div class="basesetting-collect-content">
+											<div class="basesetting-item-name">
+												<input type="checkbox" class=""> 定 时：
+											</div>
+											<div class="basesetting-item-value-small">
+												<select class="type-selector">
+												  <option value ="quick">快捷项目</option>
+												  <option value ="other">其他项目</option>
+												</select>
+											</div>
+											<div class="basesetting-item-name">
+												更新日期：
+											</div>
+											<div class="basesetting-item-value-small">
+												<select class="type-selector">
+												  <option value ="quick">1号</option>
+												  <option value ="other">2号</option>
+												  <option value ="quick">11号</option>
+												  <option value ="other">12号</option>
+												  <option value ="quick">21号</option>
+												  <option value ="other">22号</option>
+												</select>
+											</div>
+											
+										</div>
 									</div>
+										</div>
+										
+									</div> 
+									
 								</div>
 
 								<div class="panel panel-default">
@@ -138,7 +201,23 @@
 									</div>
 									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+											<!-- 重复数据处理 -->
+											<div class="col-md-5 content-box content-repeat">
+												<div class="content-repeat-list">
+													<div class="content-repeat-list-item">
+														<input type="checkbox"> 完全覆盖已有数据
+													</div>
+													<div class="content-repeat-list-item">
+														<input type="checkbox"> 检查补充新增的内容
+													</div>
+													<div class="content-repeat-list-item">
+														<input type="checkbox"> 跳过已采数据，断点续采
+													</div>
+													<div class="content-repeat-list-item">
+														<input type="checkbox"> 不断重复，尾部增加
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -163,15 +242,12 @@
 
 					<!--底部内容 -->
 					<div class="content-bottombar">
-						<div class="row">
-							<div class="col-md-4"></div>
-							<div class="col-md-4 bottom-link-parent">
+						<!-- <div class="row"> -->
+							<div class="bottom-link-parent">
 								<a href="#" class="bottom-link">帮助</a>
 								<a href="#" class="bottom-link">隐私</a>
 								<a href="#" class="bottom-link">条款</a>
 							</div>
-							<div class="col-md-4"></div>
-						</div>
 						<div class="row">
 							<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
 						</div>
@@ -198,7 +274,6 @@
 				<div class="flypanels-searchresult" style="display:none"></div>
 			</div>
 		</div> -->
-	</div>
 	
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.min.js"></script>

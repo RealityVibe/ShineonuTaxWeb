@@ -1,6 +1,9 @@
 
 
 /*flypanel-content*/
+.flypanels-content {
+	height: 1000px;
+}
 .content-total{
 	border-radius: 5px;
 	background-color: #fff;
@@ -78,4 +81,9 @@
 	height: 40px;
 	border-bottom: 1px solid rgba(41, 169, 232, 1);	
 }
-
+/*底部导航*/
+.content-bottombar{
+	/*position: absolute;*/
+	position: relative;
+	bottom: -120px;
+}

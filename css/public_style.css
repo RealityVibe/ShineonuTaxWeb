@@ -1,5 +1,5 @@
 body{
-	background-color: #f8f8f8;
+	background-color: #f1f1f1;
 }
 /*left-menu-bar*/
 .leftbar-icon{
@@ -31,9 +31,11 @@ body{
 }
 /*底部栏*/
 .content-bottombar{
-	margin-top: 130px;
-	bottom: 0px;
+	/*position: absolute;*/
+	position: relative;
+	bottom: -320px;
 }
 .bottom-link-parent{
+	display:inline/inline-block;
 	text-align: center;
 }

@@ -1,6 +1,6 @@
 
 /*基础设置*/
-.collect-setting-base-item{
+/* .collect-setting-base-item{
     display: flex;
     margin: 10px 0 0 0;
 }
@@ -9,7 +9,107 @@
 }
 .collect-setting-base-item-input{
     height: 24px;
+} */
+.flypanels-content{
+    height: 900px;
 }
+.content-box{
+    height: 320px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.content-basesetting {
+    margin-bottom: 20px;
+}
+/*项目基础设置*/
+.basesetting-title {
+    height: 40px;
+    color: #2aaae9;
+    padding: 5px;
+    padding-top: 3px;
+    border-bottom: 1px dashed gray;
+    margin-bottom: 15px;
+}
+.basesetting-title h4{
+    width: 150px;
+}
+.basesetting-item{
+    margin: 10px 0 0 0;
+    padding-left: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    height: 30px;
+}
+.basesetting-item-name{
+    line-height: 30px;
+    color: #000;
+    width: 20%;
+}
+.basesetting-item-name-small{
+    line-height: 30px;
+    color: #000;
+    width: 25%;
+}
+
+.basesetting-item-value {
+    width: 70%;
+}
+.basesetting-item-value-small {
+    width: 26%;
+}
+.basesetting-item-value-small2 {
+    width: 19%;
+}
+/* .basesetting-item-value-small input{
+    height: 28px;
+    width: 100%;
+} */
+.basesetting-item-value-small2 input{
+    height: 28px;
+    width: 100%;
+}
+.basesetting-item-value input{
+    height: 28px;
+    width: 100%;
+}
+.type-selector {
+    height: 28px;
+}
+/* 项目基础设置-采集内容 */
+.basesetting-collect-content{
+    margin: 10px 0 0 0;
+    padding-left: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    height: 70px;
+}
+.basesetting-collect-content-right {
+    padding: 2%;
+    padding-left: 5%;
+    width: 70%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.basesetting-collect-content-right p {
+    margin-right: 15%;
+    line-height: 20px;
+}
+
+/*重复数据处理*/
+.content-repeat-list{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.content-repeat-list-item {
+    margin: 15px 10px 15px 10px;
+}
+
 
 /* 手风琴 */
 a:hover,a:focus{
