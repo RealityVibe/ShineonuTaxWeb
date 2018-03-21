@@ -1,0 +1,147 @@
+.content-total{
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 40px; 
+	margin-top: 10px; 
+}
+.layui-tab{
+	margin-top: -50px;
+}
+.flypanel-content-total{
+	/*margin:20px;*/
+	height:30px;
+	margin: 10px;
+	border-bottom: 1px dashed #cccccc;
+}
+.content-total-box{
+	border: 0.5px solid black;
+	height: 150px;
+	border-radius: 5px;
+	margin: 30px 0 20px 0; 
+}
+.original-content-title{
+	color: rgba(41, 169, 232, 1);
+	font-size: 15px;
+	margin-left: -15px;
+}
+.content-total2{
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 40px;
+	margin-top: 20px; 
+}
+.replace-ways-title{
+	color: rgba(41, 169, 232, 1);
+	font-size: 15px;
+	margin-left: -15px;
+}
+.content-location{
+	margin-top:30px;
+	margin-left: 30px;
+}
+.location-title{
+	color: rgba(41, 169, 232, 1);
+	font-size: 15px;
+	margin-left: -15px;
+}
+
+/*文字在框上start */
+.method-wrap{
+	position: relative;
+	border: 0.5px solid black;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.method-wrap .title{
+	position: absolute;
+	top: -1em;
+	left: 5%;
+	line-height: 2em;
+	padding: 0 1em;
+	background-color: #fff;
+	color: rgba(41, 169, 232, 1);
+	font-size: 15px;
+	margin-left: -15px;
+}
+/* 方法一 end */
+.radio-table{
+    margin: auto;
+    font: 14px/1.5 Consolas, 微软雅黑;
+}
+.radio-table td{
+    padding-right: 80px;
+}
+.original-content{
+	padding: 10px 0px 50px 0px;
+}
+.new-content{
+	padding: 10px 0px 20px 0px;
+}
+.location-title2{
+	color: rgba(41, 169, 232, 1);
+	font-size: 15px;
+	float: left;
+	margin-top:10px; 
+	margin-left: -15px;
+}
+.total-table-div{
+	background: white;
+	padding-bottom: 30px;
+}
+.total-table,.total-table td,.total-table th{
+	margin: auto;
+    font: 14px/1.5 Consolas, 微软雅黑;
+    border: 1px solid black;
+}
+.total-table{
+	border-collapse:collapse;
+	empty-cells: hide;
+	margin-top: 30px;
+	margin-left:30px;
+}
+.total-table td{
+	padding-right: 180px;
+}
+.total-table th{
+	text-align: center;
+	background: rgba(41, 169, 232, 1);
+}
+/*bottom*/
+.content-bottom {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px; 
+	display: flex;
+	height: 200px;
+	flex-wrap: wrap;
+	background-color: #fff;
+}
+/*初步按综合查询权重筛选*/
+.content-bottom-data-title {
+	padding-top: 10px;
+	height: 40px;
+}
+/* 相似度匹配计算方法 */
+.content-bottom-process-title {
+	padding-top: 10px;
+	height: 40px;
+}
+.no-repeat-way{
+	border-bottom:  1px dashed #cccccc;	
+	color: rgba(41, 169, 232, 1);
+	font-size: 15px;
+	margin-left: -15px;
+}
+.text-input{
+	width: 50px;
+}
+.algs{
+	background: rgba(242, 242, 242, 1);
+	width: 300px;
+	height: 60px;
+	font-size: 12px;
+}
+.small-text{
+	font-size: 12px;
+}
