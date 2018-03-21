@@ -17,8 +17,8 @@
 		<!-- 左侧菜单栏 -->
 		<div class="offcanvas flypanels-left">
 			<div id="topbar-title">
-					功能清单
-				</div>
+				功能清单
+			</div>
 			<div class="panelcontent" data-panel="treemenu">
 				<nav class="flypanels-treemenu" role="navigation">
 					<ul>
@@ -39,18 +39,19 @@
 							</ul>
 						</li>
 
+						
 						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-database leftbar-icon"></i>数据管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
 							<ul>
 								<li><div><a href="DataCollect.html" class="link">数据采集</a></div></li>
 								<li><div><a href="CustomCollect.html" class="link">自定义采集</a></div></li>
+								<li><div><a href="DataProcess.html" class="link">数据加工处理</a></div></li>
+								<li><div><a href="DataShow.html" class="link">数据展示</a></div></li>
 							</ul>
 						</li>
-						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>加工管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>系统管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
 							<ul>
-								<li><div><a href="#" class="link">数据清洗</a></div></li>
-								<li><div><a href="#" class="link">数据去重</a></div></li>
-								<li><div><a href="#" class="link">Example menu item</a></div></li>
-								<li><div><a href="#" class="link">Example menu item</a></div></li>
+								<li><div><a href="#" class="link">ex1</a></div></li>
+								<li><div><a href="#" class="link">ex2</a></div></li>
 							</ul>
 						</li>
 					</ul>
@@ -62,8 +63,44 @@
 			<div class="flypanels-topbar">
 				<a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
 				<div id="topbar-title">
-					涉税数据挖掘系统
+					聚税宝
 				</div>
+
+				<div class="menu-box"> 
+					<ul class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理</a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">注册管理</a></li>
+				            <li><a href="#">配置管理</a></li>
+				            <li><a href="#">调度管理</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">关键字管理</a></li>
+				          </ul>
+				        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理</a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#" class="link">规则定义</a></li>
+						<li><a href="#" class="link">搜索引擎</a></li>
+						<li><a href="#" class="link">线程管理</a></li>
+						<li><a href="#" class="link">代理管理</a></li>
+			          </ul>
+			        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理</a>
+			          <ul class="dropdown-menu">
+			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
+						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+						<li><a href="DataShow.html" class="link">数据展示</a></li>
+			          </ul>
+			        </ul>
+				</div>
+				<div class="menu-box">系统管理</div>
 			<!-- 	<a class="flypanels-button-right icon-menu" data-panel="search" href="#"><i class="fa fa-search"></i></a> -->
 			<div class=" flypanels-topbar-news">
 				<a href="index.html"><i class="fa fa-home"></i>
@@ -84,23 +121,12 @@
 				<div class="container">
 					<div class="row content-total">
 						<div class="flypanel-content-total">
-							<div class="col-md-12 content-total-title">
+							<!-- <div class="col-md-12 content-total-title" >
 								<div>
 									今日概况
 								</div>
-							</div>
-							<div class="col-md-12 content-total-box-parent">
-								<div class="container">
-								<div class="row">
-									<div class="col-md-2 content-total-box-first"></div>
-									<div class="col-md-1"></div>
-									<div class="col-md-2 content-total-box"></div>
-									<div class="col-md-1"></div>
-									<div class="col-md-2 content-total-box"></div>
-									<div class="col-md-1"></div>
-									<div class="col-md-2 content-total-box-last"></div>
-								</div>
-								</div>
+							</div> -->
+							<div class="col-md-12 content-total-box-parent" id="graph_container">
 
 							</div>
 						</div>
@@ -109,52 +135,12 @@
 					<!-- 下半部分内容 -->
 					<div class="row">
 						<!-- 数据分类部分 -->
-						<div class="col-md-5 content-bottom">
-							<div class="col-md-12 content-bottom-data-title">
-								数据分类
-							</div>
-							<div class="row">
-								<div class="col-xs-3 content-bottom-data-detail">
-									<div class="content-bottom-data">
-										<div class="content-bottom-data-num">153497</div>
-										<div class="content-bottom-data-name">上市公司</div>
-									</div>
-								</div>
-								<div class="col-xs-3 content-bottom-data-detail">
-									<div class="content-bottom-data">
-										<div class="content-bottom-data-num">744</div>
-										<div class="content-bottom-data-name">土地交易</div>
-									</div>
-								</div>
-								<div class="col-xs-3 content-bottom-data-detail">
-									<div class="content-bottom-data">
-										<div class="content-bottom-data-num">11804</div>
-										<div class="content-bottom-data-name">新闻公告</div>
-									</div>
-								</div>
-								<div class="col-xs-3 content-bottom-data-detail">
-									<div class="content-bottom-data">
-										<div class="content-bottom-data-num">9</div>
-										<div class="content-bottom-data-name">税务法规</div>
-									</div>
-								</div>
-								<div class="col-xs-3 content-bottom-data-detail">
-									<div class="content-bottom-data">
-										<div class="content-bottom-data-num">5</div>
-										<div class="content-bottom-data-name">其他数据</div>
-									</div>
-								</div>
-							</div>
+						<div class="col-md-5 content-bottom content-bottom-data-title" id="pie_container">
 						</div>
-
-						<!-- 空部分 -->
-						<div class="col-md-2"></div>
 						
 						<!-- 最新任务 -->
-						<div class="col-md-5 content-bottom">
-							<div class="col-md-12 content-bottom-process-title">
-								最新任务
-							</div>
+						<div class="col-md-offset-1 col-md-6 content-bottom content-bottom-process-title" id="promise_container">
+
 						</div>
 					</div>
 
@@ -204,6 +190,17 @@
 	<script src="dist/jquery.flypanels.js"></script>
 	<script src="js/fastclick.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- 图表 -->
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+   	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+   	<script type="text/javascript" src="js/index_graph.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.flypanels-container').flyPanels({
