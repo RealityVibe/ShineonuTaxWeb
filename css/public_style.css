@@ -15,9 +15,17 @@ body{
 .menu-box :hover{
 	background-color: rgb(37, 100, 150);
 }
-.menu-box>ul>ul :hover{
-	background-color: #fff;
+.dropdown-menu>li>a, .dropdown-menu>li>a{
+	color: #fff;
 }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+
+	/*color: #fff;*/
+}
+.dropdown-menu{
+	background-color: rgb(37, 100, 150);
+}
+
 .menu-box a{
 	font-size: 14px;
 }
@@ -31,7 +39,7 @@ body{
 #topbar-title {
 	color: white;
 	height: 50px;
-	width: 280px;
+	width: 150px;
 	font-size: 20px;
 	padding-left: 10px; 
 	vertical-align:middle;

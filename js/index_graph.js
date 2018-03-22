@@ -5,7 +5,7 @@ option = null;
 var xAxisData = [];
 var data1 = [];
 var data2 = [];
-for (var i = 0; i < 32; i++) {
+for (var i = 1; i < 32; i++) {
     xAxisData.push(i + '号' );
     data1.push((Math.sin(i / 5) * (i / 5 -10) + i / 6) * 5 + 100);
     data2.push((Math.cos(i / 5) * (i / 5 -10) + i / 6) * 5 + 100);
@@ -87,7 +87,7 @@ option = {
     },
     series: [
         {
-            name:'访问来源',
+            name:'数据类型',
             type:'pie',
             radius: ['50%', '70%'],
             avoidLabelOverlap: false,
@@ -164,7 +164,7 @@ option = {
     ],
     series : [
         {
-            name:'直接访问',
+            name:'避税指数',
             type:'bar',
             barWidth: '60%',
             data:[100, 95, 95, 95, 90, 85, 85, 75, 70]
