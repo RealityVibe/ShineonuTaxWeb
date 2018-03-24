@@ -137,10 +137,11 @@
 }
 .algs{
 	background: rgba(242, 242, 242, 1);
-	width: 300px;
+	width: 500px;
 	height: 60px;
 	font-size: 14px;
 }
+
 .small-text{
 	font-size: 14px;
 }
