@@ -1,0 +1,106 @@
+.drop-down-box{
+	height: 25.34px;
+	width: 400px;
+	margin-left: 20px;
+	border: 1px solid #cccccc;
+}
+.drop-down-box-date{
+	height: 25.34px;
+	border: 1px solid #cccccc;
+}
+.search{
+	text-align: center;
+}
+#search-box{
+	width: 300px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	height: 25.33px;
+}
+.search-button{
+	background: rgba(41, 169, 232, 1);
+	color: white;
+	border: none;
+	height: 25.34px;
+	padding: 0px 10px 0px 10px;
+}
+.choose-type{
+	background: white;
+	margin-top:20px; 
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.belong-to-type{
+	border-bottom: 1px dashed #cccccc;
+	padding-bottom:10px;
+	text-decoration: none;
+}
+.belong-to-type li:hover,.belong-to-type .active{
+	color:#fff;
+	background-color: rgba(41, 169, 232, 1);
+	text-decoration: none;
+	height: 35px;
+}
+.active a{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.belong-to-type li{
+	display: inline;
+	width: 80px;
+	padding: 10px;
+}
+.capitalinfo,.equityinfo,.estateinfo,.assetinfo,.moneyinfo,.judicialinfo,.wageinfo,.otherinfo{
+	display: none;
+}
+.allinfo,.capitalinfo,.equityinfo,.estateinfo,.assetinfo,.moneyinfo,.judicialinfo,.wageinfo,.otherinfo{
+	padding-top: 20px;
+	border-bottom: 1px dashed #cccccc;
+	padding-bottom:10px;
+}
+.date-title{
+	margin-left: 47px;
+}
+.choose-time{
+	padding-top: 20px;
+	padding-bottom:10px;
+}
+.search-results{
+	background: white;
+	margin-top: 30px;
+	padding: 20px 10px 40px 30px;
+}
+/*弹框*/
+.window{ 
+    width:1200px; 
+    background-color:#d0def0; 
+    position:absolute; 
+    padding:2px; 
+    margin:5px; 
+    display:none; 
+    } 
+.popup-content{ 
+    height:500px; 
+    background-color:#FFF; 
+    font-size:14px; 
+    overflow:auto; 
+    } 
+.title{ 
+        padding:2px; 
+        color:#0CF; 
+        font-size:14px; 
+        } 
+.title img{ 
+        float:right; 
+        width: 20px;
+        height: 20px;
+}
+/*弹框结束*/
+.three-link{
+	float: right;
+	margin-right: 10px;
+}

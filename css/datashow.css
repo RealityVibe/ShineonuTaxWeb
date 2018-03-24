@@ -1,18 +1,14 @@
 .layui-tab{
 	margin-top: -50px;
 }
-.body-mask{
-	background: #999999;
-	display: none;
-}
 .drop-down-box{
-	height: 23.34px;
+	height: 25.34px;
 	width: 400px;
 	margin-left: 20px;
 	border: 1px solid #cccccc;
 }
 .drop-down-box-date{
-	height: 23.34px;
+	height: 25.34px;
 	border: 1px solid #cccccc;
 }
 .search{
@@ -22,11 +18,13 @@
 	width: 300px;
 	border: 1px solid #cccccc;
 	border-radius: 3px;
-	height: 23.33px;
+	height: 25.33px;
 }
 .search-button{
 	background: rgba(41, 169, 232, 1);
 	color: white;
+	border: none;
+	height: 25.33px;
 }
 .choose-type{
 	background: white;
@@ -48,7 +46,8 @@
 	color: #fff;
 }
 a:hover{
-	color: #fff;
+	color: #999999;
+	text-decoration: none;
 }
 .belong-to-type li{
 	display: inline;

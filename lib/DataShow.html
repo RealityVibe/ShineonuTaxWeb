@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="no-js" lang="zh">
+<head>
+	<!-- browser-sync start --server --files "." -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>ShineonuTaxWeb</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/flyPanels.css">
+	<link rel="stylesheet" href="css/public_style.css">
+	<link rel="stylesheet" href="css/datashow.css">
+	<!-- <link rel="stylesheet" href="css/dataprocess.css"> -->
+</head>
+<body data-debug="true">
+	<div class="flypanels-container preload">
+		<div class="offcanvas flypanels-left">
+			<div id="topbar-title">
+				功能清单
+			</div>
+			<div class="panelcontent" data-panel="treemenu">
+				<nav class="flypanels-treemenu" role="navigation">
+					<ul>
+						<li class="haschildren"><div><a href="#" class="link"><i class="fa fa-gears leftbar-icon"></i>配置管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="#" class="link">注册管理</a></div></li>
+								<li><div><a href="#" class="link">服务管理</a></div></li>
+								<li><div><a href="#" class="link">调度管理</a></div></li>
+								<li><div><a href="#" class="link">关键字管理</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-bug leftbar-icon"></i>爬虫管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="#" class="link">规则定义</a></div></li>
+								<li><div><a href="#" class="link">搜索引擎</a></div></li>
+								<li><div><a href="#" class="link">线程管理</a></div></li>
+								<li><div><a href="#" class="link">代理管理</a></div></li>
+							</ul>
+						</li>
+
+						
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-database leftbar-icon"></i>数据管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="DataCollect.html" class="link">数据采集</a></div></li>
+								<li><div><a href="DataProcess.html" class="link">数据加工处理</a></div></li>
+								<li><div><a href="DataShow.html" class="link">数据展示</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>系统管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="#" class="link">ex1</a></div></li>
+								<li><div><a href="#" class="link">ex2</a></div></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 手风琴风格模块化 -->
+		<div class="flypanels-main">
+			<!-- 导航栏 -->
+            <div class="flypanels-topbar">
+                <a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
+                <div id="topbar-title">
+                    聚税宝
+                </div>
+
+                <div class="menu-box"> 
+                    <ul class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">注册管理</a></li>
+                            <li><a href="#">配置管理</a></li>
+                            <li><a href="#">调度管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">关键字管理</a></li>
+                          </ul>
+                        </ul>
+                </div>
+                <div class="menu-box">
+                    <ul class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" class="link">规则定义</a></li>
+                        <li><a href="#" class="link">搜索引擎</a></li>
+                        <li><a href="#" class="link">线程管理</a></li>
+                        <li><a href="#" class="link">代理管理</a></li>
+                      </ul>
+                    </ul>
+                </div>
+                <div class="menu-box">
+                    <ul class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="DataCollect.html" class="link">数据采集</a></li>
+                        <li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+                        <li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+                        <li><a href="DataShow.html" class="link">数据展示</a></li>
+                      </ul>
+                    </ul>
+                </div>
+                <div class="menu-box">
+                    <ul class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="DataCollect.html" class="link">数据采集</a></li>
+                        <li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+                        <li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+                        <li><a href="DataShow.html" class="link">数据展示</a></li>
+                      </ul>
+                    </ul>
+                </div>
+            <!--    <a class="flypanels-button-right icon-menu" data-panel="search" href="#"><i class="fa fa-search"></i></a> -->
+                <div class=" flypanels-topbar-news">
+                    <a href="index.html"><i class="fa fa-home"></i>
+                        主页</a>
+                    <a href=""><i class="fa fa-bell-o"></i>
+                    消息中心</a>
+                </div>
+            </div>
+			<div class="row">
+				<div class="empty-div col-md-6"></div>
+			</div>
+                <div class="flypanels-content">
+                    <div class="container">
+                        <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowclose="true">
+                            <ul class="layui-tab-title">
+                                <li class="layui-this" lay-id="1">搜索</li>
+                                <li lay-id="2">工具箱</li>
+                            </ul>
+                            <div class="layui-tab-content">
+                                <div class="layui-tab-item layui-show">
+                                    <div class ="data-show">
+                                        <div class="search">
+                                            <form action="">
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box-date">
+                                                    <option value="1" >搜基本信息</option>
+                                                    <option value="2" selected>搜税务信息</option>   <!--预选设置-->
+                                                </select>
+                                                <input type="text" name="search-infor" id="search-box" placeholder="这里输入企业名">
+                                                <button class="search-button">&nbsp;搜 索&nbsp;</button>
+                                            </form>
+                                        </div>
+                                        <div class="choose-type">
+                                            <div  class="belong-to-type">
+                                                <ul>
+                                                    <span class="type-title">所属类目：</span>
+                                                    <li class = "active" id = all_bottom><a id = all href = "javascript:;" onclick = "change()" name = "qw1">全部</a></li>
+                                                    <li id = capital_bottom><a id = capital href = "javascript:;" onclick = "change()" name = "qw2">资本变化</a></li>
+                                                    <li id = equity_bottom><a id = equity href = "javascript:;" onclick = "change()" name = "qw3">股权变化</a></li>
+                                                    <li id = estate_bottom><a id = estate href = "javascript:;" onclick = "change()" name = "qw4">不动产变化</a></li>
+                                                    <li id = asset_bottom><a id = asset href = "javascript:;" onclick = "change()" name = "qw5">无形资产变化</a></li>
+                                                    <li id = money_bottom><a id = money href = "javascript:;" onclick = "change()" name = "qw6">资金变动</a></li>
+                                                    <li id = judicial_bottom><a id = judicial href = "javascript:;" onclick = "change()" name = "qw7">司法关联</a></li>
+                                                    <li id = wage_bottom><a id = wage href = "javascript:;" onclick = "change()" name = "qw8">工资福利</a></li>
+                                                    <li id = other_bottom><a id = other href = "javascript:;" onclick = "change()" name = "qw9">杂项</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class ="allinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                    <!--下拉框设置    -->
+                                                    <select name="infor" class="drop-down-box">
+                                                        <option value="1">全部</option>
+                                                    </select>
+                                            </div>
+                                            <div class = "capitalinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                    <!--下拉框设置    -->
+                                                    <select name="infor" class="drop-down-box">
+                                                        <option value="1">投资</option>
+                                                        <option value="1">融资</option>
+                                                        <option value="1">投融资</option>
+                                                        <option value="1">增资</option>
+                                                    </select>
+                                            </div>
+                                            <div class = "equityinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">出让股份</option>
+                                                    <option value="1">转让股份</option>
+                                                    <option value="1">要约收购</option>
+                                                    <option value="1">限售股</option>
+                                                </select>
+                                            </div>
+                                            <div class ="estateinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">土地（转让/出让）</option>
+                                                    <option value="1">房屋（ 转让/出售/出租）</option>
+                                                    <option value="1">房地产经营</option>
+                                                </select>
+                                            </div>
+                                            <div class ="assetinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">（签订/签署/竞得）****（使用权/协议）</option>
+                                                    <option value="1">专利权</option>
+                                                    <option value="1">特许经营权</option>
+                                                </select>
+                                            </div>
+                                            <div class ="moneyinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">担保</option>
+                                                    <option value="1">借款</option>
+                                                    <option value="1">理财</option>
+                                                    <option value="1">回购</option>
+                                                </select>
+                                            </div>
+                                            <div class ="judicialinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">判决+赔偿</option>
+                                                    <option value="1">调解+赔偿</option>
+                                                </select>
+                                            </div>
+                                            <div class ="wageinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">分红</option>
+                                                    <option value="1">奖励/奖金</option>
+                                                    <option value="1">针对员工进行发放的福利行为</option>
+                                                </select>
+                                            </div>
+                                            <div class ="otherinfo" name = "ad">
+                                                <span>关键字:</span>
+                                                <!--下拉框设置    -->
+                                                <select name="infor" class="drop-down-box">
+                                                    <option value="1">中标+公告</option>
+                                                    <option value="1">中标+公示</option>
+                                                    <option value="1">高管（辞职/聘用/聘任）</option>
+                                                </select>
+                                            </div>
+                                            <div class="choose-time">
+                                                <form name="reg_testdate">
+                                                    <span>选择时间：</span>
+                                                    <span>年：</span>
+                                                    <select name="YYYY" onchange="YYYYDD(this.value)" class="drop-down-box-date">
+                                                        <option value="">请选择</option>
+                                                    </select>
+                                                    <span class="date-title">月：</span>
+                                                    <select name="MM" onchange="MMDD(this.value)" class="drop-down-box-date">
+                                                        <option value="">请选择</option>
+                                                    </select>
+                                                    <span class="date-title">日：</span>
+                                                    <select name="DD" class="drop-down-box-date">
+                                                        <option value="">请选择</option>
+                                                    </select>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="search-results">
+                                            <h5>标题：常山市第三人民医院保安服务项目中标公告</h5>
+                                            <p>时间：2107/09/08<br>
+                                            招标单位：常州市第三人民医院<br>
+                                            中标单位：常州高科保安服务有限公司<br>
+                                            主要内容：常州市第三人民医院保安服务。服务内容：包括安全保卫、消防巡查、车辆收费管理、监控值班、财务押款、应急突发事件的处理等。本次采购服务时间暂定三年，合同一年一签，期满经甲方考核后续签下一年合同。中标金额：每年人民币壹佰柒拾万零贰仟捌佰柒拾伍元整（￥1702875.00）</p>
+                                            <div class="window" id="center">
+                                                <div id="title" class="title"><img src="images/close.png" alt="关闭" />详情如下：</div>
+                                                  <div class="popup-content">
+                                                      <h5>标题：常山市第三人民医院保安服务项目中标公告</h5>
+                                                        <p>时间：2107/09/08<br>
+                                                        招标单位：常州市第三人民医院<br>
+                                                        中标单位：常州高科保安服务有限公司<br>
+                                                        主要内容：常州市第三人民医院保安服务。服务内容：包括安全保卫、消防巡查、车辆收费管理、监控值班、财务押款、应急突发事件的处理等。本次采购服务时间暂定三年，合同一年一签，期满经甲方考核后续签下一年合同。中标金额：每年人民币壹佰柒拾万零贰仟捌佰柒拾伍元整（￥1702875.00）</p>
+                                                    </div>
+                                            </div>
+                                            <div class="three-link">
+                                                <a href="javascript:;" class="show-content">显示详情</a>
+                                                <a href="#" class="collect">收藏</a>
+                                                <button class="layui-btn site-demo-active" data-type="tabAdd" onclick="">查看原始信息</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--工具箱的内容-->
+                                <div class="layui-tab-item">
+                                    2
+                                </div>
+
+                            </div>
+                       </div>
+                    </div>
+
+                    <!--底部内容 -->
+                    <div class="content-bottombar">
+                        <div class="row"  style="margin-right: -5px;">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 bottom-link-parent">
+                                <a href="#" class="bottom-link">帮助</a>
+                                <a href="#" class="bottom-link">隐私</a>
+                                <a href="#" class="bottom-link">条款</a>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row" style="margin-right: -5px;">
+                                <div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
+                        </div>
+                    </div>
+                </div>
+		</div>
+	</div>
+
+
+	<script src="layui/layui.js" charset="utf-8"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kitUtils.js"></script>
+	<script src="dist/jquery.flypanels.js"></script>
+	<script src="js/fastclick.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/change.js"></script>
+	<script src="js/date.js"></script>
+	<script src="js/popup-window.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.flypanels-container').flyPanels({
+				treeMenu: {
+					init: true
+				},
+				search: {
+					init: true,
+					saveQueryCookie: true
+				}
+			});
+			FastClick.attach(document.body);
+		});
+		$(document).ready(function () 
+		{
+        $(".show-content").click(function () {
+            popCenterWindow();
+        });
+    }); 
+	</script>
+	<script>
+        layui.use('element', function(){
+          var $ = layui.jquery
+          ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+          //触发事件
+		  var active = {
+		    tabAdd: function(){
+		      //新增一个Tab项
+		      element.tabAdd('demo', {
+		        title: '原始信息'//标题
+		        ,content: '时间：常州市第三人民医院保安服务。服务内容：包括安全保卫、消防巡查、车辆收费管理、监控值班、财务押款、应急突发事件的处理等。本次采购服务时间暂定三年，合同一年一签，期满经甲方考核后续签下一年合同。中标金额：每年人民币壹佰柒拾万零贰仟捌佰柒拾伍元整（￥1702875.00）'
+		        ,id: 3 //实际使用一般是规定好的id，这里以时间戳模拟下
+              })
+                element.tabChange('demo',3);
+		    }
+		   
+		};
+          $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+          });
+        });
+    </script>
+</body>
+</html>

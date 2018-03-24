@@ -1,0 +1,439 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<!-- browser-sync start --server --files "." -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>ShineonuTaxWeb</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/flyPanels.css">
+	<link rel="stylesheet" href="css/public_style.css">
+	<link rel="stylesheet" href="css/dataprocess.css">
+	
+	<!-- <link rel="stylesheet" href="css/dataprocess.css"> -->
+</head>
+<body data-debug="true">
+	<div class="flypanels-container preload">
+		<!-- 左侧菜单栏 -->
+		<div class="offcanvas flypanels-left">
+			<div id="topbar-title">
+				功能清单
+			</div>
+			<div class="panelcontent" data-panel="treemenu">
+				<nav class="flypanels-treemenu" role="navigation">
+					<ul>
+						<li class="haschildren"><div><a href="#" class="link"><i class="fa fa-gears leftbar-icon"></i>配置管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="#" class="link">注册管理</a></div></li>
+								<li><div><a href="#" class="link">服务管理</a></div></li>
+								<li><div><a href="#" class="link">调度管理</a></div></li>
+								<li><div><a href="#" class="link">关键字管理</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-bug leftbar-icon"></i>爬虫管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="#" class="link">规则定义</a></div></li>
+								<li><div><a href="#" class="link">搜索引擎</a></div></li>
+								<li><div><a href="#" class="link">线程管理</a></div></li>
+								<li><div><a href="#" class="link">代理管理</a></div></li>
+							</ul>
+						</li>
+
+						
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-database leftbar-icon"></i>数据管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="DataCollect.html" class="link">数据采集</a></div></li>
+								<li><div><a href="CustomCollect.html" class="link">自定义采集</a></div></li>
+								<li><div><a href="DataProcess.html" class="link">数据加工处理</a></div></li>
+								<li><div><a href="DataShow.html" class="link">数据展示</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>系统管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a href="#" class="link">ex1</a></div></li>
+								<li><div><a href="#" class="link">ex2</a></div></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 手风琴风格模块化 -->
+		<div class="flypanels-main">
+			<!-- 导航栏 -->
+			<div class="flypanels-topbar">
+				<a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
+				<div id="topbar-title">
+					聚税宝
+				</div>
+
+				<div class="menu-box"> 
+					<ul class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">注册管理</a></li>
+				            <li><a href="#">配置管理</a></li>
+				            <li><a href="#">调度管理</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">关键字管理</a></li>
+				          </ul>
+				        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#" class="link">规则定义</a></li>
+						<li><a href="#" class="link">搜索引擎</a></li>
+						<li><a href="#" class="link">线程管理</a></li>
+						<li><a href="#" class="link">代理管理</a></li>
+			          </ul>
+			        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
+						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+						<li><a href="DataShow.html" class="link">数据展示</a></li>
+			          </ul>
+			        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
+						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+						<li><a href="DataShow.html" class="link">数据展示</a></li>
+			          </ul>
+			        </ul>
+				</div>
+
+			<!-- 	<a class="flypanels-button-right icon-menu" data-panel="search" href="#"><i class="fa fa-search"></i></a> -->
+			<div class=" flypanels-topbar-news">
+				<a href="index.html"><i class="fa fa-home"></i>
+					主页</a>
+				<a href=""><i class="fa fa-bell-o"></i>
+				消息中心</a>
+			</div>
+		</div>
+			<div class="row">
+				<div class="empty-div col-md-6"></div>
+			</div>
+
+			<div class="flypanels-content">
+				<div class="container">
+					<div class="layui-tab layui-tab-brief" lay-filter="demo">
+			      		<ul class="layui-tab-title">
+			        		<li class="layui-this" lay-id="11">数据清洗</li>
+			       		 	<li lay-id="44">数据去重</li>
+			      		</ul>
+				    	<div class="layui-tab-content">
+					        <div class="layui-tab-item layui-show"> 
+								<div class="container">
+									<div class="row content-total">
+										<div class="flypanel-content-total">
+											<div class="col-md-12 content-total-title">
+												<div class = "original-content-title"><!--原始信息-->
+													原内容:
+												</div>
+											</div>
+											<div class="row input-textarea">
+												<div class="col-md-1"></div>
+												<div class="col-md-10">
+													<textarea class="form-control"  style="height: 150px;margin: 20px 10px 10px 0px;"></textarea>	
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--替换方法列表-->
+								<div class="container">
+									<div class="row content-total2">
+										<div class="flypanel-content-total">
+											<div class="col-md-12 content-total-title">
+												<div class = "replace-ways-title">
+													替换方法列表:
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-1"></div>
+												<div class="col-md-10 content-location">
+													<div class="row"><!--修缮位置-->
+														<div class="col-md-2">
+															<span class="location-title">修缮位置：</span>
+														</div>
+														<div class="col-md-2">
+															<input type="radio" name="field" value="1" checked>字段全部
+														</div>
+														<div class="col-md-2">
+															<input type="radio" name="field" value="2">字段头部
+														</div>
+														<div class="col-md-2">
+															<input type="radio" name="field" value="3">字段尾部
+														</div>
+														<div class="col-md-2"></div>
+														<div class="col-md-2">
+															<span style="float: right;"><input type="checkbox" name="capital-Lowercase">区分大小写</span>
+														</div>												
+													</div>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-1"></div>
+												<div class="col-md-10 content-location"><!--修缮方式-->
+
+													<div class="col-md-12 method-wrap wrap">
+													  	<span class="title">修缮方式：</span>
+													  	<div class="content">
+													  		<div class = "row">
+													  			<div class="col-md-2"></div>
+														  		<div class="col-md-2">
+																	<input type="radio" name="way" value="1" checked>删除
+																</div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="2">添加
+																</div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="3">修改替换
+																</div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="4">修改替换？？
+																</div>
+																<div class="col-md-2"></div>
+															</div>
+															<div class="row">
+																<div class="col-md-2"></div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="5">伪创作(SEO)
+																</div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="6">时间值修改
+																</div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="7">图片文字识别
+																</div>
+																<div class="col-md-2">
+																	<input type="radio" name="way" value="8">抽取指定内容
+																</div>
+																<div class="col-md-2"></div>
+															</div>
+													  	</div>
+													  	<!--原内容-->
+													  	<div class="row">
+													  		<div class="col-md-2">
+													  			<span class="location-title2">原内容：</span>
+													  		</div>
+													  		<div class="col-md-10 input-textarea2">
+													  			<textarea class="form-control"></textarea>	
+													  		</div>
+													  	</div>
+													  	<!--新内容-->
+													  	<div class="row">
+													  		<div class="col-md-2">
+													  			<span class="location-title2">新内容：</span>
+													  		</div>
+													  		<div class="col-md-10 input-textarea2">
+													  			<textarea class="form-control"></textarea>
+													  		</div>
+													  	</div>
+													</div>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row">
+												<div class="col-md-1"></div>
+												<div class="col-md-10 total-table-div">
+														<table class="col-md-12 total-table">
+														    <thead>
+														        <tr>
+														           <th>修缮位置</th>
+																   <th>修缮方式</th>
+																   <th>原内容</th>
+																   <th>新内容</th>
+																   <th>大小写</th>
+														        </tr>
+														    </thead>
+														    <tbody>
+														        <tr>
+														            <td>01/10/12 - 02/10/12</td>
+														            <td>20 €</td>
+														            <td>30 €</td>
+														            <td>40 €</td>
+														            <td>40 €</td>
+														        </tr>
+														        <tr>
+														            <td>03/10/12 - 04/10/12</td>
+														            <td>40 €</td>
+														            <td>50 €</td>
+														            <td>60 €</td>
+														            <td>40 €</td>
+														        </tr>
+														        <tr>
+														            <td>05/10/12 - 06/10/12</td>
+														            <td>70 €</td>
+														            <td>80 €</td>
+														            <td>90 €</td>
+														            <td>40 €</td>
+														        </tr>
+														    </tbody> 		    
+														</table>						
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+										</div>
+									</div>
+								</div>			
+				        	</div>
+									
+							<!--去重Tab的内容-->
+			        		<div class="layui-tab-item">
+
+								<div class="row">
+									<!-- 空部分 -->
+									<!-- <div class="col-md-1"></div> -->
+									<!-- 数据分类部分 -->
+									<div class="col-md-5 content-bottom">
+										<div class="col-md-12 content-bottom-data-title">
+											<div class="no-repeat-way">
+												初步按综合查询权重筛选
+											</div>
+										</div>
+										<div>
+											<span class="small-text">参与后续筛选的查询结果数量：</span>
+											<input class ="text-input" type="text" name="num">
+										</div>
+									</div>
+
+									<!-- 空部分 -->
+									<div class="col-md-2"></div>
+									<!-- 最新任务 -->
+									<div class="col-md-5 content-bottom">
+										<div class="col-md-12 content-bottom-process-title">		
+											<div class="no-repeat-way">	
+												相似度匹配计算方法
+											</div>
+										</div>
+										<div class="algs">
+											<input type="radio" name="alg" value="1" style="margin-top: 13px;margin-left: 20px;">熊猫算法<br>
+											<input type="radio" name="alg" value="1" style="margin-left: 20px;">余弦计算
+										</div>
+									</div>
+									<!-- 空部分 -->
+									<!-- <div class="col-md-1"></div> -->
+								</div>
+								<div class="row">
+									<!-- 空部分 -->
+									<!-- <div class="col-md-1"></div> -->
+									<!-- 数据分类部分 -->
+									<div class="col-md-5 content-bottom">
+										<div class="col-md-12 content-bottom-data-title">		
+											<div class="no-repeat-way">								
+												相似度匹配阈值
+											</div>
+										</div>
+										<div>
+											<span class="small-text">高频词匹配阈值：</span>
+											<input class ="text-input" type="text" name="num">
+											<span class="small-text">%&#9;（若满足会进入下一步）</span>
+										</div>
+										<div>
+											<span class="small-text">全部词匹配阈值：</span>
+											<input class ="text-input" type="text" name="num">
+											<span class="small-text">%&#9;（若满足会认为全文相似）</span>
+										</div>
+										<div class="small-text">（注：阈值就是指判断的边界值）</div>
+									</div>
+
+									<!-- 空部分 -->
+									<div class="col-md-2"></div>
+									<!-- 最新任务 -->
+									<div class="col-md-5 content-bottom">
+										<div class="col-md-12 content-bottom-process-title">
+											<div class="no-repeat-way">			
+												其它
+											</div>
+										</div>
+										<div class="small-text">
+											<input type="checkbox" name="alg" value="1">当高频词匹配结果不满足阈值条件时，就不再执行全部词匹配计算<br>
+											<input type="checkbox" name="alg" value="1">只需要依据高频词来计算最终相似性（不再判断全部词的相似性
+										</div>
+									</div>
+									<!-- 空部分 -->
+									<!-- <div class="col-md-1"></div> -->
+								</div>
+			        		</div>
+
+
+
+
+			        	</div>	
+			       </div>
+			    </div>
+
+				<!--底部内容 -->
+				<div class="content-bottombar">
+					<div class="row"  style="margin-right: -5px;">
+						<div class="col-md-4"></div>
+						<div class="col-md-4 bottom-link-parent">
+							<a href="#" class="bottom-link">帮助</a>
+							<a href="#" class="bottom-link">隐私</a>
+							<a href="#" class="bottom-link">条款</a>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+					<div class="row" style="margin-right: -5px;">
+							<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="layui/layui.js" charset="utf-8"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kitUtils.js"></script>
+	<script src="dist/jquery.flypanels.js"></script>
+	<script src="js/fastclick.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.flypanels-container').flyPanels({
+				treeMenu: {
+					init: true
+				},
+				search: {
+					init: true,
+					saveQueryCookie: true
+				}
+			});
+			FastClick.attach(document.body);
+		});
+	</script>
+	<script>
+        layui.use('element', function(){
+          var $ = layui.jquery
+          ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+          
+          $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+          });
+        });
+    </script>
+</body>
+</html>
