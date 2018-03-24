@@ -112,6 +112,10 @@
 	flex-wrap: wrap;
 	background-color: #fff;
 }
+.bottom-link{
+	color: #337ab7;
+	text-decoration: none;
+}
 /*初步按综合查询权重筛选*/
 .content-bottom-data-title {
 	padding-top: 10px;
