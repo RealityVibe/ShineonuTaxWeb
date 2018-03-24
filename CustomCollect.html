@@ -14,10 +14,11 @@
 </head>
 <body data-debug="true">
 	<div class="flypanels-container preload">
+		<!-- 左侧菜单栏 -->
 		<div class="offcanvas flypanels-left">
 			<div id="topbar-title">
-					功能清单
-				</div>
+				功能清单
+			</div>
 			<div class="panelcontent" data-panel="treemenu">
 				<nav class="flypanels-treemenu" role="navigation">
 					<ul>
@@ -38,20 +39,19 @@
 							</ul>
 						</li>
 
+						
 						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-database leftbar-icon"></i>数据管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
 							<ul>
-								<li><div><a href="DataCollect.html" class="link">简易采集</a></div></li>
-                                <li><div><a href="CustomCollect.html" class="link">自定义采集</a></div></li>
+								<li><div><a href="DataCollect.html" class="link">数据采集</a></div></li>
+								<li><div><a href="CustomCollect.html" class="link">自定义采集</a></div></li>
 								<li><div><a href="DataProcess.html" class="link">数据加工处理</a></div></li>
 								<li><div><a href="DataShow.html" class="link">数据展示</a></div></li>
 							</ul>
 						</li>
-						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>加工管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
+						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>系统管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
 							<ul>
-								<li><div><a href="#" class="link">数据清洗</a></div></li>
-								<li><div><a href="#" class="link">数据去重</a></div></li>
-								<li><div><a href="#" class="link">Example menu item</a></div></li>
-								<li><div><a href="#" class="link">Example menu item</a></div></li>
+								<li><div><a href="#" class="link">ex1</a></div></li>
+								<li><div><a href="#" class="link">ex2</a></div></li>
 							</ul>
 						</li>
 					</ul>
@@ -59,35 +59,77 @@
 			</div>
 		</div>
 
-		<!-- 手风琴风格模块化 -->
 		<div class="flypanels-main">
 
 			<!-- 标题栏 -->
+				<!-- 导航栏 -->
 			<div class="flypanels-topbar">
 				<a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
 				<div id="topbar-title">
-					涉税数据挖掘系统
+					聚税宝
 				</div>
-				<!-- 	<a class="flypanels-button-right icon-menu" data-panel="search" href="#"><i class="fa fa-search"></i></a> -->
 
+				<div class="menu-box"> 
+					<ul class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">注册管理</a></li>
+				            <li><a href="#">配置管理</a></li>
+				            <li><a href="#">调度管理</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">关键字管理</a></li>
+				          </ul>
+				        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#" class="link">规则定义</a></li>
+						<li><a href="#" class="link">搜索引擎</a></li>
+						<li><a href="#" class="link">线程管理</a></li>
+						<li><a href="#" class="link">代理管理</a></li>
+			          </ul>
+			        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
+						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+						<li><a href="DataShow.html" class="link">数据展示</a></li>
+			          </ul>
+			        </ul>
+				</div>
+				<div class="menu-box">
+					<ul class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
+						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
+						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
+						<li><a href="DataShow.html" class="link">数据展示</a></li>
+			          </ul>
+			        </ul>
+				</div>
 				<div class=" flypanels-topbar-news">
-					<a href="index.html"><i class="fa fa-home"></i>
+				<a href="index.html"><i class="fa fa-home"></i>
 					主页</a>
-					<a href=""><i class="fa fa-bell-o"></i>
-					消息中心</a>
-				</div>
+				<a href=""><i class="fa fa-bell-o"></i>
+				消息中心</a>
 			</div>
-
+			</div>
 			<!-- 占位空行 -->
 			<div class="row">
 				<div class="empty-div col-md-6"></div>
 			</div>
 
 			<div class="flypanels-content">
-
 				<div class="container">
 					<!-- 设置内容 -->
-					<div class="row">
+					<div class="">
 						<div class="col-md-5 content-box content-basesetting">
 							<!-- 基础项目设置 -->
 							<div class="content-box-title content-basesetting">
@@ -183,11 +225,10 @@
 								<button class="content-keywords-fromtxt-lookup">
 									浏览
 								</button>
-								
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="">
 						<!-- 重复数据处理 -->
 						<div class="col-md-5 content-box content-repeat">
 							<div class="basesetting-title">
@@ -268,6 +309,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>

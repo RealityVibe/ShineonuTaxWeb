@@ -5,13 +5,45 @@ body{
 .leftbar-icon{
 	margin-right: 5px;
 }
+
+.menu-box {
+	height: 100%;
+	line-height: 50px;
+	color: #fff;
+	padding: 0 5px 0 5px;
+}
+.menu-box :hover{
+	background-color: rgb(37, 100, 150);
+}
+.dropdown-menu>li>a, .dropdown-menu>li>a{
+	color: #fff;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+
+	/*color: #fff;*/
+}
+.dropdown-menu{
+	background-color: rgb(37, 100, 150);
+}
+
+.menu-box a{
+	font-size: 14px;
+}
+.menu-box ul{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.menu-box select{
+	color: #000;
+}
 #topbar-title {
 	color: white;
 	height: 50px;
-	width: 200px;
-	font-size: 20px; 
+	width: 150px;
+	font-size: 20px;
+	padding-left: 10px; 
 	vertical-align:middle;
-	text-align: center;
+	text-align: left;
 	padding-top: 17px;
  	/*background-color: #fff;*/
 }
@@ -27,7 +59,7 @@ body{
 	font-size: 15px;
 }
 .empty-div{
-	height: 80px;
+	height: 20px;
 }
 /*底部栏*/
 .content-bottombar{

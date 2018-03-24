@@ -1,14 +1,19 @@
 
-
+.content-bottom-process-title{
+	height: 300px;
+}
 /*flypanel-content*/
+.content-total-box-parent {
+	height: 300px;
+}
 .content-total{
 	border-radius: 5px;
 	background-color: #fff;
 }
 .flypanel-content-total{
 	/*margin:20px;*/
-	height:30px;
-	margin: 10px;
+	/*height:30px;*/
+	/*margin: 10px;*/
 	border-bottom: 1px solid rgba(41, 169, 232, 1);
 }
 .content-total-box{
@@ -54,8 +59,12 @@
 	border-bottom: 5px solid red;
 }
 .content-bottom-data-title {
+	height: 300px;
 	padding-top: 10px;
 	border-bottom: 1px solid rgba(41, 169, 232, 1);	
+}
+.content-bottom-process-title{
+	height: 300px;
 }
 .content-bottom-data{
 	flex-wrap: wrap;
@@ -74,8 +83,6 @@
 
 /* 最新任务 */
 .content-bottom-process-title {
-	padding-top: 10px;
-	height: 40px;
-	border-bottom: 1px solid rgba(41, 169, 232, 1);	
+	padding-top: 10px;	border-bottom: 1px solid rgba(41, 169, 232, 1);	
 }
 

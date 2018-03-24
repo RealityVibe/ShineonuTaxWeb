@@ -1,28 +1,18 @@
 .content-total{
 	border-radius: 5px;
 	background-color: #fff;
-	margin-right: 40px; 
-	margin-top: 10px; 
-}
-.layui-tab{
-	margin-top: -50px;
+	margin-right: 40px;
 }
 .flypanel-content-total{
 	/*margin:20px;*/
-	height:30px;
-	margin: 10px;
-	border-bottom: 1px dashed #cccccc;
-}
-.content-total-box{
-	border: 0.5px solid black;
-	height: 150px;
-	border-radius: 5px;
-	margin: 30px 0 20px 0; 
+	/* height:30px; */
+	/* border-bottom: 1px dashed #cccccc; */
 }
 .original-content-title{
 	color: rgba(41, 169, 232, 1);
 	font-size: 15px;
-	margin-left: -15px;
+	border-bottom: 1px dashed #cccccc;
+	padding: 10px 10px 10px 10px;
 }
 .content-total2{
 	border-radius: 5px;
@@ -33,22 +23,21 @@
 .replace-ways-title{
 	color: rgba(41, 169, 232, 1);
 	font-size: 15px;
-	margin-left: -15px;
+	border-bottom: 1px dashed #cccccc;
+	padding: 10px 10px 10px 10px;
 }
 .content-location{
-	margin-top:30px;
-	margin-left: 30px;
+	margin-top:20px;
 }
 .location-title{
 	color: rgba(41, 169, 232, 1);
 	font-size: 15px;
-	margin-left: -15px;
 }
 
 /*文字在框上start */
 .method-wrap{
 	position: relative;
-	border: 0.5px solid black;
+	border: 1px solid #cccccc;
 	padding: 20px;
 	box-sizing: border-box;
 	border-radius: 5px;
@@ -62,7 +51,6 @@
 	background-color: #fff;
 	color: rgba(41, 169, 232, 1);
 	font-size: 15px;
-	margin-left: -15px;
 }
 /* 方法一 end */
 .radio-table{
@@ -72,41 +60,48 @@
 .radio-table td{
     padding-right: 80px;
 }
-.original-content{
-	padding: 10px 0px 50px 0px;
-}
-.new-content{
-	padding: 10px 0px 20px 0px;
-}
 .location-title2{
 	color: rgba(41, 169, 232, 1);
 	font-size: 15px;
 	float: left;
-	margin-top:10px; 
-	margin-left: -15px;
+	margin-top:25px; 
+	margin-left: 40px;
 }
 .total-table-div{
 	background: white;
 	padding-bottom: 30px;
 }
-.total-table,.total-table td,.total-table th{
-	margin: auto;
-    font: 14px/1.5 Consolas, 微软雅黑;
-    border: 1px solid black;
+.input-textarea2{
+	margin: 10px 0px 10px 0px;
 }
-.total-table{
-	border-collapse:collapse;
-	empty-cells: hide;
-	margin-top: 30px;
-	margin-left:30px;
-}
-.total-table td{
-	padding-right: 180px;
-}
-.total-table th{
+/*清洗页面的表格开始*/
+.total-table {
 	text-align: center;
-	background: rgba(41, 169, 232, 1);
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	margin-top: 30px;
 }
+.total-table td, .total-table th {
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+}
+.total-table thead {
+	background-color:rgba(41, 169, 232, 1);
+	color: #fff;
+	font-weight: 800;
+}
+.total-table tbody tr td{
+	border-bottom: 1px solid #eee;
+}
+.total-table tbody tr:hover td{
+	background-color: #eee;
+	color: rgba(41, 169, 232, 1);
+}
+/*清洗页面的表格结束*/
+
 /*bottom*/
 .content-bottom {
 	padding-left: 20px;
@@ -140,8 +135,8 @@
 	background: rgba(242, 242, 242, 1);
 	width: 300px;
 	height: 60px;
-	font-size: 12px;
+	font-size: 14px;
 }
 .small-text{
-	font-size: 12px;
+	font-size: 14px;
 }
