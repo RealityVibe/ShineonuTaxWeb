@@ -22,11 +22,11 @@ function YYYYMMDDstart()
            //先给年下拉框赋内容   
            var y  = new Date().getFullYear();   
            for (var i = (y-30); i < (y+30); i++) //以今年为准，前30年，后30年   
-                   document.reg_testdate.YYYY.options.add(new Option(" "+ i +"", i));   
+                   document.reg_testdate.YYYY.options.add(new Option(" "+ i +"年", i));   
     
            //赋月份的下拉框   
            for (var i = 1; i < 13; i++)   
-                   document.reg_testdate.MM.options.add(new Option(" " + i + "", i));   
+                   document.reg_testdate.MM.options.add(new Option(" " + i + "月", i));   
     
            document.reg_testdate.YYYY.value = y;   
            document.reg_testdate.MM.value = new Date().getMonth() + 1;   
@@ -59,7 +59,7 @@ function YYYYMMDDstart()
    {   
            var e = document.reg_testdate.DD; optionsClear(e);   
            for (var i=1; i<(n+1); i++)   
-                e.options.add(new Option(" "+ i + "", i));   
+                e.options.add(new Option(" "+ i + "日", i));   
    }   
    function IsPinYear(year)//判断是否闰平年   
    {     return(0 == year%4 && (year%100 !=0 || year%400 == 0));

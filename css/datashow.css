@@ -66,8 +66,23 @@
 	border-bottom: 1px dashed #cccccc;
 	padding-bottom:10px;
 }
-.date-title{
-	margin-left: 47px;
+.layui-input-inline{
+	margin-left: 25px;
+	width: 400px;
+}
+.drop-down-box-date{
+	margin-left: 30px;
+	width: 100px;
+}
+.drop-down-box-year,.drop-down-box-month,.drop-down-box-day{
+	border-color: #e6e6e6;
+	height: 38px;
+}
+.drop-down-box-month{
+	margin-left: 55px;
+}
+.drop-down-box-day{
+	margin-left: 55px;
 }
 .choose-time{
 	padding-top: 20px;

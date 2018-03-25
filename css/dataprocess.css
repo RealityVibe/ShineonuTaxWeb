@@ -2,6 +2,7 @@
 	border-radius: 5px;
 	background-color: #fff;
 	margin-right: 40px;
+	margin-top: 10px;
 }
 .flypanel-content-total{
 	/*margin:20px;*/
@@ -82,6 +83,7 @@
 	border-spacing: 0;
 	font-size: 14px;
 	margin-top: 30px;
+	border: 1px solid #eee;
 }
 .total-table td, .total-table th {
 	padding: 10px;
@@ -94,7 +96,7 @@
 	font-weight: 800;
 }
 .total-table tbody tr td{
-	border-bottom: 1px solid #eee;
+	border: 1px solid #eee;
 }
 .total-table tbody tr:hover td{
 	background-color: #eee;
@@ -133,15 +135,16 @@
 	margin-left: -15px;
 }
 .text-input{
-	width: 50px;
+	width: 60px;
+	border: 1.5px solid #cccccc;
+	border-radius: 3px;
 }
-.algs{
-	background: rgba(242, 242, 242, 1);
-	width: 500px;
-	height: 60px;
-	font-size: 14px;
-}
-
 .small-text{
 	font-size: 14px;
+}
+.small-text input{
+	margin-bottom: 30px;
+}
+.layui-input-block{
+	margin-left:-1px;
 }
