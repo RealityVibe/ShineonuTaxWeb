@@ -8,356 +8,524 @@
 	<title>ShineonuTaxWeb</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/flyPanels.css">
 	<link rel="stylesheet" href="css/public_style.css">
-	<link rel="stylesheet" href="css/datacollect.css">
+	<link rel="stylesheet" href="css/dataCollect.css">
+	<link rel="stylesheet" href="layui/css/layui.css">
+
 </head>
-<body data-debug="true">
-	<div class="flypanels-container preload">
-		<!-- 左侧菜单栏 -->
-		<div class="offcanvas flypanels-left">
-			<div id="topbar-title">
-				功能清单
-			</div>
-			<div class="panelcontent" data-panel="treemenu">
-				<nav class="flypanels-treemenu" role="navigation">
-					<ul>
-						<li class="haschildren"><div><a href="#" class="link"><i class="fa fa-gears leftbar-icon"></i>配置管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
-							<ul>
-								<li><div><a href="#" class="link">注册管理</a></div></li>
-								<li><div><a href="#" class="link">服务管理</a></div></li>
-								<li><div><a href="#" class="link">调度管理</a></div></li>
-								<li><div><a href="#" class="link">关键字管理</a></div></li>
-							</ul>
-						</li>
-						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-bug leftbar-icon"></i>爬虫管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
-							<ul>
-								<li><div><a href="#" class="link">规则定义</a></div></li>
-								<li><div><a href="#" class="link">搜索引擎</a></div></li>
-								<li><div><a href="#" class="link">线程管理</a></div></li>
-								<li><div><a href="#" class="link">代理管理</a></div></li>
-							</ul>
-						</li>
+<body data-spy="scroll" data-target="#myScrollspy">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">聚税宝</a>
+		    </div>
 
-						
-						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-database leftbar-icon"></i>数据管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
-							<ul>
-								<li><div><a href="DataCollect.html" class="link">数据采集</a></div></li>
-								<li><div><a href="CustomCollect.html" class="link">自定义采集</a></div></li>
-								<li><div><a href="DataProcess.html" class="link">数据加工处理</a></div></li>
-								<li><div><a href="DataShow.html" class="link">数据展示</a></div></li>
-							</ul>
-						</li>
-						<li class="haschildren"><div class="link"><a href="#" class="link"><i class="fa fa-wrench leftbar-icon"></i>系统管理</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
-							<ul>
-								<li><div><a href="#" class="link">ex1</a></div></li>
-								<li><div><a href="#" class="link">ex2</a></div></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">注册管理</a></li>
+		            <li><a href="#">服务管理</a></li>
+		            <li><a href="#">调度管理</a></li>
+		            <li><a href="#">关键字管理</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">规则定义</a></li>
+		            <li><a href="#">搜索引擎</a></li>
+		            <li><a href="#">线程管理</a></li>
+		            <li><a href="#">代理管理</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="dataCollect.html">数据采集</a></li>
+		            <li><a href="dataProcess.html">数据加工处理</a></li>
+		            <li><a href="dataShow.html">数据展示</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">1</a></li>
+		            <li><a href="#">2</a></li>
+		            <li><a href="#">3</a></li>
+		            <li><a href="#">4</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		     
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><img src="images/home.png">主页</a></li>
+		        <li><a href="#"><img src="images/message.png">消息中心</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 
-		<!-- 手风琴风格模块化 -->
-		<div class="flypanels-main">
-			<!-- 导航栏 -->
-			<div class="flypanels-topbar">
-				<a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
-				<div id="topbar-title">
-					聚税宝
-				</div>
-
-				<div class="menu-box"> 
-					<ul class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">注册管理</a></li>
-				            <li><a href="#">配置管理</a></li>
-				            <li><a href="#">调度管理</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">关键字管理</a></li>
-				          </ul>
-				        </ul>
-				</div>
-				<div class="menu-box">
-					<ul class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#" class="link">规则定义</a></li>
-						<li><a href="#" class="link">搜索引擎</a></li>
-						<li><a href="#" class="link">线程管理</a></li>
-						<li><a href="#" class="link">代理管理</a></li>
-			          </ul>
-			        </ul>
-				</div>
-				<div class="menu-box">
-					<ul class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
-						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
-						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
-						<li><a href="DataShow.html" class="link">数据展示</a></li>
-			          </ul>
-			        </ul>
-				</div>
-				<div class="menu-box">
-					<ul class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="DataCollect.html" class="link">数据采集</a></li>
-						<li><a href="CustomCollect.html" class="link">自定义采集</a></li>
-						<li><a href="DataProcess.html" class="link">数据加工处理</a></li>
-						<li><a href="DataShow.html" class="link">数据展示</a></li>
-			          </ul>
-			        </ul>
-				</div>
-			<!-- 	<a class="flypanels-button-right icon-menu" data-panel="search" href="#"><i class="fa fa-search"></i></a> -->
-				<div class=" flypanels-topbar-news">
-					<a href="index.html"><i class="fa fa-home"></i>
-						主页</a>
-					<a href=""><i class="fa fa-bell-o"></i>
-					消息中心</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="empty-div col-md-6"></div>
-			</div>
-			<div class="flypanels-content">
-
-				<div class="container">
-					<!-- 设置内容 -->
-					<div class="row">
-						<div class="col-md-offset-1 col-md-10">
-							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- 目标网址 -->
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h4 class="panel-title">
-											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												目标网址（输入多个网址事情换行）
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-										<div class="panel-body">
-											<div class="row">
-												<textarea rows="5" id="collect-setting-uri" class="col-md-offset-1 col-md-10 collect-setting-uri"></textarea>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- 基础设置 -->
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingTwo">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												基础设置
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-										<div class="panel-body">
-											<!-- 基础项目设置 -->
-									<div class="content-box-title content-basesetting">
-										<div class="basesetting-item">
-											<div class="basesetting-item-name">
-												项目名称：
-											</div>
-											<div class="basesetting-item-value">
-												<input type="text">
-											</div>
-										</div>
-										<div class="basesetting-item">
-											<div class="basesetting-item-name">
-												存放路径：
-											</div>
-											<div class="basesetting-item-value">
-												<input type="text">
-											</div>
-										</div>
-										<div class="basesetting-item">
-											<div class="basesetting-item-name">
-												所属类别：
-											</div>
-											<div class="basesetting-item-value-small">
-												<select class="type-selector">
-												  <option value ="quick">快捷项目</option>
-												  <option value ="other">其他项目</option>
-												</select>
-											</div>
-											<div class="basesetting-item-name-small">
-												访问间隔（s）：
-											</div>
-											<div class="basesetting-item-value-small2">
-												<input type="text">
-											</div>
-										</div>
-										<div class="basesetting-collect-content">
-											<div class="basesetting-item-name">
-												采集内容：
-											</div>
-											<div class=" basesetting-collect-content-right">
-												<p><input type="checkbox" class="collecr-content-type"> 标题</p>
-												<p><input type="checkbox" class="collecr-content-type"> 时间</p>
-												<p><input type="checkbox" class="collecr-content-type"> 作者</p>
-												<p><input type="checkbox" class="collecr-content-type"> 正文</p>
-												<p><input type="checkbox" class="collecr-content-type"> 来源</p>
-											</div>
-										</div>
-										<!-- 定时更新 -->
-										<div class="basesetting-collect-content">
-											<div class="basesetting-item-name">
-												<input type="checkbox" class=""> 定 时：
-											</div>
-											<div class="basesetting-item-value-small">
-												<select class="type-selector">
-												  <option value ="quick">快捷项目</option>
-												  <option value ="other">其他项目</option>
-												</select>
-											</div>
-											<div class="basesetting-item-name">
-												更新日期：
-											</div>
-											<div class="basesetting-item-value-small">
-												<select class="type-selector">
-												  <option value ="quick">1号</option>
-												  <option value ="other">2号</option>
-												  <option value ="quick">11号</option>
-												  <option value ="other">12号</option>
-												  <option value ="quick">21号</option>
-												  <option value ="other">22号</option>
-												</select>
-											</div>
-											
-										</div>
-									</div>
-										</div>
-										
-									</div> 
-									
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingThree">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												重复数据处理
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div class="panel-body">
-											<!-- 重复数据处理 -->
-											<div class="content-box content-repeat">
-												<div class="content-repeat-list">
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 完全覆盖已有数据
-													</div>
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 检查补充新增的内容
-													</div>
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 跳过已采数据，断点续采
-													</div>
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 不断重复，尾部增加
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFour">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-												页面链接的范围
-											</a>
-										</h4>
-									</div>
-									<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div class="panel-body">
-											<!-- 重复数据处理 -->
-											<div class="content-box content-repeat">
-												<div class="content-repeat-list">
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 包含页面内所有的连接
-													</div>
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 兼括多级域名
-													</div>
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 每个页面内容都当做列表页面（穷尽访问）
-													</div>
-													<div class="content-repeat-list-item">
-														<input type="checkbox"> 其他
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--底部内容 -->
-					<div class="content-bottombar">
-						<!-- <div class="row"> -->
-							<div class="bottom-link-parent">
-								<a href="#" class="bottom-link">帮助</a>
-								<a href="#" class="bottom-link">隐私</a>
-								<a href="#" class="bottom-link">条款</a>
-							</div>
+			
+		<div class="container">
+			<div class="layui-tab layui-tab-brief" lay-filter="demo">
+			    <ul class="layui-tab-title">
+			        <li class="layui-this" lay-id="11">简易采集</li>
+			       	<li lay-id="44">自定义采集</li>
+			    </ul>
+				<div class="layui-tab-content">
+					<!--简易采集-->
+					<div class="layui-tab-item layui-show"> 
 						<div class="row">
-							<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
-						</div>
+								<div class="col-md-3"  id="myScrollspy">
+									<ul class="nav nav-tabs nav-stacked" id="myNav1" style="width: 200px;">
+							            <li class="active"><a href="#section-1">目标网址</a></li>
+							            <li><a href="#section-2">基础设置</a></li>
+							            <li><a href="#section-3">重复数据处理</a></li>
+							            <li><a href="#section-4">页面链接范围</a></li>
+							        </ul>
+								</div>
+								<div class="col-md-9">
+									<div class="row content-total" id="section-1">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												目标网址：（输入多个网址请换行区分）
+											</div>
+										</div>
+										<div class="row input-textarea">
+											<div class="col-md-1"></div>
+												<div class="col-md-10">
+													<textarea class="form-control"  style="height: 150px;margin: 10px 10px 20px 0px;"></textarea>	
+												</div>
+											<div class="col-md-1"></div>
+										</div>
+									</div>
+
+									<div class="row content-total" id="section-2">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												基础设置
+											</div>
+										</div>
+										<div class="setting_content">
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="project_name">项目名称：</span>
+												</div>
+												<div class="col-md-8">
+													<input class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="store_url">存放路径：</span>
+												</div>
+												<div class="col-md-8">
+													<input class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="sort_kind">所属类别：</span>
+												</div>
+												<div class="col-md-3">
+													<form class="layui-form" action="">
+														<div class="layui-input-inline">
+		                                                   	<select name="modules" lay-verify="required" lay-search="">
+	                                                                <option value="1">快捷项目</option>
+	                                                                <option value="2">其他项目</option>
+	                                                            </select>
+	                                                    </div>
+	                                                </form>
+												</div>
+												<div class="col-md-2">
+													<span class="visit_interval">访问间隔(s)：</span>
+												</div>
+												<div class="col-md-3">
+													<input class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="collect_con">采集内容：</span>
+												</div>
+												<div class="col-md-8">
+													<form class="layui-form" action="" style="margin-left: -110px;">
+														<div class="layui-form-item" pane="">
+														    <div class="layui-input-block">
+														      	<input type="checkbox" name="title" lay-skin="primary" title="标题" checked="">
+														      	<input type="checkbox" name="time" lay-skin="primary" title="时间">
+														       	<input type="checkbox" name="author" lay-skin="primary" title="作者">
+														        <input type="checkbox" name="main_body" lay-skin="primary" title="正文">
+														        <input type="checkbox" name="resource" lay-skin="primary" title="来源">
+														    </div>
+													  	</div>
+													</form>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-3">
+													<form class="layui-form" action="" style="margin-left:-110px;">
+														<div class="layui-form-item" pane="">
+														    <div class="layui-input-block">
+																<input type="checkbox" name="like1[write]" lay-skin="primary" title="定期更新：" checked="" >
+															 </div>
+													  	</div>
+													</form>
+												</div>
+												<div class="col-md-2">
+													<form class="layui-form" action="" style="margin-left: -70px;">
+														<div class="layui-input-inline">
+		                                                   	<select name="modules" lay-verify="required" lay-search="">
+	                                                                <option value="1">每月</option>
+	                                                                <option value="2">每周</option>
+	                                                                <option value="3">每天</option>
+	                                                        </select>
+	                                                    </div>
+	                                                </form>
+												</div>
+												<div class="col-md-2">
+													<span class="visit_interval">间隔：</span>
+												</div>
+												<div class="col-md-3">
+													<form class="layui-form" action="">
+														<div class="layui-input-inline">
+		                                                   	<select name="modules" lay-verify="required" lay-search="">
+	                                                                <option value="1">1号</option>
+	                                                                <option value="2">2号</option>
+	                                                        </select>
+	                                                    </div>
+	                                                </form>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row content-total" id="section-3">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												重复数据处理
+											</div>
+										</div>
+										<form class="layui-form" action="">
+											<div class="layui-form-item" pane="">
+												<div class="layui-input-block" ">
+													<input type="checkbox" name="like1[write]" lay-skin="primary" title="完全覆盖已有数据" checked=""><br>
+													<input type="checkbox" name="like1[read]" lay-skin="primary" title="检查补充新增的内容"><br>
+													<input type="checkbox" name="like1[write]" lay-skin="primary" title="跳过已采数据，断点续采"><br>
+													<input type="checkbox" name="like1[read]" lay-skin="primary" title="不断重复，尾部增加">
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="row content-total" id="section-4">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												页面链接的范围：
+											</div>
+										</div>
+										<form class="layui-form" action="">
+											<div class="layui-form-item" pane="">
+												<div class="layui-input-block" ">
+													<input type="checkbox" name="like1[write]" lay-skin="primary" title="包含页面所有的连接" checked=""><br>
+													<input type="checkbox" name="like1[read]" lay-skin="primary" title="兼括多级域名"><br>
+													<input type="checkbox" name="like1[write]" lay-skin="primary" title="每个页面都当做列表页面"><br>
+													<input type="checkbox" name="like1[read]" lay-skin="primary" title="其它">
+												</div>
+											</div>
+										</form>	
+									</div>
+					        	</div>
+				        	</div>
+						
+				    </div>
+									
+					<!--自定义采集-->
+			        <div class="layui-tab-item">
+			        	<div class="row">
+								<div class="col-md-3"  id="myScrollspy">
+									<ul class="nav nav-tabs nav-stacked" id="myNav2" style="width: 200px;">
+							            <li class="active"><a href="#section2-1">项目基础设置</a></li>
+							            <li><a href="#section2-2">搜索关键字</a></li>
+							            <li><a href="#section2-3">重复数据处理</a></li>
+							            <li><a href="#section2-4">搜索对象</a></li>
+							        </ul>
+								</div>
+								<div class="col-md-9">
+									<div class="row content-total" id="section2-1">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												项目基础设置
+											</div>
+										</div>
+										<div class="setting_content">
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="project_name">项目名称：</span>
+												</div>
+												<div class="col-md-8">
+													<input class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="store_url">存放路径：</span>
+												</div>
+												<div class="col-md-8">
+													<input class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="sort_kind">所属类别：</span>
+												</div>
+												<div class="col-md-3">
+													<form class="layui-form" action="">
+														<div class="layui-input-inline">
+		                                                   	<select name="modules" lay-verify="required" lay-search="">
+	                                                                <option value="1">快捷项目</option>
+	                                                                <option value="2">其他项目</option>
+	                                                            </select>
+	                                                    </div>
+	                                                </form>
+												</div>
+												<div class="col-md-2">
+													<span class="visit_interval">访问间隔(s)：</span>
+												</div>
+												<div class="col-md-3">
+													<input class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span class="collect_con">采集内容：</span>
+												</div>
+												<div class="col-md-8">
+													<form class="layui-form" action="" style="margin-left: -110px;">
+														<div class="layui-form-item" pane="">
+														    <div class="layui-input-block">
+														      	<input type="checkbox" name="title" lay-skin="primary" title="标题" checked="">
+														      	<input type="checkbox" name="time" lay-skin="primary" title="时间">
+														       	<input type="checkbox" name="author" lay-skin="primary" title="作者">
+														        <input type="checkbox" name="main_body" lay-skin="primary" title="正文">
+														        <input type="checkbox" name="resource" lay-skin="primary" title="来源">
+														    </div>
+													  	</div>
+													</form>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row setting_cont">
+												<div class="col-md-1"></div>
+												<div class="col-md-3">
+													<form class="layui-form" action="" style="margin-left:-110px;">
+														<div class="layui-form-item" pane="">
+														    <div class="layui-input-block">
+																<input type="checkbox" name="like1[write]" lay-skin="primary" title="定期更新：" checked="" >
+															 </div>
+													  	</div>
+													</form>
+												</div>
+												<div class="col-md-2">
+													<form class="layui-form" action="" style="margin-left: -70px;">
+														<div class="layui-input-inline">
+		                                                   	<select name="modules" lay-verify="required" lay-search="">
+	                                                                <option value="1">每月</option>
+	                                                                <option value="2">每周</option>
+	                                                                <option value="3">每天</option>
+	                                                        </select>
+	                                                    </div>
+	                                                </form>
+												</div>
+												<div class="col-md-2">
+													<span class="visit_interval">间隔：</span>
+												</div>
+												<div class="col-md-3">
+													<form class="layui-form" action="">
+														<div class="layui-input-inline">
+		                                                   	<select name="modules" lay-verify="required" lay-search="">
+	                                                                <option value="1">1号</option>
+	                                                                <option value="2">2号</option>
+	                                                        </select>
+	                                                    </div>
+	                                                </form>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+										</div>		
+									</div>
+
+									<div class="row content-total" id="section2-2">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												搜索关键词：（多组关键词时请换行区分）
+											</div>
+										</div>
+										<div class="row input-textarea">
+											<div class="col-md-1"></div>
+												<div class="col-md-10">
+													<textarea class="form-control"  style="height: 150px;margin: 10px 10px 20px 0px;" placeholder="舆情"></textarea>	
+												</div>
+											<div class="col-md-1"></div>
+										</div>
+										<form>
+											<div class="row">
+												<div class="col-md-1"></div>
+												<div class="col-md-2">
+													<span>从txt文件导入：</span>
+												</div>
+												<div class="col-md-6">
+													<input class="form-control">
+												</div>
+												<div class="col-md-3">
+													<button class="layui-btn" lay-submit="" lay-filter="demo1">浏览</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="row content-total" id="section2-3">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												重复数据处理
+											</div>
+										</div>
+										<form class="layui-form" action="">
+											<div class="layui-form-item" pane="">
+												<div class="layui-input-block" ">
+													<input type="checkbox" name="like1[write]" lay-skin="primary" title="完全覆盖已有数据" checked=""><br>
+													<input type="checkbox" name="like1[read]" lay-skin="primary" title="检查补充新增的内容"><br>
+													<input type="checkbox" name="like1[write]" lay-skin="primary" title="跳过已采数据，断点续采"><br>
+													<input type="checkbox" name="like1[read]" lay-skin="primary" title="不断重复，尾部增加">
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="row content-total" id="section2-4">
+										<div class="col-md-12 content-total-title">
+											<div class = "url-content-title"><!--原始信息-->
+												搜索对象
+											</div>
+										</div>
+										<div class="search-background-color">
+											<form class="layui-form" action="">
+												<div class="row">
+													<div class="col-md-1"></div>
+													<div class="col-md-2">新闻</div>
+													<div class="col-md-9"></div>
+												</div>
+												<div class="layui-form-item" pane="">
+													<div class="layui-input-block" ">
+														<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
+														<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
+														<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
+														<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+													</div>
+												</div>
+											</form>	
+										</div>
+										<div class="search-background-color">
+											<form class="layui-form" action="">
+												<div class="row">
+													<div class="col-md-1"></div>
+													<div class="col-md-2">网页</div>
+													<div class="col-md-9"></div>
+												</div>
+												<div class="layui-form-item" pane="">
+													<div class="layui-input-block" ">
+														<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
+														<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
+														<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
+														<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="search-background-color">
+											<form class="layui-form" action="">
+												<div class="row">
+													<div class="col-md-1"></div>
+													<div class="col-md-2">博客、论坛</div>
+													<div class="col-md-9"></div>
+												</div>
+												<div class="layui-form-item" pane="">
+													<div class="layui-input-block" ">
+														<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
+														<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
+														<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
+														<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+					        	</div>
+				        	</div>
 					</div>
+			    </div>	
+			</div>	
+
+			<!--底部内容 -->
+			<div class="content-bottombar" style="margin-bottom: 50px;">
+				<!-- <div class="row"> -->
+				<div class="bottom-link-parent">
+					<a href="#" class="bottom-link">帮助</a>
+					<a href="#" class="bottom-link">隐私</a>
+					<a href="#" class="bottom-link">条款</a>
+				</div>
+				<div class="row">
+					<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- //搜索栏 -->
-		<!-- <div class="offcanvas flypanels-right">
-			<div class="panelcontent" data-panel="search">
-				<div class="searchbox" data-searchurl="json/searchresult.json?search=true">
-					<input title="search" type="text" />
-					<a href="#" aria-label="search" class="searchbutton"></a>
-				</div>
-				<div class="resultinfo" style="display:none">
-					You search for "<span class="query">lorem ipsum</span>" resulted in <span class="num">5</span> hits.
-				</div>
-				<div class="errormsg" style="display:none">
-					Something went wrong, please refresh the page and try again.
-				</div>
-		
-				<div class="loading" style="display:none"><div class="loader"></div><span>Searching...</span></div>
-				<div class="flypanels-searchresult" style="display:none"></div>
-			</div>
-		</div> -->
 	
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/kitUtils.js"></script>
-	<script src="dist/jquery.flypanels.js"></script>
 	<script src="js/fastclick.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="layui/layui.js"></script>
+	<script src="js/affix.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('.flypanels-container').flyPanels({
-				treeMenu: {
-					init: true
-				},
-				search: {
-					init: true,
-					saveQueryCookie: true
-				}
-			});
-			FastClick.attach(document.body);
+        layui.use('element', function(){
+          var $ = layui.jquery
+          ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+          
+          $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+          });
+        });
+       layui.use('form', function(){
+			  var form = layui.form
 		});
-	</script>
+    </script>
+
 </body>
 </html>
