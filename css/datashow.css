@@ -11,6 +11,7 @@
 }
 .search{
 	text-align: center;
+	margin-top:10px;
 }
 #search-box{
 	width: 300px;
@@ -90,7 +91,7 @@
 }
 .search-results{
 	background: white;
-	margin-top: 30px;
+	margin-top: 20px;
 	padding: 20px 10px 40px 30px;
 }
 h4{
@@ -137,4 +138,9 @@ h4{
 .bottom-link{
 	color: #337ab7;
 	text-decoration: none;
+}
+.three-link img{
+	height: 16px;
+	width: 16px;
+	margin-bottom: 3px;
 }

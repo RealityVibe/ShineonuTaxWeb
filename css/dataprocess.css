@@ -5,7 +5,7 @@
 	margin-top: 10px;
 }
 /*左边菜单栏开始*/
- ul.nav-tabs{
+ 	ul.nav-tabs{
         width: 140px;
         margin-top: 20px;
         border-radius: 4px;
@@ -39,6 +39,7 @@
         top: 30px; /* Set the top position of pinned element */
     }
 /*左边菜单栏结束*/
+
 .original-content-title{
 	color: rgba(41, 169, 232, 1);
 	font-size: 15px;
@@ -119,6 +120,7 @@
 	padding: 10px;
 	margin: 0;
 	text-align: center;
+	width: 20%;
 }
 .total-table thead {
 	background-color:rgba(41, 169, 232, 1);
@@ -177,4 +179,16 @@
 }
 .algs{
 	margin-left:-50px;
+}
+.text-margin-top{
+    margin-top: 5px;
+}
+.similar,.other{
+	padding: 60px 0 20px 0;
+}
+.similar2{
+	padding: 20px 0 20px 0;
+}
+.other2{
+	padding:0 0 20px 0; 
 }

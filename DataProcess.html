@@ -14,7 +14,7 @@
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -85,11 +85,10 @@
 				<div class="layui-tab-content">
 					<div class="layui-tab-item layui-show"> 
 						<div class="row">
-							<div class="col-md-2"  id="myScrollspy">
+							<div class="col-md-2 slide"  id="myScrollspy">
 								<ul class="nav nav-tabs nav-stacked" id="myNav">
 					                <li class="active"><a href="#section-1">原内容</a></li>
 					                <li><a href="#section-2">替换方法列表</a></li>
-					               
 					            </ul>
 							</div>
 							<div class="col-md-10">
@@ -111,17 +110,17 @@
 
 								<!--替换方法列表-->
 							
-									<div class="row content-total2" id="section-2">
-										<div class="flypanel-content-total">
-											<div class="col-md-12 content-total-title">
-												<div class = "replace-ways-title">
-													替换方法列表:
-												</div>
+								<div class="row content-total2" id="section-2">
+									<div class="flypanel-content-total">
+										<div class="col-md-12 content-total-title">
+											<div class = "replace-ways-title">
+												替换方法列表:
 											</div>
-											<div class="row">
+										</div>
+										<div class="row">
 												<div class="col-md-1"></div>
 												<div class="col-md-10 content-location">
-													<div class="row"><!--修缮位置-->
+													<div class="row">
 														<div class="col-md-2">
 															<span class="location-title">修缮位置：</span>
 														</div>
@@ -141,12 +140,12 @@
 													</div>
 												</div>
 												<div class="col-md-1"></div>
-											</div>
+										</div>
 
-											<div class="row">
+										<div class="row">
 												<div class="col-md-1"></div>
-												<div class="col-md-10 content-location"><!--修缮方式-->
-
+												<div class="col-md-10 content-location"><!-- 修缮方式 -->
+											
 													<div class="col-md-12 method-wrap wrap">
 													  	<span class="title">修缮方式：</span>
 													  	<div class="content">
@@ -183,7 +182,7 @@
 																
 															</div>
 													  	</div>
-													  	<!--原内容-->
+													  	<!-- 原内容 -->
 													  	<div class="row">
 													  		<div class="col-md-2">
 													  			<span class="location-title2">原内容：</span>
@@ -192,7 +191,7 @@
 													  			<textarea class="form-control"></textarea>	
 													  		</div>
 													  	</div>
-													  	<!--新内容-->
+													 <!--  	新内容 -->
 													  	<div class="row">
 													  		<div class="col-md-2">
 													  			<span class="location-title2">新内容：</span>
@@ -204,8 +203,8 @@
 													</div>
 												</div>
 												<div class="col-md-1"></div>
-											</div>
-											<div class="row">
+										</div> 
+										<div class="row">
 												<div class="col-md-1"></div>
 												<div class="col-md-10 total-table-div">
 														<table class="col-md-12 total-table">
@@ -243,17 +242,17 @@
 														</table>						
 												</div>
 												<div class="col-md-1"></div>
-											</div>
-										</div>
+										</div> 
 									</div>
 								</div>
 							</div>
-				        	</div>
+						</div>
+				        </div>
 									
 							<!--去重Tab的内容-->
 			        		<div class="layui-tab-item">
 			        			<div class="row">
-									<div class="col-md-3"  id="myScrollspy">
+									<div class="col-md-3 slide"  id="myScrollspy">
 										<ul class="nav nav-tabs nav-stacked" id="myNav1" style="width: 200px;">
 							                <li class="active"><a href="#section2-1">初步按综合查询权重筛选</a></li>
 							                <li><a href="#section2-2">相似度匹配计算方法</a></li>
@@ -263,78 +262,106 @@
 									</div>
 									<div class="col-md-9">
 										<div class="row content-total" id="section2-1">
-											<!-- 数据分类部分 -->
-											<div class="col-md-12 content-bottom">
-												<div class="col-md-12 content-bottom-data-title">
-													<div class="no-repeat-way">
-														初步按综合查询权重筛选
-													</div>
-												</div>
-												<div>
-													<span class="small-text">参与后续筛选的查询结果数量：</span>
-													<input class ="text-input" type="text" name="num">
+											<div class="col-md-12 content-total-title">
+												<div class = "original-content-title"><!--初步按综合查询权重筛选-->
+													初步按综合查询权重筛选
 												</div>
 											</div>
+											<div class="row" style="padding:60px 0 20px 0">
+												<div class="col-md-1"></div>
+												<div class="col-md-4" style="margin-top:5px;">
+													<span class="small-text">参与后续筛选的查询结果数量：</span>
+												</div>
+												<div class="col-md-6">
+													<input class ="form-control" type="text" name="num">
+												</div>
+												<div class="col-md-1"></div>
+											</div>
 										</div>
+					
+								
 										<div class="row content-total" id="section2-2">
-											<!-- 最新任务 -->
-											<div class="col-md-12 content-bottom">
-												<div class="col-md-12 content-bottom-process-title">		
-													<div class="no-repeat-way">	
+											<!-- 相似度匹配计算方法 -->
+												<div class="col-md-12 content-total-title">		
+													<div class="original-content-title">	
 														相似度匹配计算方法
 													</div>
 												</div>
-												<form class="layui-form" action="">
-													<div class="layui-form-item">
-													    <div class="layui-input-block algs">
-													      <input type="radio" name="alg" value="熊猫算法" title="熊猫算法" checked="">
-													      <input type="radio" name="alg" value="余弦计算" title="余弦计算">	
-													    </div>
+												<form class="row layui-form" action="" style="padding:60px 0 20px 0">
+													<div class="col-md-1"></div>
+													<div class="col-md-5">
+														<input type="radio" name="alg" value="熊猫算法" title="熊猫算法" checked="">
 													</div>
+													<div class="col-md-5">
+														<input type="radio" name="alg" value="余弦计算" title="余弦计算">	
+													</div>
+													<div class="col-md-1"></div>
 												</form>
-											</div>
 										</div>
 
 										<div class="row content-total" id="section2-3">
 											<!-- 数据分类部分 -->
-											<div class="col-md-12 content-bottom">
-												<div class="col-md-12 content-bottom-data-title">		
-													<div class="no-repeat-way">								
-														相似度匹配阈值
-													</div>
+											<div class="col-md-12 content-total-title">		
+												<div class="original-content-title">						
+													相似度匹配阈值
 												</div>
-												<div class="col-md-12">
+											</div>
+											<div class="row similar">
+												<div class="col-md-1"></div>
+												<div class="col-md-3 text-margin-top">
 													<span class="small-text">高频词匹配阈值：</span>
-													<input class ="text-input" type="text" name="num">
-													<span class="small-text">%&#9;（若满足会进入下一步）</span>
 												</div>
-												<div class="col-md-12">
+												<div class="col-md-4">
+													<input class ="form-control" type="text" name="num">
+												</div>
+												<div class="col-md-3 text-margin-top">
+													<span class="small-text">%&#9;(若满足会进入下一步)</span>
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+											<div class="row">
+												<div class="col-md-1"></div>
+												<div class="col-md-3 text-margin-top">
 													<span class="small-text">全部词匹配阈值：</span>
-													<input class ="text-input" type="text" name="num">
-													<span class="small-text">%&#9;（若满足会认为全文相似）</span>
 												</div>
-												<div class="small-text">（注：阈值就是指判断的边界值）</div>
+												<div class="col-md-4">
+													<input class ="form-control" type="text" name="num">
+												</div>
+												<div class="col-md-4 text-margin-top">
+													<span class="small-text">%&#9;(若满足会认为全文相似)</span>
+												</div>
+												
+											</div>
+											<div class="row similar2">
+												<div class="col-md-1"></div>
+												<div class="col-md-6 text-margin-top">
+													<span class="small-text">(注：阈值就是指判断的边界值)</sapn>
+												</div>
+												<div class="col-md-5"></div>
 											</div>
 										</div>
 										<div class="row content-total" id="section2-4">
-											<!-- 最新任务 -->
-											<div class="col-md-12 content-bottom">
-												<div class="col-md-12 content-bottom-process-title">
-													<div class="no-repeat-way">			
-														其它
-													</div>
+											<div class="col-md-12 content-total-title">		
+												<div class="original-content-title">	
+													其它
 												</div>
-												<form class="layui-form" action="">
-													<div class="layui-form-item" pane="">
-													    <div class="layui-input-block" style="margin-left:-8px; ">
-													      <input type="checkbox" name="like1[write]" lay-skin="primary" title="当高频词匹配结果不满足阈值条件时，就不再执行全部词匹配计算" checked=""><br>
-													      <input type="checkbox" name="like1[read]" lay-skin="primary" title="只需要依据高频词来计算最终相似性（不再判断全部词的相似性）">
-													    </div>
-												  	</div>
-												</form>
 											</div>
-											<!-- 空部分 -->
-											<!-- <div class="col-md-1"></div> -->
+											<form class="layui-form" action="">
+												<div class="row other">
+													<div class="col-md-1"></div>
+													<div class="col-md-10">
+													    <input type="checkbox" name="like1[write]" lay-skin="primary" title="当高频词匹配结果不满足阈值条件时，就不再执行全部词匹配计算" checked="">
+													</div>
+													<div class="col-md-1"></div>
+												</div>
+												<div class="row other2">
+													<div class="col-md-1"></div>
+													<div class="col-md-10">
+													    <input type="checkbox" name="like1[read]" lay-skin="primary" title="只需要依据高频词来计算最终相似性（不再判断全部词的相似性）">
+													</div>
+													<div class="col-md-1"></div>	
+												</div>	
+											</form>
 										</div>
 					        		</div>
 				        		</div>

@@ -14,7 +14,7 @@
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -86,7 +86,7 @@
 					<!--简易采集-->
 					<div class="layui-tab-item layui-show"> 
 						<div class="row">
-								<div class="col-md-3"  id="myScrollspy">
+								<div class="col-md-3 slide"  id="myScrollspy">
 									<ul class="nav nav-tabs nav-stacked" id="myNav1" style="width: 200px;">
 							            <li class="active"><a href="#section-1">目标网址</a></li>
 							            <li><a href="#section-2">基础设置</a></li>
@@ -119,7 +119,7 @@
 										<div class="setting_content">
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="project_name">项目名称：</span>
 												</div>
 												<div class="col-md-8">
@@ -129,7 +129,7 @@
 											</div>
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="store_url">存放路径：</span>
 												</div>
 												<div class="col-md-8">
@@ -139,7 +139,7 @@
 											</div>
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="sort_kind">所属类别：</span>
 												</div>
 												<div class="col-md-3">
@@ -152,7 +152,7 @@
 	                                                    </div>
 	                                                </form>
 												</div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="visit_interval">访问间隔(s)：</span>
 												</div>
 												<div class="col-md-3">
@@ -162,11 +162,11 @@
 											</div>
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="collect_con">采集内容：</span>
 												</div>
 												<div class="col-md-8">
-													<form class="layui-form" action="" style="margin-left: -110px;">
+													<form class="layui-form" action="">
 														<div class="layui-form-item" pane="">
 														    <div class="layui-input-block">
 														      	<input type="checkbox" name="title" lay-skin="primary" title="标题" checked="">
@@ -202,8 +202,8 @@
 	                                                    </div>
 	                                                </form>
 												</div>
-												<div class="col-md-2">
-													<span class="visit_interval">间隔：</span>
+												<div class="col-md-2 text-margin-top">
+													<span class="interval">间隔：</span>
 												</div>
 												<div class="col-md-3">
 													<form class="layui-form" action="">
@@ -229,10 +229,26 @@
 										<form class="layui-form" action="">
 											<div class="layui-form-item" pane="">
 												<div class="layui-input-block" ">
-													<input type="checkbox" name="like1[write]" lay-skin="primary" title="完全覆盖已有数据" checked=""><br>
-													<input type="checkbox" name="like1[read]" lay-skin="primary" title="检查补充新增的内容"><br>
-													<input type="checkbox" name="like1[write]" lay-skin="primary" title="跳过已采数据，断点续采"><br>
-													<input type="checkbox" name="like1[read]" lay-skin="primary" title="不断重复，尾部增加">
+													<div class="row">
+														<div class="col-md-1"></div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[write]" lay-skin="primary" title="完全覆盖已有数据" checked="">
+														</div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[read]" lay-skin="primary" title="检查补充新增的内容">
+														</div>
+														<div class="col-md-1"></div>
+													</div>
+													<div class="row">
+														<div class="col-md-1"></div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[write]" lay-skin="primary" title="跳过已采数据，断点续采">
+														</div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[read]" lay-skin="primary" title="不断重复，尾部增加">
+														</div>
+														<div class="col-md-1"></div>
+													</div>
 												</div>
 											</div>
 										</form>
@@ -246,10 +262,26 @@
 										<form class="layui-form" action="">
 											<div class="layui-form-item" pane="">
 												<div class="layui-input-block" ">
-													<input type="checkbox" name="like1[write]" lay-skin="primary" title="包含页面所有的连接" checked=""><br>
-													<input type="checkbox" name="like1[read]" lay-skin="primary" title="兼括多级域名"><br>
-													<input type="checkbox" name="like1[write]" lay-skin="primary" title="每个页面都当做列表页面"><br>
-													<input type="checkbox" name="like1[read]" lay-skin="primary" title="其它">
+													<div class="row">
+														<div class="col-md-1"></div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[write]" lay-skin="primary" title="包含页面所有的连接" checked="">
+														</div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[read]" lay-skin="primary" title="兼括多级域名">
+														</div>
+														<div class="col-md-1"></div>
+													</div>
+													<div class="row">
+														<div class="col-md-1"></div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[write]" lay-skin="primary" title="每个页面都当做列表页面">
+														</div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[read]" lay-skin="primary" title="其它">
+														</div>
+														<div class="col-md-1"></div>
+													</div>
 												</div>
 											</div>
 										</form>	
@@ -262,7 +294,7 @@
 					<!--自定义采集-->
 			        <div class="layui-tab-item">
 			        	<div class="row">
-								<div class="col-md-3"  id="myScrollspy">
+								<div class="col-md-3 slide"  id="myScrollspy">
 									<ul class="nav nav-tabs nav-stacked" id="myNav2" style="width: 200px;">
 							            <li class="active"><a href="#section2-1">项目基础设置</a></li>
 							            <li><a href="#section2-2">搜索关键字</a></li>
@@ -280,7 +312,7 @@
 										<div class="setting_content">
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="project_name">项目名称：</span>
 												</div>
 												<div class="col-md-8">
@@ -290,7 +322,7 @@
 											</div>
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="store_url">存放路径：</span>
 												</div>
 												<div class="col-md-8">
@@ -300,7 +332,7 @@
 											</div>
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="sort_kind">所属类别：</span>
 												</div>
 												<div class="col-md-3">
@@ -313,7 +345,7 @@
 	                                                    </div>
 	                                                </form>
 												</div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="visit_interval">访问间隔(s)：</span>
 												</div>
 												<div class="col-md-3">
@@ -323,7 +355,7 @@
 											</div>
 											<div class="row setting_cont">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="collect_con">采集内容：</span>
 												</div>
 												<div class="col-md-8">
@@ -363,7 +395,7 @@
 	                                                    </div>
 	                                                </form>
 												</div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span class="visit_interval">间隔：</span>
 												</div>
 												<div class="col-md-3">
@@ -397,14 +429,14 @@
 										<form>
 											<div class="row">
 												<div class="col-md-1"></div>
-												<div class="col-md-2">
+												<div class="col-md-2 text-margin-top">
 													<span>从txt文件导入：</span>
 												</div>
 												<div class="col-md-6">
 													<input class="form-control">
 												</div>
-												<div class="col-md-3">
-													<button class="layui-btn" lay-submit="" lay-filter="demo1">浏览</button>
+												<div class="col-md-3 button-browse">
+													<button class="layui-btn" lay-submit="" lay-filter="demo1" style="height: 35px;">浏览</button>
 												</div>
 											</div>
 										</form>
@@ -419,10 +451,26 @@
 										<form class="layui-form" action="">
 											<div class="layui-form-item" pane="">
 												<div class="layui-input-block" ">
-													<input type="checkbox" name="like1[write]" lay-skin="primary" title="完全覆盖已有数据" checked=""><br>
-													<input type="checkbox" name="like1[read]" lay-skin="primary" title="检查补充新增的内容"><br>
-													<input type="checkbox" name="like1[write]" lay-skin="primary" title="跳过已采数据，断点续采"><br>
-													<input type="checkbox" name="like1[read]" lay-skin="primary" title="不断重复，尾部增加">
+													<div class="row">
+														<div class="col-md-1"></div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[write]" lay-skin="primary" title="完全覆盖已有数据" checked="">
+														</div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[read]" lay-skin="primary" title="检查补充新增的内容">
+														</div>
+														<div class="col-md-1"></div>
+													</div>
+													<div class="row">
+														<div class="col-md-1"></div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[write]" lay-skin="primary" title="跳过已采数据，断点续采">
+														</div>
+														<div class="col-md-5">
+															<input type="checkbox" name="like1[read]" lay-skin="primary" title="不断重复，尾部增加">
+														</div>
+														<div class="col-md-1"></div>
+													</div>
 												</div>
 											</div>
 										</form>
@@ -437,16 +485,26 @@
 											<form class="layui-form" action="">
 												<div class="row">
 													<div class="col-md-1"></div>
-													<div class="col-md-2">新闻</div>
-													<div class="col-md-9"></div>
-												</div>
-												<div class="layui-form-item" pane="">
-													<div class="layui-input-block" ">
-														<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
-														<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
-														<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
-														<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+													<div class="col-md-1 text-margin-top">新 闻</div>
+													<div class="col-md-9">
+														<div class="layui-form-item" pane="">
+															<div class="row layui-input-block" ">
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+																</div>
+															</div>
+														</div>
 													</div>
+													<div class="col-md-1"></div>
 												</div>
 											</form>	
 										</div>
@@ -454,16 +512,26 @@
 											<form class="layui-form" action="">
 												<div class="row">
 													<div class="col-md-1"></div>
-													<div class="col-md-2">网页</div>
-													<div class="col-md-9"></div>
-												</div>
-												<div class="layui-form-item" pane="">
-													<div class="layui-input-block" ">
-														<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
-														<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
-														<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
-														<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+													<div class="col-md-1 text-margin-top">网 页</div>
+													<div class="col-md-9">
+														<div class="layui-form-item" pane="">
+															<div class="row layui-input-block" ">
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+																</div>
+															</div>
+														</div>
 													</div>
+													<div class="col-md-1"></div>
 												</div>
 											</form>
 										</div>
@@ -471,16 +539,26 @@
 											<form class="layui-form" action="">
 												<div class="row">
 													<div class="col-md-1"></div>
-													<div class="col-md-2">博客、论坛</div>
-													<div class="col-md-9"></div>
-												</div>
-												<div class="layui-form-item" pane="">
-													<div class="layui-input-block" ">
-														<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
-														<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
-														<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
-														<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+													<div class="col-md-1 text-margin-top">论 坛</div>
+													<div class="col-md-9">
+														<div class="layui-form-item" pane="">
+															<div class="row layui-input-block" ">
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[write]" lay-skin="primary" title="百度" checked="">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[read]" lay-skin="primary" title="360">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[write]" lay-skin="primary" title="搜狗">
+																</div>
+																<div class="col-md-3">
+																	<input type="checkbox" name="like1[read]" lay-skin="primary" title="雅虎">
+																</div>
+															</div>
+														</div>
 													</div>
+													<div class="col-md-1"></div>
 												</div>
 											</form>
 										</div>

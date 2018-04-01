@@ -93,3 +93,9 @@
     border-bottom: 1px dashed #cccccc;
     padding: 10px 10px 10px 10px;
 }
+.text-margin-top{
+    margin-top: 10px;
+}
+.button-browse{
+    margin-bottom: 20px;
+}

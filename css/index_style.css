@@ -54,7 +54,9 @@
 	text-align: center;
 	line-height: 20px;
 }
-
+.body-content{
+	margin-top: 80px;
+}
 /* 最新任务 */
 .content-bottom-process-title {
 	padding-top: 10px;	border-bottom: 1px solid rgba(41, 169, 232, 1);	
