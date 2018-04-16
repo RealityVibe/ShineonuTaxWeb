@@ -69,23 +69,10 @@ if (option && typeof option === "object") {
 var dom = document.getElementById("pie_container");
 var myChart = echarts.init(dom);
 var app = {};
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0416备份
-option = null;
-app.title = '环形图';
-
-option = {
-<<<<<<< HEAD
-=======
-=======
 
 app.title = '环形图';
 
 option1 = {
->>>>>>> 0416备份
->>>>>>> 0416备份
     title: {
         text: '数据分类'
     },
@@ -98,14 +85,8 @@ option1 = {
         x: 'right',
         data:['土地交易', '国家政策','其他数据','税务法规','新闻公告']
     },
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
     
     calculable : false,   //拖拽
->>>>>>> 0416备份
->>>>>>> 0416备份
     series: [
         {
             name:'数据类型',
@@ -139,18 +120,6 @@ option1 = {
             ]
         }
     ]
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0416备份
-};
-;
-if (option && typeof option === "object") {
-    myChart.setOption(option, true);
-}
-<<<<<<< HEAD
-=======
-=======
     };
 
 if (option1 && typeof option1 === "object") {
@@ -187,8 +156,6 @@ if (option1 && typeof option1 === "object") {
  
    myChart.on("click", eConsole);
    myChart.on("hover", eConsole);
->>>>>>> 0416备份
->>>>>>> 0416备份
 
 /*失信名单*/
 var dom = document.getElementById("promise_container");
