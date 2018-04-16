@@ -120,7 +120,17 @@
 	padding: 10px;
 	margin: 0;
 	text-align: center;
+<<<<<<< HEAD
 	width: 20%;
+=======
+<<<<<<< HEAD
+	width: 20%;
+=======
+}
+.table-th1{
+	width: 11%;
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 }
 .total-table thead {
 	background-color:rgba(41, 169, 232, 1);
@@ -181,7 +191,15 @@
 	margin-left:-50px;
 }
 .text-margin-top{
+<<<<<<< HEAD
     margin-top: 5px;
+=======
+<<<<<<< HEAD
+    margin-top: 5px;
+=======
+   line-height: 36px;
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 }
 .similar,.other{
 	padding: 60px 0 20px 0;

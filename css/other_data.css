@@ -1,0 +1,9 @@
+.search-results{
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 20px 0 20px 25px;
+}
+.search-results h4{
+	font-weight:bold;
+	font-size: 20px;
+}

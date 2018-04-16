@@ -94,8 +94,31 @@
     padding: 10px 10px 10px 10px;
 }
 .text-margin-top{
-    margin-top: 10px;
+    line-height: 36px;
 }
 .button-browse{
     margin-bottom: 20px;
+}
+.collect_btn_con{
+    padding:0 0 20px 0; 
+}
+.collect_btn{
+    height: 30px;
+    background-color: rgba(41, 169, 232, 1);
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.self_collect_btn{
+    height: 30px;
+    background-color: rgba(41, 169, 232, 1);
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+}
+.self_collect_con{
+    padding-left: 43px;
 }

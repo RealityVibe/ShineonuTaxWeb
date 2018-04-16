@@ -1,0 +1,25 @@
+.content-total-box-parent {
+	height: 200px;
+}
+.content-total{
+	margin-top: 30px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.search-key-date{
+	background-color: #fff;
+	padding: 20px 0 10px 0; 
+	margin-top: 30px;
+}
+.drop-down-box,.drop-down-box-year,.drop-down-box-month,.drop-down-box-day{
+	border-color: #e6e6e6;
+	height: 38px;
+	margin-left:20px;
+}
+.land_keys,.land_date,.land_btn{
+	padding:5px 0 5px 40px;
+}
+.content-bottombar{
+	bottom: 0px;
+	margin-top: 120px;
+}

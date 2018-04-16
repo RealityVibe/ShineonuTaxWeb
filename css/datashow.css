@@ -36,7 +36,15 @@
 }
 .belong-to-type{
 	border-bottom: 1px dashed #cccccc;
+<<<<<<< HEAD
 	padding-bottom:10px;
+=======
+<<<<<<< HEAD
+	padding-bottom:10px;
+=======
+	padding-bottom:20px;
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 	text-decoration: none;
 }
 .belong-to-type li:hover,.belong-to-type .active{

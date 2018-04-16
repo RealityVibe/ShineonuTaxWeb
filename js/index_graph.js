@@ -69,10 +69,23 @@ if (option && typeof option === "object") {
 var dom = document.getElementById("pie_container");
 var myChart = echarts.init(dom);
 var app = {};
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0416备份
 option = null;
 app.title = '环形图';
 
 option = {
+<<<<<<< HEAD
+=======
+=======
+
+app.title = '环形图';
+
+option1 = {
+>>>>>>> 0416备份
+>>>>>>> 0416备份
     title: {
         text: '数据分类'
     },
@@ -85,6 +98,14 @@ option = {
         x: 'right',
         data:['土地交易', '国家政策','其他数据','税务法规','新闻公告']
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    
+    calculable : false,   //拖拽
+>>>>>>> 0416备份
+>>>>>>> 0416备份
     series: [
         {
             name:'数据类型',
@@ -118,11 +139,56 @@ option = {
             ]
         }
     ]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0416备份
 };
 ;
 if (option && typeof option === "object") {
     myChart.setOption(option, true);
 }
+<<<<<<< HEAD
+=======
+=======
+    };
+
+if (option1 && typeof option1 === "object") {
+    myChart.setOption(option1, true);
+}
+    var data_url=['land_deals.html','country_policy.html','other_data.html','tax_law.html','news_notice.html']; 
+ 
+    function everyClick(param,i,txt,url){    //程序这边的url需要传入
+    if(param.seriesIndex==0&&param.dataIndex==i){
+        /*confirm("是否进入详情页面？")&&*/window.open (url,'_parent','height=100,width=400,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no');
+        } 
+    }
+     
+  
+ 
+    //增加监听事件
+    function eConsole(param) {
+        //var mes = '【' + param.type + '】';
+        if (typeof param.seriesIndex != 'undefined') {
+        // mes += '  seriesIndex : ' + param.seriesIndex;
+        // mes += '  dataIndex : ' + param.dataIndex;
+            if (param.type == 'click') {     
+                var peiLenght= option1.legend.data.length;
+                //alert(peiLenght);// 获取总共给分隔的扇形数
+                for(var i=0;i<peiLenght;i++){
+                    everyClick(param,i,option1.legend.data[i],data_url[i])
+                }  
+            }else{
+                document.getElementById('hover-console').innerHTML = 'Event Console : ' + param.dataIndex;
+                //alert();
+            }   
+        }
+    }
+ 
+   myChart.on("click", eConsole);
+   myChart.on("hover", eConsole);
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 
 /*失信名单*/
 var dom = document.getElementById("promise_container");

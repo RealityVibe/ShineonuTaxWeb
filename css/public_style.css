@@ -1,10 +1,28 @@
 body{
 	background-color: #f8f8f8;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.navbar{
+	border-radius: 0px;
+}
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 .navbar-default{
 	background: #2575aa;
 	border-color:#2575aa;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.navbar-header a:hover{
+	color: #fff;
+}
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 .navbar{
 	border:none;
 }
@@ -29,7 +47,21 @@ body{
 .dropdown-menu>li>a, .dropdown-menu>li>a{
 	color: #fff;
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+.navbar-right img{
+	margin-top: -4px;
+	padding-right: 5px; 
+}
+.navbar-default .navbar-brand{
+	color: #fff;
+}
+>>>>>>> 0416备份
+>>>>>>> 0416备份
 /*底部栏*/
 .content-bottombar{
 	bottom: 0px;
@@ -38,6 +70,22 @@ body{
 .bottom-link-parent{
 	text-align: center;
 }
+<<<<<<< HEAD
 .container{
 	margin-top: 50px;
 }
+=======
+<<<<<<< HEAD
+.container{
+	margin-top: 50px;
+}
+=======
+.bottom-link{
+    color: #337ab7;
+    text-decoration: none;
+}
+/* .container{
+	margin-top: 50px;
+} */
+>>>>>>> 0416备份
+>>>>>>> 0416备份

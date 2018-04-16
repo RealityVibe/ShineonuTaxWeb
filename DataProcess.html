@@ -14,7 +14,7 @@
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -59,10 +59,8 @@
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">1</a></li>
-		            <li><a href="#">2</a></li>
-		            <li><a href="#">3</a></li>
-		            <li><a href="#">4</a></li>
+		            <li><a href="#">人员管理</a></li>
+		            <li><a href="#">系统管理</a></li>
 		          </ul>
 		        </li>
 		      </ul>
@@ -149,7 +147,7 @@
 													<div class="col-md-12 method-wrap wrap">
 													  	<span class="title">修缮方式：</span>
 													  	<div class="content">
-													  		<div class = "row">
+													  		<div class = "row" style="padding-bottom: 10px;">
 													  			<div class="col-md-2"></div>
 														  		<div class="col-md-2">
 																	<input type="radio" name="way" value="1" checked>删除
@@ -161,11 +159,11 @@
 																	<input type="radio" name="way" value="3">伪创作(SEO)
 																</div>
 																<div class="col-md-3">
-																	<input type="radio" name="way" value="4">修改替换？？
+																	<input type="radio" name="way" value="4">修改替换
 																</div>
-																
 															</div>
-															<div class="row">
+															
+															<div class="row"  style="padding-bottom: 10px;">
 																<div class="col-md-2"></div>
 																<div class="col-md-2">
 																	<input type="radio" name="way" value="5">时间值修改
@@ -210,11 +208,11 @@
 														<table class="col-md-12 total-table">
 														    <thead>
 														        <tr>
-														           <th>修缮位置</th>
-																   <th>修缮方式</th>
+														           <th class="table-th1">修缮位置</th>
+																   <th class="table-th1">修缮方式</th>
 																   <th>原内容</th>
 																   <th>新内容</th>
-																   <th>大小写</th>
+																   <th class="table-th1">大小写</th>
 														        </tr>
 														    </thead>
 														    <tbody>
