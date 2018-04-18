@@ -1,11 +1,14 @@
 .drop-down-box{
-	height: 25.34px;
 	width: 400px;
 	margin-left: 20px;
 	border: 1px solid #cccccc;
 }
 .drop-down-box-date{
-	height: 25.34px;
+	
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+}
+.drop-down-box-date10{
 	border: 1px solid #cccccc;
 	border-radius: 3px;
 }
@@ -87,17 +90,25 @@ h4{
 	font-size: 20px;
 }
 .cont_title{
-	padding: 10px 40px 10px 40px;
+	padding: 10px 40px 5px 40px;
 }
 .main_cont{
 	padding: 0px 40px 10px 40px;
 }
 .three_link{
-	padding: 10px 30px 10px 792px;
+	padding: 0px 30px 10px 870px;
+}
+.three_link a:hover{
+	color: #558ED5;
+	text-decoration: none;
 }
 .three_link2{
 	margin-right: 20px;
-	padding: 10px 30px 10px 665px;
+	padding: 0px 30px 10px 890px;
+}
+.three_link2 a:hover{
+	color: #558ED5;
+	text-decoration: none;
 }
 .show-content{
 	margin-right: 15px; 

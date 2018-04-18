@@ -53,6 +53,8 @@
                     <li><a href="dataCollect.html">数据采集</a></li>
                     <li><a href="dataProcess.html">数据加工处理</a></li>
                     <li><a href="dataShow.html">数据展示</a></li>
+                    <li><a href="companyList.html">企业管理</a></li>
+                    <li><a href="checkRecords.html">稽查记录</a></li>
                   </ul>
                 </li>
 		        <li class="dropdown">
@@ -328,7 +330,7 @@
         ,btn: ['关闭']
         ,btnAlign: 'c'
         ,moveType: 1 //拖拽模式，0或者1
-        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:25%;border:1px solid #f8f8f8;">稽查人员姓名：</th><td>魏易达</td></tr><tr><th style="width:25%; border:1px solid #f8f8f8;">完成时间：</th><td style="border:1px solid #f8f8f8;">2018年3月1日</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">工号：</th><td style="border:1px solid #f8f8f8;">748327423</td></tr><tr><th  style="width:25%;border:1px solid #f8f8f8;">处理结果：</th><td style="border:1px solid #f8f8f8;">   改公告所反映的信息属实，该公司以非正当理由逃税120,000元，      经过不断审 核，现已追缴税款123,521元</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">所属分类：</th><td style="border:1px solid #f8f8f8;">配电变压器公司</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">备注：</th><td style="border:1px solid #f8f8f8;"></td></tr></table></div>'
+        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">稽查人员姓名：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">魏易达</td></tr><tr><th style="width:119.33px; border:1px solid #f8f8f8;padding-left:5px;">完成时间：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">2018年3月1日</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">工号：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">748327423</td></tr><tr><th  style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">处理结果：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">   改公告所反映的信息属实，该公司以非正当理由逃税120,000元，      经过不断审 核，现已追缴税款123,521元</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">所属分类：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">配电变压器公司</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">备注：</th><td style="border:1px solid #f8f8f8;padding-left:5px;width:278.67px;"></td></tr></table></div>'
         ,success: function(layero){
           var btn = layero.find('.layui-layer-btn');
         }
@@ -346,7 +348,7 @@
         ,btn: ['审核通过','关闭']
         ,btnAlign: 'c'
         ,moveType: 1 //拖拽模式，0或者1
-        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:25%;border:1px solid #f8f8f8;">稽查人员姓名：</th><td>郑和</td></tr><tr><th style="width:25%; border:1px solid #f8f8f8;">完成时间：</th><td style="border:1px solid #f8f8f8;"></td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">工号：</th><td style="border:1px solid #f8f8f8;">748327873</td></tr><tr><th  style="width:25%;border:1px solid #f8f8f8;">处理结果：</th><td style="border:1px solid #f8f8f8;">   改公告所反映的信息属实，该公司以非正当理由逃税130,000元，      经过不断审 核，现已追缴税款1240,521元</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">所属分类：</th><td style="border:1px solid #f8f8f8;">配电变压器公司</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">备注：</th><td style="border:1px solid #f8f8f8;"></td></tr></table></div>'
+        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">稽查人员姓名：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">郑和</td></tr><tr><th style="width:119.33px; border:1px solid #f8f8f8;padding-left:5px;">完成时间：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">工号：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">748327873</td></tr><tr><th  style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">处理结果：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">   改公告所反映的信息属实，该公司以非正当理由逃税130,000元，     经过不断审核，现已追缴税款1240,521元</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">所属分类：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">配电变压器公司</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">备注：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr></table></div>'
         ,success: function(layero){
           var btn = layero.find('.layui-layer-btn');
         }
@@ -364,14 +366,14 @@
         ,btn: ['分配任务','关闭']
         ,btnAlign: 'c'
         ,moveType: 1 //拖拽模式，0或者1
-        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:25%;border:1px solid #f8f8f8;">稽查人员姓名：</th><td>郑和</td></tr><tr><th style="width:25%; border:1px solid #f8f8f8;">完成时间：</th><td style="border:1px solid #f8f8f8;"></td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">工号：</th><td style="border:1px solid #f8f8f8;">748327873</td></tr><tr><th  style="width:25%;border:1px solid #f8f8f8;">处理结果：</th><td style="border:1px solid #f8f8f8;">未处理</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">所属分类：</th><td style="border:1px solid #f8f8f8;">配电变压器公司</td></tr><tr><th style="width:25%;border:1px solid #f8f8f8;">备注：</th><td style="border:1px solid #f8f8f8;"></td></tr></table></div>'
+        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">稽查人员姓名：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">郑和</td></tr><tr><th style="width:119.33px; border:1px solid #f8f8f8;padding-left:5px;">完成时间：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">工号：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">748327873</td></tr><tr><th  style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">处理结果：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"> 该舆情未处理 </td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">所属分类：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">配电变压器公司</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">备注：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr></table></div>'
         ,success: function(layero){
           var btn = layero.find('.layui-layer-btn');
         }
       });
     }
   };
-  
+
 	$('#layerDemo1 .layui-a1').on('click', function(){
 	    var othis = $(this), method = othis.data('method');
 	    active[method] ? active[method].call(this, othis) : '';

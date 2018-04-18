@@ -4,6 +4,9 @@
 	margin-right: 40px;
 	margin-top: 10px;
 }
+.layui-tab-title{
+    margin-top: -20px;
+}
 /*左边菜单栏开始*/
  	ul.nav-tabs{
         width: 140px;
