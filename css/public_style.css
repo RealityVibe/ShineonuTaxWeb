@@ -5,8 +5,8 @@ body{
 	border-radius: 0px;
 }
 .navbar-default{
-	background: #2575aa;
-	border-color:#2575aa;
+	background: #558ED7;
+	border-color:#558ED7;
 }
 .navbar-header a:hover{
 	color: #fff;
@@ -27,10 +27,10 @@ body{
 	color: #fff;
 }
 .dropdown a:hover{
-	background-color: #2575aa;
+	background-color: #558ED5;
 }
 .dropdown-menu{
-	background-color: rgb(37, 100, 150);
+	background-color: #558ED5;
 }
 .dropdown-menu>li>a, .dropdown-menu>li>a{
 	color: #fff;

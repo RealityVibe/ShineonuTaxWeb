@@ -195,6 +195,30 @@ varid4=document.getElementById("id4");*/
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","block");
 			});
+$("#time_distribution").click(function(){
+	$("#time_distribution").addClass("active");//删除样式
+	$("#tax_distribution").removeClass();//删除样式
+	$("#risk_index").removeClass();//追加样式
+	$(".time_distribution_info").css("display","block");
+	$(".tax_distribution_info").css("display","none");
+	$(".risk_index_info").css("display","none");
+});
+$("#tax_distribution").click(function(){
+	$("#time_distribution").removeClass();//删除样式
+	$("#tax_distribution").addClass("active");//删除样式
+	$("#risk_index").removeClass();//追加样式
+	$(".time_distribution_info").css("display","none");
+	$(".tax_distribution_info").css("display","block");
+	$(".risk_index_info").css("display","none");
+});
+$("#risk_index").click(function(){
+	$("#time_distribution").removeClass();//删除样式
+	$("#tax_distribution").removeClass();//删除样式
+	$("#risk_index").addClass("active");//追加样式
+	$(".time_distribution_info").css("display","none");
+	$(".tax_distribution_info").css("display","none");
+	$(".risk_index_info").css("display","block");
+});
 //3.事件注册块...........................................................
 
 

@@ -86,34 +86,92 @@ h4{
 	font-weight:bold;
 	font-size: 20px;
 }
-.cont_title{
-	padding: 10px 40px 10px 40px;
+.sort_select{
+	background-color: #fff; 
+	border:1px solid #f5f5f5;
 }
-.main_cont{
-	padding: 0px 40px 10px 40px;
+.sort_select_title{
+	border-bottom: 1px solid #f5f5f5;
+	padding: 10px 0px 10px 0px;
 }
-.three_link{
-	padding: 10px 30px 10px 792px;
+.sort_select_title span{
+	margin: 20px 0px 20px 20px;
+	padding:  0px 0px 0px 10px;
+	border-left: 3px solid #558ED7;
+	font-size: 18px;
 }
-.three_link2{
-	margin-right: 20px;
-	padding: 10px 30px 10px 665px;
+.sort_select_details{
+	padding: 10px 0px 10px 35px;
 }
-.show-content{
-	margin-right: 15px; 
+.company_list{
+	background-color: #fff;
+	margin-top: 10px;
+	padding-bottom:10px;
 }
-.site-demo-active{
-	margin-right: 15px; 
+.title_search{
+	border-bottom: 1px solid #f5f5f5;
+	padding: 10px 0px 10px 0px;
 }
-.collect{
-	margin-right: 15px; 
+.company_list_title span{
+	margin: 20px 0px 20px 20px;
+	padding:  0px 0px 0px 10px;
+	border-left: 3px solid #558ED7;
+	font-size: 18px;
 }
-.bottom-link{
-	color: #337ab7;
-	text-decoration: none;
+.search_box{
+	width: 180px;
+	height: 80%;
+	margin-left: 50px;
 }
-/* .three-link img{
-	height: 16px;
-	width: 16px;
-	margin-bottom: 5px;
-} */
+
+.query_btn{
+	 height: 30px;
+    background-color: #558ED7;
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+.details_btn{
+	height: 30px;
+    background-color: #558ED7;
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+    margin-top:10px;
+    margin-left: 80px;
+}
+.date_sort{
+	margin-left: 35px;
+	padding: 10px 0 10px 0px; 
+}
+.date_sort span{
+	padding-right: 30px; 
+}
+#demo2{
+	margin-left: 35px;
+}
+.task1{
+	margin:10px 35px 10px 35px;
+	border: 1px solid #f8f8f8;
+}
+.task1_title{
+	background-color: #f8f8f8;
+	padding: 10px 35px 10px 10px;
+}
+.task1_title span{
+	font-size: 16px;
+	font-weight: bold;
+}
+.task1_title a{
+	color:#558ED7;
+	margin-left: 20px;
+}
+.task1_cont{
+	padding:10px 10px 10px 10px;
+}
+.task1_cont a{
+	color:#558ED7;
+}

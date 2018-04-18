@@ -26,8 +26,8 @@
     }
     ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
         color: #fff;
-        background: #0088cc;
-        border: 1px solid #0088cc;
+        background: #558ED7;
+        border: 1px solid #558ED7;
     }
     ul.nav-tabs li:first-child a{
         border-radius: 4px 4px 0 0;
@@ -41,7 +41,7 @@
 /*左边菜单栏结束*/
 
 .original-content-title{
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 	font-size: 15px;
 	border-bottom: 1px dashed #cccccc;
 	padding: 10px 10px 10px 10px;
@@ -53,7 +53,7 @@
 	margin-top: 20px; 
 }
 .replace-ways-title{
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 	font-size: 15px;
 	border-bottom: 1px dashed #cccccc;
 	padding: 10px 10px 10px 10px;
@@ -62,7 +62,7 @@
 	margin-top:20px;
 }
 .location-title{
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 	font-size: 15px;
 }
 
@@ -81,7 +81,7 @@
 	line-height: 2em;
 	padding: 0 1em;
 	background-color: #fff;
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 	font-size: 15px;
 }
 /* 方法一 end */
@@ -93,7 +93,7 @@
     padding-right: 80px;
 }
 .location-title2{
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 	font-size: 15px;
 	float: left;
 	margin-top:25px; 
@@ -125,7 +125,7 @@
 	width: 11%;
 }
 .total-table thead {
-	background-color:rgba(41, 169, 232, 1);
+	background-color:#558ED7;
 	color: #fff;
 	font-weight: 800;
 }
@@ -134,7 +134,7 @@
 }
 .total-table tbody tr:hover td{
 	background-color: #eee;
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 }
 /*清洗页面的表格结束*/
 
@@ -164,7 +164,7 @@
 }
 .no-repeat-way{
 	border-bottom:  1px dashed #cccccc;	
-	color: rgba(41, 169, 232, 1);
+	color: #558ED7;
 	font-size: 15px;
 	margin-left: -15px;
 }

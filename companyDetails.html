@@ -9,9 +9,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/public_style.css">
-	<link rel="stylesheet" href="css/datashow.css">
 	<link rel="stylesheet" href="layui/css/layui.css">
-	<link rel="stylesheet" href="css/datashow.css">
+	<link rel="stylesheet" href="css/company_details.css">
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
 		<nav class="navbar navbar-default">
@@ -72,28 +71,73 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+        <div class="container">
+          
+		<div class="company_list">
+         	<div class="row title_search">
+         		<div class="col-md-3 company_list_title">
+         			<span>公司简介及备案信息</span>
+         		</div>
+         		<div class="col-md-7"></div>
+         		<div class="col-md-2">
+         			<a href="companyList.html"><input type="button" value="返回" class="comeback_btn"></a>
+         		</div>
+         	</div>
+         	<div class="row company_cont">
+				<div class="col-md-2 company_image">
+					<img src="images/jsb.png">
+				</div>
+				<div class="col-md-10 company_info">
+					<table class="col-md-12 total-table">
+				        <tr>
+				           <th class="table-th">法人名称：</th>
+						   <td>杭州战火中频设备有限公司</td>
+						   <th class="table-th">风险指数：</th>
+						   <td>25</td>
+				        </tr>
+				        <tr>
+				        	<th class="table-th">主要经营范围：</th>
+				        	<td>制造、加工；变压器</td>
+							<th class="table-th">经营模式：</th>
+				        	<td>生产加工</td>
+				        </tr>
+						 <tr>
+				           <th class="table-th">营业执照号码：</th>
+						   <td>330128384682638648</td>
+						   <th class="table-th">成立时间：</th>
+						   <td>2010年3月20日</td>
+				        </tr>
+				        <tr>
+				        	<th class="table-th">发证机关：</th>
+				        	<td>杭州市西湖区市场</td>
+							<th class="table-th">注册资本：</th>
+				        	<td>50万元</td>
+				        </tr>
+				         <tr>
+				           <th class="table-th">经营状态：</th>
+						   <td>存续</td>
+						   <th class="table-th">类型：</th>
+						   <td>私营有限责任公司</td>
+				        </tr>
+				        <tr>
+				        	<th class="table-th">所属分类：</th>
+				        	<td>配电变压器公司</td>
+							<th class="table-th">官网：</th>
+				        	<td><a href="http://www.hzzhzp.com">http://www.hzzhzp.com</a></td>
+				        </tr>
+					</table>
+				</div>
+         	</div>
+         </div>
 
-			
-		<div class="container">
-            <div class="row search">
-                <div class="col-md-2"></div>
-                <form class="col-md-8 layui-form"  action="">
-                    <!--下拉框设置    -->
-                    <div class="col-md-3 layui-inline">
-                        <select name="infor" class="drop-down-box-date">
-                            <option value="1">搜基本信息</option>
-                            <option value="2" selected>搜税务信息</option>   <!-- 预选设置 -->
-                        </select>
-                    </div>
-                    <div class="col-md-6 layui-inline">
-                      <input type="text" name="search-infor" lay-verify="required" placeholder="这里输入企业名" autocomplete="off" class="layui-input">
-                    </div>
-                    <!-- <div class="col-md-1"></div> -->
-                    <button class="col-md-2 layui-btn search-button" lay-submit="" lay-filter="demo1">&nbsp;搜 索&nbsp;</button>
-                </form>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="choose-type">
+
+         <div class="company_list">
+         	<div class="title_search">
+         		<div class=" company_list_title">
+         			<span>涉税舆情</span>
+         		</div>
+         	</div>
+         	<div class="choose-type">
                 <div  class="belong-to-type">
                     <ul>
                         <span class="type-title">所属类目：</span> 
@@ -111,17 +155,17 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class ="allinfo" name = "ad">
-                                <form class="layui-form" action="">
-                                    <div class="layui-inline">
-                                        <span>关键字:</span>
-                                        <div class="layui-input-inline">
-                                            <select name="modules" lay-verify="required" lay-search="">
-                                                <option value="">直接选择或搜索选择</option>
-                                                <option value="1">全部</option>
-                                            </select>
-                                        </div>
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">全部</option>
+                                        </select>
                                     </div>
-                                </form>
+                                </div>
+                            </form>
                         </div>
                         <div class = "capitalinfo" name = "ad">
                             <form class="layui-form" action="">
@@ -282,26 +326,71 @@
                     主要内容：常州市第三人民医院保安服务。服务内容：包括安全保卫、消防巡查、车辆收费管理、监控值班、财务押款、应急突发事件的处理等。本次采购服务时间暂定三年，合同一年一签，期满经甲方考核后续签下一年合同。中标金额：每年人民币壹佰柒拾万零贰仟捌佰柒拾伍元整（￥1702875.00）</p>
                 </div>
                 <div class="three_link">
-                    <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a>
+                     <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a>
                     <a href="#" class="collect" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/collect.png" style="width: 18px;height: 18px;margin-bottom: 3px;">收藏</a>
                     <a class="site-demo-active" href="origin_info.html"><img src="images/show_original.png" style="width: 16px;height: 16px;margin-bottom: 3px;">查看原始信息</a>
                 </div>
             </div>
+            <div id="demo2"></div>
+         </div>
 
-			<!--底部内容 -->
-			<div class="content-bottombar" style="margin-bottom: 50px;">
-				<!-- <div class="row"> -->
-				<div class="bottom-link-parent">
-					<a href="#" class="bottom-link">帮助</a>
-					<a href="#" class="bottom-link">隐私</a>
-					<a href="#" class="bottom-link">条款</a>
-				</div>
-				<div class="row">
-					<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
-				</div>
+		<div class="company_list">
+         	<div class="title_search">
+         		<div class=" company_list_title">
+         			<span>税收情况</span>
+         		</div>
+         	</div>
+			<div class="tax_soluation_pragh">
+                <div  class="tax_soluation_title">
+                    <ul>
+                        <li class = "active" id = time_distribution><a id = all href = "javascript:;" onclick = "change()" name = "qw10">时间分布</a></li>
+                        <li id = tax_distribution><a id = capital href = "javascript:;" onclick = "change()" name = "qw11">税务分布</a></li>
+                        <li id = risk_index><a id = equity href = "javascript:;" onclick = "change()" name = "qw12">风险指数</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="row">
+                        <div class ="time_distribution_info" name = "ad">
+                        	<div class="gragh1" id="container10"></div>
+                        </div>
+                        <div class = "tax_distribution_info" name = "ad">
+                           <div class="gragh2" id="container11"></div>
+                        </div>
+                        <div class = "risk_index_info" name = "ad">
+                           <div class="gragh3" id="container12"></div>
+                        </div>
+                </div>
+            </div>
+         </div>
+
+         <div class="company_list">
+         	<div class="title_search">
+         		<div class=" company_list_title">
+         			<span>位置地图</span>
+         		</div>
+         	</div>
+			<div class="tax_soluation_pragh">
+                <div class = "map_info" name = "ad">
+                   <iframe src="map.html" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
+                </div>
+        	</div>
+
+         </div>
+		<!--底部内容 -->
+		<div class="content-bottombar">
+			<!-- <div class="row"> -->
+			<div class="bottom-link-parent">
+				<a href="#" class="bottom-link">帮助</a>
+				<a href="#" class="bottom-link">隐私</a>
+				<a href="#" class="bottom-link">条款</a>
+			</div>
+			<div class="row">
+				<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
 			</div>
 		</div>
+		</div>
 	
+
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/kitUtils.js"></script>
@@ -309,8 +398,19 @@
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="layui/layui.js"></script>
 	<script src="js/change.js"></script>
+	
 	<script src="js/date.js"></script>
-	<script src="js/popup-window.js"></script>
+
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+   	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+   	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+   	<script type="text/javascript" src="js/company_cont.js"></script>
 	<script>
         layui.use('element', function(){
           var $ = layui.jquery
@@ -324,6 +424,22 @@
         layui.use('form', function(){
               var form = layui.form
         });
+
+        layui.use(['laypage', 'layer'], function(){
+			  var laypage = layui.laypage
+			  ,layer = layui.layer;
+			  
+			  //自定义样式
+			  laypage.render({
+			    elem: 'demo2'
+			    ,count: 100
+				,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+				    ,jump: function(obj){
+				      console.log(obj)
+				    }
+			    ,theme: '#558ED7'
+			  });
+			});
     </script>
 
 </body>

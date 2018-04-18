@@ -10,6 +10,10 @@
 	border-radius: 5px;
 	background-color: #fff;
 }
+.navbar-brand img{
+	width: 30px;
+	height: 30px;
+}
 /*bottom*/
 .content-bottom {
 	padding: 5px;

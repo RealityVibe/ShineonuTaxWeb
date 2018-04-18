@@ -26,8 +26,8 @@
     }
     ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
         color: #fff;
-        background: #0088cc;
-        border: 1px solid #0088cc;
+        background: #558ED7;
+        border: 1px solid #558ED7;
     }
     ul.nav-tabs li:first-child a{
         border-radius: 4px 4px 0 0;
@@ -52,7 +52,7 @@
 }
 .no-repeat-way{
     border-bottom:  1px dashed #cccccc; 
-    color: rgba(41, 169, 232, 1);
+    color: #558ED7;
     font-size: 15px;
     margin-left: -15px;
 }
@@ -88,7 +88,7 @@
     text-decoration: none;
 }
 .url-content-title{
-    color: rgba(41, 169, 232, 1);
+    color: #558ED7;
     font-size: 15px;
     border-bottom: 1px dashed #cccccc;
     padding: 10px 10px 10px 10px;
@@ -104,7 +104,7 @@
 }
 .collect_btn{
     height: 30px;
-    background-color: rgba(41, 169, 232, 1);
+    background-color: #558ED7;
     border: none;
     color: white;
     width: 80px;
@@ -113,7 +113,7 @@
 }
 .self_collect_btn{
     height: 30px;
-    background-color: rgba(41, 169, 232, 1);
+    background-color: #558ED7;
     border: none;
     color: white;
     width: 80px;

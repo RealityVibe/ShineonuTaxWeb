@@ -1,0 +1,255 @@
+.drop-down-box{
+	height: 25.34px;
+	width: 400px;
+	margin-left: 20px;
+	border: 1px solid #cccccc;
+}
+.drop-down-box-date{
+	height: 25.34px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+}
+#search-box{
+	width: 300px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	height: 25.34px;
+	padding: 10px;
+}
+.search-button{
+	background: #558ED7;
+	color: white;
+	border: none;
+	padding: 0px 20px 0px 20px;
+	border-radius: 3px;
+}
+.choose-type{
+	background: white;
+	padding-left: 30px;
+	padding-top: 20px;
+	border: 1px solid #f5f5f5;
+}
+.belong-to-type{
+	border-bottom: 1px dashed #cccccc;
+	padding-bottom:20px;
+	text-decoration: none;
+}
+.belong-to-type li:hover,.belong-to-type .active{
+	color:#fff;
+	background-color: #558ED7;
+	text-decoration: none;
+	height: 35px;
+	border-radius: 3px;
+}
+.active a{
+	color: #fff;
+	text-decoration: none;
+}
+.belong-to-type a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.belong-to-type li{
+	display: inline;
+	width: 80px;
+	padding: 10px;
+}
+.capitalinfo,.equityinfo,.estateinfo,.assetinfo,.moneyinfo,.judicialinfo,.wageinfo,.otherinfo{
+	display: none;
+}
+.allinfo,.capitalinfo,.equityinfo,.estateinfo,.assetinfo,.moneyinfo,.judicialinfo,.wageinfo,.otherinfo{
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+.layui-input-inline{
+	margin-left: 25px;
+}
+.drop-down-box-year,.drop-down-box-month,.drop-down-box-day{
+	border-color: #e6e6e6;
+	height: 38px;
+}
+.drop-down-box-month{
+	margin-left: 55px;
+}
+.drop-down-box-day{
+	margin-left: 55px;
+}
+.choose-time{
+	padding-top: 10px;
+	/* padding-bottom:10px; */
+}
+.search_results{
+	background-color: #fff;
+	margin-top: 0px;
+}
+h4{
+	font-weight:bold;
+	font-size: 20px;
+}
+.cont_title{
+	padding: 10px 40px 10px 30px;
+}
+.main_cont{
+	padding: 0px 40px 10px 30px;
+}
+.company_list{
+	background-color: #fff;
+	margin-top: 10px;
+	padding-bottom:10px;
+}
+.three_link{
+	padding: 10px 30px 10px 781px;
+}
+.show-content{
+	margin-right: 15px; 
+}
+.site-demo-active{
+	margin-right: 15px; 
+}
+.collect{
+	margin-right: 15px; 
+}
+.title_search{
+	border-bottom: 1px solid #f5f5f5;
+	padding: 10px 0px 10px 0px;
+}
+.company_list_title span{
+	margin: 20px 0px 20px 20px;
+	padding:  0px 0px 0px 10px;
+	border-left: 3px solid #558ED7;
+	font-size: 18px;
+}
+.company_cont{
+	margin:10px 30px 0 5px; 
+}
+.company_info{
+	padding: 10px 15px 5px 20px;
+}
+.company_info h4{
+	margin:0 0 5px 0;	
+}
+.company_info p{
+	margin:0 0 5px 0;	
+}
+.company_cont img{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.comeback_btn{
+	height: 30px;
+    background-color: #558ED7;
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+    margin-left: 40px;
+}
+
+.total-table{
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	border: 1px solid #eee;
+}
+.total-table td, .total-table th {
+	padding: 3px;
+	margin: 0;
+	border: 1px solid #eee;
+}
+.total-table td{
+	padding-left: 10px;
+}
+.total-table a{
+	color: #558ED7;
+}
+.total-table th{
+	/* text-align: right; */
+	/* background-color: #95B3D7;
+	color: white; */
+	font-weight: bold;
+}
+.table-th{
+	width: 15%;
+	font-weight:normal;
+}
+.total-table td:hover{
+	background-color: #eee;
+	color: #35B9EE;
+}
+#demo2{
+	margin-left: 35px;
+}
+.tax_distribution_info,.risk_index_info{
+	display: none;
+}
+.tax_soluation_pragh{
+	padding-left: 30px;
+	padding-top: 20px;
+}
+.tax_soluation_title li:hover,.tax_soluation_title .active{
+	color:#fff;
+	background-color: #558ED7;
+	text-decoration: none;
+	height: 35px;
+	border-radius: 3px;
+}
+.tax_soluation_title li{
+	width: 80px;
+	padding: 10px;
+}
+.tax_soluation_title{
+	padding-bottom:20px;
+	text-decoration: none;
+}
+.tax_soluation_title a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.time_distribution,.risk_index{
+	margin-top:10px;
+}
+.tax_soluation_pragh{
+	background: white;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+
+.tax_soluation_title{
+	/*border-bottom: 1px dashed #cccccc;*/
+	padding-bottom:20px;
+	text-decoration: none;
+}
+.tax_soluation_title li:hover,.tax_soluation_title .active{
+	color:#fff;
+	background-color: #558ED7;
+	text-decoration: none;
+	height: 35px;
+	border-radius: 3px;
+}
+.active a{
+	color: #fff;
+	text-decoration: none;
+}
+.tax_soluation_title a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.tax_soluation_title li{
+	display: inline;
+	width: 80px;
+	padding: 10px;
+}
+.time_distribution_info,.tax_distribution_info,.risk_index_info,.map_info{
+	height: 300px;
+	border: 1px solid #f8f8f8;
+	margin: 0px 60px 10px 15px;
+}
+.gragh1,.gragh2,.gragh3{
+	height: 300px;
+	width: 1060px;
+}
+iframe{
+	padding:10px;
+}
