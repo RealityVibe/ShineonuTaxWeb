@@ -1,10 +1,32 @@
-.search-results{
+.search_results{
 	background-color: #fff;
-	margin-top: 20px;
-	padding: 10px 0 20px 25px;
+	margin-top:10px;
+	padding: 10px 0 10px 25px;
 }
-.search-results h4{
+.search_results h4{
 	font-weight:bold;
 	font-size: 20px;
 	padding: 0px 0 5px 0; 
+}
+.cont_title{
+	padding: 10px 40px 5px 40px;
+}
+.main_cont{
+	padding: 0px 40px 10px 40px;
+}
+.three_link{
+	padding: 0px 30px 0px 850px;
+}
+.three_link a:hover{
+	color: #558ED5;
+	text-decoration: none;
+}
+.show-content{
+	margin-right: 15px; 
+}
+.site-demo-active{
+	margin-right: 15px; 
+}
+.collect{
+	margin-right: 15px; 
 }

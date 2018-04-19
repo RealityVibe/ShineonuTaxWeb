@@ -168,7 +168,7 @@ option = {
      title: {
         text: '税务危楼'
     },
-    color: ['#61a0a8'],
+    color: ['#558ED5'],
     tooltip : {
         trigger: 'axis',
         axisPointer : {            // 坐标轴指示器，坐标轴触发有效
@@ -184,7 +184,7 @@ option = {
     xAxis : [
         {
             type : 'category',
-            data : ['豪大大鸡排', '深计手套', '琳儿女装', '凡仔汉堡', '卫士食品', '小米', '某单位', '火菊锅', '摇摇欲坠'],
+            data : ['卫龙', '七号', '贡茶', '汉堡', '美图', '小米', '正新', '火菊', 'KFC'],
             axisTick: {
                 alignWithLabel: true
             }

@@ -81,6 +81,7 @@
 .search_results{
 	background-color: #fff;
 	margin-top: 0px;
+	border-bottom:1px solid #f8f8f8;
 }
 h4{
 	font-weight:bold;
@@ -98,7 +99,7 @@ h4{
 	padding-bottom:10px;
 }
 .three_link{
-	padding: 10px 30px 10px 781px;
+	padding: 10px 30px 10px 870px;
 }
 .show-content{
 	margin-right: 15px; 

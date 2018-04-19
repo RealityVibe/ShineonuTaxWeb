@@ -51,9 +51,15 @@ body{
 	text-align: center;
 }
 .bottom-link{
-    color: #337ab7;
+    color: #558ED5;
     text-decoration: none;
 }
-/* .container{
-	margin-top: 50px;
-} */
+.navbar-brand{
+	padding: 11px 10px 0 5px;
+}
+.navbar-brand img{
+	padding-right: 5px;
+	width: 34px;
+	height: 28px;
+	display: inline-block;
+}

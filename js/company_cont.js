@@ -36,7 +36,7 @@ option = {
     ],
     series : [
         {
-            name:'国家政策',
+            name:'缴税',
             type:'bar',
             barWidth: '60%',
             data:[30, 52, 100, 34, 30, 60, 120, 50, 50, 50, 40, 40]
@@ -56,13 +56,13 @@ option = {
     color: ['#558ED7'],
     xAxis: {
         type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        data: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月']
     },
     yAxis: {
         type: 'value'
     },
     series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [16, 22, 31, 34, 29, 33, 20, 35 , 23 , 25 ,37 , 29],
         type: 'line'
     }]
 };
@@ -85,11 +85,11 @@ option = {
     legend: {
         orient: 'vertical',
         x: 'left',
-        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+        data:['资本变化','不动产变化','资金变动','司法关联','工资福利']
     },
     series: [
         {
-            name:'访问来源',
+            name:'税务分布',
             type:'pie',
             radius: ['50%', '70%'],
             avoidLabelOverlap: false,
@@ -112,11 +112,11 @@ option = {
                 }
             },
             data:[
-                {value:335, name:'直接访问'},
-                {value:310, name:'邮件营销'},
-                {value:234, name:'联盟广告'},
-                {value:135, name:'视频广告'},
-                {value:1548, name:'搜索引擎'}
+                {value:335, name:'资本变化'},
+                {value:310, name:'不动产变化'},
+                {value:234, name:'资金变动'},
+                {value:135, name:'司法关联'},
+                {value:1548, name:'工资福利'}
             ]
         }
     ]

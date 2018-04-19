@@ -28,7 +28,7 @@
 }
 .choose-type{
 	background: white;
-	margin-top:20px; 
+	margin-top:10px; 
 	padding-top: 20px;
 	padding-left: 30px;
 }
@@ -83,7 +83,7 @@
 }
 .search_results{
 	background-color: #fff;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 h4{
 	font-weight:bold;
@@ -107,6 +107,13 @@ h4{
 	padding: 0px 30px 10px 890px;
 }
 .three_link2 a:hover{
+	color: #558ED5;
+	text-decoration: none;
+}
+.three_link3{
+	padding: 0px 30px 10px 875px;
+}
+.three_link3 a:hover{
 	color: #558ED5;
 	text-decoration: none;
 }

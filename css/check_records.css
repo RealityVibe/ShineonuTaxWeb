@@ -127,7 +127,15 @@ h4{
 	height: 80%;
 	margin-left: 50px;
 }
-
+.delete_btn{
+	height: 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 3px;
+    margin-left: 50px;
+}
 .query_btn{
 	 height: 30px;
     background-color: #558ED5;
@@ -171,7 +179,7 @@ h4{
 }
 .task1_title a{
 	color:#558ED5;
-	margin-left: 20px;
+	float:right;
 }
 .task1_cont{
 	padding:10px 10px 10px 10px;

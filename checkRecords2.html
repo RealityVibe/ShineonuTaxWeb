@@ -195,24 +195,6 @@
              	</div>
              	<div class="task1">
              		<div class="task1_title">
-             			<span>浙江田中精机股份有限公司关于董事会秘书、财务总监辞职的公告</span>
-             			<a href="">任务详情</a>
-             		</div>
-             		<div class="task1_cont">
-						<p>所属类别：杂项（高管辞职）</p>
-						<div class="row task1_situation">
-							<div class="col-md-2" ><p>处理情况：已处理</p></div>
-							<div class="col-md-2" id="layerDemo1"><a data-method="notice1" class="layui-a1">处理详情</a></div>
-							<div class="col-md-2"><p>处理人：魏易达</p></div>
-							<div class="col-md-2" id="layerDemo10"><a data-method="notice10" class="layui-a10">删除</a></div>
-							<div class="col-md-4"></div>
-						</div>
-						<p>稽查结果：改公告所反映的信息属实，该公司以非正当理由逃税1200,000元，经过不断审核，现已追缴税款1237,521元。</p>
-
-             		</div>
-             	</div>
-             	<div class="task1">
-             		<div class="task1_title">
              			<span>浙江省台州市中级人民法院赔偿委员会判决书</span>
              			<a href="">任务详情</a>
              		</div>
@@ -259,7 +241,7 @@
 						<p>稽查结果：无</p>
              		</div>
              	</div>
-             	<div id="demo2"></div>
+             	<!-- <div id="demo2"></div> -->
             </div>
 			<!--底部内容 -->
 			<div class="content-bottombar">
@@ -298,7 +280,7 @@
               var form = layui.form
         });
 
-        layui.use(['laypage', 'layer'], function(){
+       /* layui.use(['laypage', 'layer'], function(){
 			  var laypage = layui.laypage
 			  ,layer = layui.layer;
 			  
@@ -312,33 +294,13 @@
 				    }
 			    ,theme: '#558ED7'
 			  });
-			});
-			
-
+			});*/
 			layui.use('layer', function(){ //独立版的layer无需执行这一句
   var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
   
   //触发事件
   var active = {
-    notice1: function(){
-      //示范一个公告层
-      layer.open({
-        type: 1
-        ,title: '任务详情' //不显示标题栏
-        ,closeBtn: false	
-        ,area: '500px;'
-        ,shade: 0.8
-        ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
-        ,btn: ['关闭']
-        ,btnAlign: 'c'
-        ,moveType: 1 //拖拽模式，0或者1
-        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">稽查人员姓名：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">魏易达</td></tr><tr><th style="width:119.33px; border:1px solid #f8f8f8;padding-left:5px;">完成时间：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">2018年3月1日</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">工号：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">748327423</td></tr><tr><th  style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">处理结果：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">   改公告所反映的信息属实，该公司以非正当理由逃税120,000元，      经过不断审 核，现已追缴税款123,521元</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">所属分类：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">配电变压器公司</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">备注：</th><td style="border:1px solid #f8f8f8;padding-left:5px;width:278.67px;"></td></tr></table></div>'
-        ,success: function(layero){
-         /* var btn = layero.find('.layui-layer-btn');*/
-        }
-      });
-    }
-    ,notice2: function(){
+    notice2: function(){
       //示范一个公告层
       layer.open({
         type: 1
@@ -352,7 +314,7 @@
         ,moveType: 1 //拖拽模式，0或者1
         ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">稽查人员姓名：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">郑和</td></tr><tr><th style="width:119.33px; border:1px solid #f8f8f8;padding-left:5px;">完成时间：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">工号：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">748327873</td></tr><tr><th  style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">处理结果：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">   改公告所反映的信息属实，该公司以非正当理由逃税130,000元，     经过不断审核，现已追缴税款1240,521元</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">所属分类：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">配电变压器公司</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">备注：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr></table></div>'
         ,success: function(layero){
-          /*var btn = layero.find('.layui-layer-btn');*/
+          var btn = layero.find('.layui-layer-btn');
         }
       });
     }
@@ -370,47 +332,17 @@
         ,moveType: 1 //拖拽模式，0或者1
         ,content: '<div style="padding: 50px; line-height: 22px; background-color: #fff; font-weight: 300;border:1px solid #f8f8f8;"><table><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">稽查人员姓名：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">郑和</td></tr><tr><th style="width:119.33px; border:1px solid #f8f8f8;padding-left:5px;">完成时间：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">工号：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">748327873</td></tr><tr><th  style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">处理结果：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"> 该舆情未处理 </td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">所属分类：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;">配电变压器公司</td></tr><tr><th style="width:119.33px;border:1px solid #f8f8f8;padding-left:5px;">备注：</th><td style="width:278.67px;border:1px solid #f8f8f8;padding-left:5px;"></td></tr></table></div>'
         ,success: function(layero){
-          /*var btn = layero.find('.layui-layer-btn');*/
-        }
-      });
-    }
-     ,notice10: function(){
-      //示范一个公告层
-      layer.open({
-        type: 1
-        ,title: '提示：' //不显示标题栏
-        ,closeBtn: false
-        ,area: '300px;'
-        ,shade: 0.8
-        ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
-        ,btn: ['确定', '取消']
-        ,btnAlign: 'c'
-        ,moveType: 1 //拖拽模式，0或者1
-        ,content: '<div><p style="padding:5px 0 5px 20px;">确认删除该任务？</p></div>'
-        ,success: function(layero){
           var btn = layero.find('.layui-layer-btn');
-          btn.find('.layui-layer-btn0').attr({
-            href: 'checkRecords2.html'
-            ,target: '_parent'
-          });
         }
       });
     }
   };
 
-	$('#layerDemo1 .layui-a1').on('click', function(){
-	    var othis = $(this), method = othis.data('method');
-	    active[method] ? active[method].call(this, othis) : '';
-	});
 	$('#layerDemo2 .layui-a2').on('click', function(){
 	    var othis = $(this), method = othis.data('method');
 	    active[method] ? active[method].call(this, othis) : '';
 	});
 	$('#layerDemo3 .layui-a3').on('click', function(){
-	    var othis = $(this), method = othis.data('method');
-	    active[method] ? active[method].call(this, othis) : '';
-	  });
-	$('#layerDemo10 .layui-a10').on('click', function(){
 	    var othis = $(this), method = othis.data('method');
 	    active[method] ? active[method].call(this, othis) : '';
 	  });
