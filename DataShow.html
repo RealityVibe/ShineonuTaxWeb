@@ -3,7 +3,7 @@
 <head>
 	<!-- browser-sync start --server --files "." -->
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
 	<title>ShineonuTaxWeb</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,9 +39,9 @@
                 <li class="">
                   <a href="checkRecords.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">任务列表<span class="sr-only"></span></a>
                 </li>
-                
+
               </ul>
-             
+
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html"><img src="images/home.png">主页</a></li>
                 <li><a href="#"><img src="images/message.png">消息中心</a></li>
@@ -49,8 +49,8 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-		
-		<div class="container body-content">
+
+        <div class="container">
             <div class="row search">
                 <div class="col-md-2"></div>
                 <form class="col-md-8 layui-form"  action="">
@@ -62,7 +62,7 @@
                         </select>
                     </div>
                     <div class="col-md-6 layui-inline" style="margin-left: -15px;">
-                      <input type="text" name="search-infor" lay-verify="required" placeholder="这里输入企业名" autocomplete="off" class="layui-input">
+                        <input type="text" name="search-infor" lay-verify="required" placeholder="这里输入企业名" autocomplete="off" class="layui-input">
                     </div>
                     <!-- <div class="col-md-1"></div> -->
                     <button class="col-md-2 layui-btn search-button" lay-submit="" lay-filter="demo1">&nbsp;搜 索&nbsp;</button>
@@ -72,7 +72,7 @@
             <div class="row choose-type">
                 <div  class="belong-to-type">
                     <ul>
-                        <span class="type-title">所属类目：</span> 
+                        <span class="type-title">所属类目：</span>
                         <li class = "active" id = all_bottom><a id = all href = "javascript:;" onclick = "change()" name = "qw1">全部</a></li>
                         <li id = capital_bottom><a id = capital href = "javascript:;" onclick = "change()" name = "qw2">资本变化</a></li>
                         <li id = equity_bottom><a id = equity href = "javascript:;" onclick = "change()" name = "qw3">股权变化</a></li>
@@ -84,20 +84,23 @@
                         <li id = other_bottom><a id = other href = "javascript:;" onclick = "change()" name = "qw9">杂项</a></li>
                     </ul>
                 </div>
-                <div class="row">
+                <div class="row key_words">
                     <div class="col-md-6">
                         <div class ="allinfo" name = "ad">
-                                <form class="layui-form" action="">
-                                    <div class="layui-inline">
-                                        <span>关键字:</span>
-                                        <div class="layui-input-inline">
-                                            <select name="modules" lay-verify="required" lay-search="">
-                                                <option value="">直接选择或搜索选择</option>
-                                                <option value="1">全部</option>
-                                            </select>
-                                        </div>
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select lay-verify="required" lay-search="" id="test">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">全部</option>
+                                        </select>
                                     </div>
-                                </form>
+                                    <div class="layui-input-inline" >
+                                        <button data-method="notice10" class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class = "capitalinfo" name = "ad">
                             <form class="layui-form" action="">
@@ -112,11 +115,14 @@
                                             <option value="1">增资</option>
                                         </select>
                                     </div>
+                                    <div class="layui-input-inline" id=layerDemo10>
+                                        <button data-method="notice10" class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <div class = "equityinfo" name = "ad">
-                           <form class="layui-form" action="">
+                            <form class="layui-form" action="">
                                 <div class="layui-inline">
                                     <span>关键字:</span>
                                     <div class="layui-input-inline">
@@ -128,11 +134,14 @@
                                             <option value="1">限售股</option>
                                         </select>
                                     </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <div class ="estateinfo" name = "ad">
-                           <form class="layui-form" action="">
+                            <form class="layui-form" action="">
                                 <div class="layui-inline">
                                     <span>关键字:</span>
                                     <div class="layui-input-inline">
@@ -143,11 +152,14 @@
                                             <option value="1">房地产经营</option>
                                         </select>
                                     </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <div class ="assetinfo" name = "ad">
-                           <form class="layui-form" action="">
+                            <form class="layui-form" action="">
                                 <div class="layui-inline">
                                     <span>关键字:</span>
                                     <div class="layui-input-inline">
@@ -157,6 +169,9 @@
                                             <option value="1">专利权</option>
                                             <option value="1">特许经营权</option>
                                         </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
                                     </div>
                                 </div>
                             </form>
@@ -174,11 +189,14 @@
                                             <option value="1">回购</option>
                                         </select>
                                     </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <div class ="judicialinfo" name = "ad">
-                           <form class="layui-form" action="">
+                            <form class="layui-form" action="">
                                 <div class="layui-inline">
                                     <span>关键字:</span>
                                     <div class="layui-input-inline">
@@ -187,6 +205,9 @@
                                             <option value="1">判决+赔偿</option>
                                             <option value="1">调解+赔偿</option>
                                         </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
                                     </div>
                                 </div>
                             </form>
@@ -203,6 +224,9 @@
                                             <option value="1">针对员工进行发放的福利行为</option>
                                         </select>
                                     </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -218,32 +242,198 @@
                                             <option value="1">高管（辞职/聘用/聘任）</option>
                                         </select>
                                     </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
+
                     <div class="col-md-6">
-                        <div class="choose-time">
-                            <form name="reg_testdate">
-                                <span>选择时间：</span>
-                                
-                                <select name="YYYY" onchange="YYYYDD(this.value)" class="drop-down-box-year">
-                                    <option value="">请选择年份</option>
-                                </select>
-                                <!--<span>年</span> -->
-                               
-                                <select name="MM" onchange="MMDD(this.value)" class="drop-down-box-month">
-                                    <option value="">请选择月份</option>
-                                </select>
-                                <!-- <span>月</span> -->
-                                
-                                <select name="DD" class="drop-down-box-day">
-                                    <option value="">请选择日期</option>
-                                </select>
-                                <!-- <span>日</span> -->
+                        <div class ="allinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">全部</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class = "capitalinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">投资</option>
+                                            <option value="1">融资</option>
+                                            <option value="1">投融资</option>
+                                            <option value="1">增资</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class = "equityinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">出让股份</option>
+                                            <option value="1">转让股份</option>
+                                            <option value="1">要约收购</option>
+                                            <option value="1">限售股</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class ="estateinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">土地(转让/出让)</option>
+                                            <option value="1">房屋(转让/出售/出租)</option>
+                                            <option value="1">房地产经营</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class ="assetinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">（签订/签署/竞得）****（使用权/协议）</option>
+                                            <option value="1">专利权</option>
+                                            <option value="1">特许经营权</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class ="moneyinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">担保</option>
+                                            <option value="1">借款</option>
+                                            <option value="1">理财</option>
+                                            <option value="1">回购</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class ="judicialinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">判决+赔偿</option>
+                                            <option value="1">调解+赔偿</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class ="wageinfo1" name = "ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">分红</option>
+                                            <option value="1">奖励/奖金</option>
+                                            <option value="1">针对员工进行发放的福利行为</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class ="otherinfo1" name ="ad">
+                            <form class="layui-form" action="">
+                                <div class="layui-inline">
+                                    <span>限制关键字:</span>
+                                    <div class="layui-input-inline">
+                                        <select name="modules" lay-verify="required" lay-search="">
+                                            <option value="">直接选择或搜索选择</option>
+                                            <option value="1">中标+公告</option>
+                                            <option value="1">中标+公示</option>
+                                            <option value="1">高管（辞职/聘用/聘任）</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
+                </div>
+                <div class="choose-time">
+                    <form name="reg_testdate">
+                        <span>选择时间：</span>
+
+                        <select name="YYYY" onchange="YYYYDD(this.value)" class="drop-down-box-year">
+                            <option value="">请选择年份</option>
+                        </select>
+                        <!--<span>年</span> -->
+
+                        <select name="MM" onchange="MMDD(this.value)" class="drop-down-box-month">
+                            <option value="">请选择月份</option>
+                        </select>
+                        <!-- <span>月</span> -->
+
+                        <select name="DD" class="drop-down-box-day">
+                            <option value="">请选择日期</option>
+                        </select>
+                        <!-- <span>日</span> -->
+                    </form>
                 </div>
             </div>
 
@@ -253,7 +443,7 @@
                 </div>
                 <div class="main_cont">
                     <p>时间：2018年3月31日<br>
-                    主要内容：詹劲松先生通过上海众越旺投资合伙企业(有限合伙)持有公司股份181743股，占公司总股本的0.26%，其所持股份将严格按相关法规进行管理。公司2017年限制性股票激励计划授予激励对象詹劲松先生12万股普通股A股股票，公司将按照《浙江田中精机股份有限公司2017年限制性股票激励计划(草案修订稿)》的要求处理。</p>
+                        主要内容：詹劲松先生通过上海众越旺投资合伙企业(有限合伙)持有公司股份181743股，占公司总股本的0.26%，其所持股份将严格按相关法规进行管理。公司2017年限制性股票激励计划授予激励对象詹劲松先生12万股普通股A股股票，公司将按照《浙江田中精机股份有限公司2017年限制性股票激励计划(草案修订稿)》的要求处理。</p>
                 </div>
                 <div class="three_link">
                     <!-- <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a> -->
@@ -261,19 +451,19 @@
                     <a class="site-demo-active" href="origin_info.html"><img src="images/show_original.png" style="width: 16px;height: 16px;margin-bottom: 3px;">查看原始信息</a>
                 </div>
             </div>
-            
+
             <div class="row search_results">
                 <div class="cont_title">
                     <h4>标题：浙江省台州市中级人民法院赔偿委员会判决书</h4>
                 </div>
                 <div class="main_cont">
                     <p>时间：2017年9月19日<br>
-                    审理机构：浙江省台州市中级人民法院赔偿委员会<br>
-                    案件类型：无因管理纠纷<br>
-                    当事人：茅美飞、天台县人民法院<br>
-                    案由：本案从执行立案至今将近2年时间，该院未执行到任何财产，且被执行人陈惠明是多个案件的被执行人，名下己无可供执行的财产，天台法院应裁定终结本案的执行程序。<br>
-                    简要裁决结果：天台县人民法院对被告陈惠明银行存款中68万元以外的部分予以解除冻结。<br>
-                   </p>
+                        审理机构：浙江省台州市中级人民法院赔偿委员会<br>
+                        案件类型：无因管理纠纷<br>
+                        当事人：茅美飞、天台县人民法院<br>
+                        案由：本案从执行立案至今将近2年时间，该院未执行到任何财产，且被执行人陈惠明是多个案件的被执行人，名下己无可供执行的财产，天台法院应裁定终结本案的执行程序。<br>
+                        简要裁决结果：天台县人民法院对被告陈惠明银行存款中68万元以外的部分予以解除冻结。<br>
+                    </p>
                 </div>
                 <div class="three_link">
                     <!-- <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a> -->
@@ -287,13 +477,13 @@
                 </div>
                 <div class="main_cont">
                     <p>2017年9月3日<br>
-                    地块编号：JTGWJ20170901<br>
-                    使用年限（年）：50 <br>
-                    具体位置：湟里镇东安村兴旺路以南、凯达路以北<br>
-                    竞得方：常州凯达重工科技有限公司<br>
-                    出让面积（平方米）：11083.22<br>
-                    用途：工业<br>
-                   </p>
+                        地块编号：JTGWJ20170901<br>
+                        使用年限（年）：50 <br>
+                        具体位置：湟里镇东安村兴旺路以南、凯达路以北<br>
+                        竞得方：常州凯达重工科技有限公司<br>
+                        出让面积（平方米）：11083.22<br>
+                        用途：工业<br>
+                    </p>
                 </div>
                 <div class="three_link">
                     <!-- <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a> -->
@@ -310,7 +500,7 @@
                         招标单位：太仓市沙溪镇第一小学<br>
                         中标单位：太仓市城厢镇文彪文化用品商行<br>
                         主要内容：中标金额：142350元<br>
-                   </p>
+                    </p>
                 </div>
                 <div class="three_link">
                     <!-- <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a> -->
@@ -327,7 +517,7 @@
                         招标单位：连云港市政府采购网<br>
                         中标单位：连云港市宏一科技有限公司<br>
                         主要内容：江苏卓越建设项目管理有限公司受灌南县教育局的委托，就灌南县教育局教师发展中心心理咨询室设备采购二次竞争性磋商，按规定程序进行了谈判，成交单位：连云港市宏一科技有限公司，成交金额：158400元。<br>
-                   </p>
+                    </p>
                 </div>
                 <div class="three_link">
                     <!-- <a href="javascript:;" class="show-content" style="padding-right:20px; border-right: 1px solid #cccccc;"><img src="images/details.png" style="width: 13px;height: 13px;">显示详情</a> -->
@@ -335,20 +525,20 @@
                     <a class="site-demo-active" href="origin_info.html"><img src="images/show_original.png" style="width: 16px;height: 16px;margin-bottom: 3px;">查看原始信息</a>
                 </div>
             </div>
-			<!--底部内容 -->
-			<div class="content-bottombar">
-				<!-- <div class="row"> -->
-				<div class="bottom-link-parent">
-					<a href="#" class="bottom-link">帮助</a>
-					<a href="#" class="bottom-link">隐私</a>
-					<a href="#" class="bottom-link">条款</a>
-				</div>
-				<div class="row">
-					<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
-				</div>
-			</div>
-		</div>
-	
+            <!--底部内容 -->
+            <div class="content-bottombar">
+                <!-- <div class="row"> -->
+                <div class="bottom-link-parent">
+                    <a href="#" class="bottom-link">帮助</a>
+                    <a href="#" class="bottom-link">隐私</a>
+                    <a href="#" class="bottom-link">条款</a>
+                </div>
+                <div class="row">
+                    <div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
+                </div>
+            </div>
+        </div>
+
 	<!--<script src="js/jquery-1.11.0.min.js"></script>-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/kitUtils.js"></script>
@@ -358,19 +548,59 @@
 	<script src="js/change.js"></script>
 	<script src="js/date.js"></script>
 	<script src="js/popup-window.js"></script>
-	<script>
+    <script>
+        function fun(){
+            var val = document.getElementById("val").value;
+            var txt = document.getElementById("txt").value;
+            var sel = document.getElementById("test");
+            var option = new Option(txt, val);
+            sel.options.add(option);
+        }
         layui.use('element', function(){
-          var $ = layui.jquery
-          ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+            var $ = layui.jquery
+                ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
 
-          $('.site-demo-active').on('click', function(){
-            var othis = $(this), type = othis.data('type');
-            active[type] ? active[type].call(this, othis) : '';
-          });
+            $('.site-demo-active').on('click', function(){
+                var othis = $(this), type = othis.data('type');
+                active[type] ? active[type].call(this, othis) : '';
+            });
         });
         layui.use('form', function(){
-              var form = layui.form
+            var form = layui.form
         });
+        layui.use('layer', function(){ //独立版的layer无需执行这一句
+            var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+            //触发事件
+            var active = {
+                notice10: function(){
+                    //示范一个公告层
+                    layer.open({
+                        type: 1
+                        ,title: '提示：' //不显示标题栏
+                        ,closeBtn: false
+                        ,area: ['400px','400px']
+                        ,shade: 0.8
+                        ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                        ,btn: ['提交', '取消']
+                        ,btnAlign: 'c'
+                        ,moveType: 1 //拖拽模式，0或者1
+                        ,content: '<div style="padding:10px;"><h4>新增列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val"style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt"/></div><h4>修改列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val" placeholder="1" style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt" placeholder="全部"/></div><h4>删除列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val" placeholder="" style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt" placeholder=""/></div></div>'
+                        ,success: function(layero){
+                            var btn = layero.find('.layui-layer-btn');
+                            btn.find('.layui-layer-btn0').attr({
+                                href: 'DataShowAdminAlter.html'
+                                ,target: '_parent'
+                            });
+                        }
+                    });
+                }
+            };
+            $('#layerDemo10 .layui-btn').on('click', function(){
+                var othis = $(this), method = othis.data('method');
+                active[method] ? active[method].call(this, othis) : '';
+            });
+        });
+
     </script>
 
 </body>
