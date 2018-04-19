@@ -7,8 +7,8 @@ var data1 = [];
 var data2 = [];
 for (var i = 1; i < 32; i++) {
     xAxisData.push(i + '号' );
-    data1.push((Math.sin(i / 5) * (i / 5 -10) + i / 6) * 5 + 100);
-    data2.push((Math.cos(i / 5) * (i / 5 -10) + i / 6) * 5 + 100);
+    data1.push((Math.sin(i / 5) * (i / 5 -10) + i / 6) * 50 + 1000);
+    data2.push((Math.cos(i / 5) * (i / 5 -10) + i / 6) * 50 + 1000);
 }
 
 option = {
@@ -83,7 +83,7 @@ option1 = {
     legend: {
         orient: 'vertical',
         x: 'right',
-        data:['土地交易', '国家政策','其他数据','税务法规','新闻公告']
+        data:['土地交易', '股权变动','其他数据','税务法规','新闻公告']
     },
     
     calculable : false,   //拖拽
@@ -113,7 +113,7 @@ option1 = {
             },
             data:[
                 {value:335, name:'土地交易'},
-                {value:310, name:'国家政策'},
+                {value:310, name:'股权变动'},
                 {value:234, name:'其他数据'},
                 {value:135, name:'税务法规'},
                 {value:1548, name:'新闻公告'}
