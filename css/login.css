@@ -1,4 +1,6 @@
 .body-content{
 	margin-top: 40px;
 }
-
+.layui-input-block{
+	margin-left: 10px;
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<!-- browser-sync start --server --files "." -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>ShineonuTaxWeb</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/flyPanels.css"> -->
+	<link rel="stylesheet" href="css/public_style.css">
+	<link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="indexAdmin.html"><img alt="Brand" src="images/logo_white.png">聚税宝</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">注册管理</a></li>
+		            <li><a href="#">服务管理</a></li>
+		            <li><a href="#">调度管理</a></li>
+		            <li><a href="#">关键字管理</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">规则定义</a></li>
+		            <li><a href="#">搜索引擎</a></li>
+		            <li><a href="#">线程管理</a></li>
+		            <li><a href="#">代理管理</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		           	<li><a href="DataCollect.html">数据采集</a></li>
+		            <li><a href="DataProcess.html">数据加工处理</a></li>
+		            <li><a href="DataShowAdmin.html">信息检索</a></li>
+		            <li><a href="companyListAdmin.html">企业管理</a></li>
+		            <li><a href="checkRecordsAdmin.html">任务列表</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">人员管理</a></li>
+		            <li><a href="#">系统管理</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		     
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="indexAdmin.html"><img src="images/home.png">主页</a></li>
+		        <li><a href="#"><img src="images/message.png">消息中心</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+			<div class="container body-content">
+				<div class="row content-total">
+					<div class="col-md-12 content-total-box-parent" id="graph_container"></div>
+				</div>
+
+					<!-- 下半部分内容 -->
+					<div class="row">
+						<!-- 数据分类 -->
+						<div class="col-md-5 content-bottom content-bottom-data-title" id="pie_container">
+						</div>
+						
+						<!-- 高危企业-->
+						<div class="col-md-offset-1 col-md-6 content-bottom content-bottom-process-title" id="promise_container">
+						</div>
+					</div>
+
+					<!--底部内容 -->
+					<div class="content-bottombar">
+						<!-- <div class="row"> -->
+							<div class="bottom-link-parent">
+								<a href="#" class="bottom-link">帮助</a>
+								<a href="#" class="bottom-link">隐私</a>
+								<a href="#" class="bottom-link">条款</a>
+							</div>
+						<div class="row">
+							<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
+						</div>
+					</div>
+				</div>
+	
+	<!--<script src="js/jquery-1.11.0.min.js"></script>-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/kitUtils.js"></script>
+	<script src="js/fastclick.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- 图表 -->
+	<script type="text/javascript" src="js/echarts/echarts.min.js"></script>
+   	<script type="text/javascript" src="js/echarts/echarts-gl.min.js"></script>
+   	<script type="text/javascript" src="js/echarts/extension/ecStat.min.js"></script>
+   	<script type="text/javascript" src="js/dataTool.min.js"></script>
+   	<script type="text/javascript" src="js/echarts/map/china.js"></script>
+   	<script type="text/javascript" src="js/echarts/map/world.js"></script>
+   	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+   	<script type="text/javascript" src="js/echarts/extension/bmap.min.js"></script>
+   	<script type="text/javascript" src="js/echarts/simplex.js"></script>
+   	<script type="text/javascript" src="js/index_graph2.js"></script>
+	
+</body>
+</html>

@@ -55,11 +55,16 @@ body{
     text-decoration: none;
 }
 .navbar-brand{
-	padding: 11px 10px 0 5px;
+	padding: 7px 0px 0 5px;
+	margin-left: 50px;
 }
 .navbar-brand img{
 	padding-right: 5px;
-	width: 34px;
-	height: 28px;
+	width: 44px;
+	height: 38px;
 	display: inline-block;
+}
+.container-fluid{
+	padding-left:60px; 
+	padding-right:30px; 
 }
