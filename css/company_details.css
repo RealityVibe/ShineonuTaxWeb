@@ -94,6 +94,7 @@ h4{
 	padding: 0px 40px 10px 30px;
 }
 .company_list{
+	border-radius: 5px;
 	background-color: #fff;
 	margin-top: 10px;
 	padding-bottom:10px;
@@ -253,4 +254,15 @@ h4{
 }
 iframe{
 	padding:10px;
+}
+
+.company_detail_portrait{
+	height: 360px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.company_detail_portrait_img{
+	width: 600px;
+	margin-bottom: 20px;
 }

@@ -1,145 +1,131 @@
 <!doctype html>
 <html class="no-js" lang="zh">
 <head>
-	<!-- browser-sync start --server --files "." -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
-	<title>ShineonuTaxWeb</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/public_style.css">
-	<link rel="stylesheet" href="layui/css/layui.css">
-	<link rel="stylesheet" href="css/company_details.css">
+    <!-- browser-sync start --server --files "." -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+    <title>ShineonuTaxWeb</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/public_style.css">
+    <link rel="stylesheet" href="css/company_details.css">
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		       <a class="navbar-brand" href="indexAdmin.html"><img alt="Brand" src="images/logo_white.png">聚税宝</a>
-		    </div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img alt="Brand" src="images/logo_white.png">聚税宝</a>
+            </div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">配置管理<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">注册管理</a></li>
-		            <li><a href="#">服务管理</a></li>
-		            <li><a href="#">调度管理</a></li>
-		            <li><a href="#">关键字管理</a></li>
-		          </ul>
-		        </li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爬虫管理<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">规则定义</a></li>
-		            <li><a href="#">搜索引擎</a></li>
-		            <li><a href="#">线程管理</a></li>
-		            <li><a href="#">代理管理</a></li>
-		          </ul>
-		        </li>
-		         <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据管理<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="DataCollect.html">数据采集</a></li>
-                    <li><a href="DataProcess.html">数据加工处理</a></li>
-                    <li><a href="DataShowAdmin.html">信息检索</a></li>
-                    <li><a href="companyListAdmin.html">企业管理</a></li>
-                    <li><a href="checkRecordsAdmin.html">任务列表</a></li>
-                  </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="">
+                  <a href="DataShow.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">信息检索<span class="sr-only"></span></a>
                 </li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">人员管理</a></li>
-                    <li><a href="#">系统管理</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		     
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="indexAdmin.html"><img src="images/home.png">主页</a></li>
-		        <li><a href="#"><img src="images/message.png">消息中心</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
+                <li class="">
+                  <a href="companyList.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">企业管理<span class="sr-only"></span></a>
+                </li>
+                <li class="">
+                  <a href="checkRecords.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">任务列表<span class="sr-only"></span></a>
+                </li>
+                
+              </ul>
+             
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><img src="images/home.png">主页</a></li>
+                <li><a href="#"><img src="images/message.png">消息中心</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
         <div class="container">
           
-		<div class="row company_list">
-         	<div class="row title_search">
-         		<div class="col-md-3 company_list_title">
-         			<span>公司简介及备案信息</span>
-         		</div>
-         		<div class="col-md-7"></div>
-         		<div class="col-md-2">
-         			<a href="companyList.html"><input type="button" value="返回" class="comeback_btn"></a>
-         		</div>
-         	</div>
-         	<div class="row company_cont">
-				<div class="col-md-2 company_image">
-					<img src="images/company1.jpg">
-				</div>
-				<div class="col-md-10 company_info">
-					<table class="col-md-12 total-table">
-				        <tr>
-				           <th class="table-th">法人名称：</th>
-						   <td>北京战火中频设备有限公司</td>
-						   <th class="table-th">风险指数：</th>
-						   <td><input type="text" name="" placeholder="25" style="border: none;"></td>
-				        </tr>
-				        <tr>
-				        	<th class="table-th">主要经营范围：</th>
-				        	<td>制造、加工；变压器</td>
-							<th class="table-th">经营模式：</th>
-				        	<td>生产加工</td>
-				        </tr>
-						 <tr>
-				           <th class="table-th">营业执照号码：</th>
-						   <td>330128384682638648</td>
-						   <th class="table-th">成立时间：</th>
-						   <td>2010年3月20日</td>
-				        </tr>
-				        <tr>
-				        	<th class="table-th">发证机关：</th>
-				        	<td>北京市西湖区市场</td>
-							<th class="table-th">注册资本：</th>
-				        	<td>50万元</td>
-				        </tr>
-				         <tr>
-				           <th class="table-th">经营状态：</th>
-						   <td>存续</td>
-						   <th class="table-th">类型：</th>
-						   <td>私营有限责任公司</td>
-				        </tr>
-				        <tr>
-				        	<th class="table-th">所属分类：</th>
-				        	<td>配电变压器公司</td>
-							<th class="table-th">官网：</th>
-				        	<td><a href="http://www.hzzhzp.com">http://www.hzzhzp.com</a></td>
-				        </tr>
-					</table>
-				</div>
-         	</div>
+        <div class="row company_list">
+            <div class="row title_search">
+                <div class="col-md-3 company_list_title">
+                    <span>公司简介及备案信息</span>
+                </div>
+                <div class="col-md-7"></div>
+                <div class="col-md-2">
+                    <a href="companyList.html"><input type="button" value="返回" class="comeback_btn"></a>
+                </div>
+            </div>
+            <div class="row company_cont">
+                <div class="col-md-2 company_image">
+                    <img src="images/company1.jpg">
+                </div>
+                <div class="col-md-10 company_info">
+                    <table class="col-md-12 total-table">
+                        <tr>
+                           <th class="table-th">法人名称：</th>
+                           <td>北京和信中频设备有限公司</td>
+                           <th class="table-th">风险指数：</th>
+                           <td><input type="text" name="" placeholder="25" style="border: none;"></td>
+                        </tr>
+                        <tr>
+                            <th class="table-th">主要经营范围：</th>
+                            <td>制造、加工；变压器</td>
+                            <th class="table-th">经营模式：</th>
+                            <td>生产加工</td>
+                        </tr>
+                         <tr>
+                           <th class="table-th">营业执照号码：</th>
+                           <td>330128384682638648</td>
+                           <th class="table-th">成立时间：</th>
+                           <td>2010年3月20日</td>
+                        </tr>
+                        <tr>
+                            <th class="table-th">发证机关：</th>
+                            <td>北京市西湖区市场</td>
+                            <th class="table-th">注册资本：</th>
+                            <td>50万元</td>
+                        </tr>
+                         <tr>
+                           <th class="table-th">经营状态：</th>
+                           <td>存续</td>
+                           <th class="table-th">类型：</th>
+                           <td>私营有限责任公司</td>
+                        </tr>
+                        <tr>
+                            <th class="table-th">所属分类：</th>
+                            <td>配电变压器公司</td>
+                            <th class="table-th">官网：</th>
+                            <td><a href="http://www.hzzhzp.com">http://www.hzzhzp.com</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
          </div>
 
-
+        <div class="row company_list">
+            <div class="title_search">
+                <div class=" company_list_title">
+                    <span>企业画像</span>
+                </div>
+            </div>
+            <div class="tax_soluation_pragh">
+                <div class = "company_detail_portrait" name = "ad">
+                   <img src="images/portrait.png" class = "company_detail_portrait_img">
+                </div>
+            </div>
+         </div>
          <div class="row company_list">
-         	<div class="title_search">
-         		<div class=" company_list_title">
-         			<span>涉税舆情</span>
-         		</div>
-         	</div>
-         	<div class="choose-type">
+            <div class="title_search">
+                <div class=" company_list_title">
+                    <span>涉税舆情</span>
+                </div>
+            </div>
+            <div class="choose-type">
                 <div  class="belong-to-type">
                     <ul>
                         <span class="type-title">所属类目：</span> 
@@ -410,13 +396,13 @@
             <div id="demo2"></div>
          </div>
 
-		<div class="row company_list">
-         	<div class="title_search">
-         		<div class=" company_list_title">
-         			<span>税收情况</span>
-         		</div>
-         	</div>
-			<div class="tax_soluation_pragh">
+        <div class="row company_list">
+            <div class="title_search">
+                <div class=" company_list_title">
+                    <span>税收情况</span>
+                </div>
+            </div>
+            <div class="tax_soluation_pragh">
                 <div  class="tax_soluation_title">
                     <ul>
                         <li class = "active" id = time_distribution><a id = all href = "javascript:;" onclick = "change()" name = "qw10">时间分布</a></li>
@@ -427,7 +413,7 @@
                 </div>
                 <div class="row">
                         <div class ="time_distribution_info" name = "ad">
-                        	<div class="gragh1" id="container10"></div>
+                            <div class="gragh1" id="container10"></div>
                         </div>
                         <div class = "tax_distribution_info" name = "ad">
                            <div class="gragh2" id="container12"></div>
@@ -440,54 +426,55 @@
          </div>
 
          <div class="row company_list">
-         	<div class="title_search">
-         		<div class=" company_list_title">
-         			<span>位置地图</span>
-         		</div>
-         	</div>
-			<div class="tax_soluation_pragh">
+            <div class="title_search">
+                <div class=" company_list_title">
+                    <span>位置地图</span>
+                </div>
+            </div>
+            <div class="tax_soluation_pragh">
                 <div class = "map_info" name = "ad">
                    <iframe src="map.html" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
                 </div>
-        	</div>
+            </div>
 
          </div>
-		<!--底部内容 -->
-		<div class="content-bottombar">
-			<!-- <div class="row"> -->
-			<div class="bottom-link-parent">
-				<a href="" class="bottom-link">帮助</a>
-				<a href="" class="bottom-link">隐私</a>
-				<a href="" class="bottom-link">条款</a>
-			</div>
-			<div class="row">
-				<div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
-			</div>
-		</div>
-		</div>
-	
 
-	<!--<script src="js/jquery-1.11.0.min.js"></script>-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/kitUtils.js"></script>
-	<script src="js/fastclick.min.js"></script>
-	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	<script src="layui/layui.js"></script>
-	<script src="js/change.js"></script>
-	
-	<script src="js/date.js"></script>
+        <!--底部内容 -->
+        <div class="content-bottombar">
+            <!-- <div class="row"> -->
+            <div class="bottom-link-parent">
+                <a href="" class="bottom-link">帮助</a>
+                <a href="" class="bottom-link">隐私</a>
+                <a href="" class="bottom-link">条款</a>
+            </div>
+            <div class="row">
+                <div class="bottom-link-parent">copyright@2018 Shineonu体验技术部出品</div>
+            </div>
+        </div>
+        </div>
+    
 
-	<script type="text/javascript" src="js/echarts/echarts.min.js"></script>
-   	<script type="text/javascript" src="js/echarts/echarts-gl.min.js"></script>
-   	<script type="text/javascript" src="js/echarts/extension/ecStat.min.js"></script>
-   	<script type="text/javascript" src="js/dataTool.min.js"></script>
-   	<script type="text/javascript" src="js/echarts/map/china.js"></script>
-   	<script type="text/javascript" src="js/echarts/map/world.js"></script>
-   	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
-   	<script type="text/javascript" src="js/echarts/extension/bmap.min.js"></script>
-   	<script type="text/javascript" src="js/echarts/simplex.js"></script>
-   	<script type="text/javascript" src="js/company_cont.js"></script>
-	<script>
+    <!--<script src="js/jquery-1.11.0.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kitUtils.js"></script>
+    <script src="js/fastclick.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="layui/layui.js"></script>
+    <script src="js/change.js"></script>
+    
+    <script src="js/date.js"></script>
+
+    <script type="text/javascript" src="js/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="js/echarts/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="js/echarts/extension/ecStat.min.js"></script>
+    <script type="text/javascript" src="js/dataTool.min.js"></script>
+    <script type="text/javascript" src="js/echarts/map/china.js"></script>
+    <script type="text/javascript" src="js/echarts/map/world.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="js/echarts/extension/bmap.min.js"></script>
+    <script type="text/javascript" src="js/echarts/simplex.js"></script>
+    <script type="text/javascript" src="js/company_cont.js"></script>
+    <script>
         layui.use('element', function(){
           var $ = layui.jquery
           ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
@@ -502,20 +489,20 @@
         });
 
         layui.use(['laypage', 'layer'], function(){
-			  var laypage = layui.laypage
-			  ,layer = layui.layer;
-			  
-			  //自定义样式
-			  laypage.render({
-			    elem: 'demo2'
-			    ,count: 100
-				,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
-				    ,jump: function(obj){
-				      console.log(obj)
-				    }
-			    ,theme: '#558ED7'
-			  });
-			});
+              var laypage = layui.laypage
+              ,layer = layui.layer;
+              
+              //自定义样式
+              laypage.render({
+                elem: 'demo2'
+                ,count: 100
+                ,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+                    ,jump: function(obj){
+                      console.log(obj)
+                    }
+                ,theme: '#558ED7'
+              });
+            });
     </script>
 
 </body>

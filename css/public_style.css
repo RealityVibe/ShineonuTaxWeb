@@ -68,3 +68,11 @@ body{
 	padding-left:60px; 
 	padding-right:30px; 
 }
+.navbar-nav {
+	margin-left: 50px;
+}
+
+.navbar-nav>li>a{
+	border: 15px 10px 15px 10px;
+	/*width: 45px;*/
+}
