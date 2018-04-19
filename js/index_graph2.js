@@ -125,7 +125,7 @@ option1 = {
 if (option1 && typeof option1 === "object") {
     myChart.setOption(option1, true);
 }
-    var data_url=['land_dealsAdmin.html','country_policyAdmin.html','other_dataAdmin.html','tax_lawAdmin.html','news_noticeAdmin.html']; 
+    var data_url=['land_deals.html','country_policy.html','other_data.html','tax_law.html','news_notice.html']; 
  
     function everyClick(param,i,txt,url){    //程序这边的url需要传入
     if(param.seriesIndex==0&&param.dataIndex==i){
@@ -184,9 +184,12 @@ option = {
     xAxis : [
         {
             type : 'category',
-            data : ['卫龙', '七号', '贡茶', '汉堡', '美图', '小米', '正新', '火菊', 'KFC'],
+            'axisLabel': {
+                'interval':0
+            },
+            data : ['苏龙发电', '海澜集团', '申达集团', '华西集团', '西中地大', '中达方友', '瑞利达', '古地投资', '中核恒通'],
             axisTick: {
-                alignWithLabel: true
+                alignWithLabel: true,
             }
         }
     ],
@@ -200,7 +203,7 @@ option = {
             name:'避税指数',
             type:'bar',
             barWidth: '60%',
-            data:[100, 95, 95, 95, 90, 85, 85, 75, 70]
+            data:[98, 95, 93, 91, 88, 85, 83, 75, 70]
         }
     ]
 };
