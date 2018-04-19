@@ -34,6 +34,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","block");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#capital_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -54,6 +63,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","block");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#equity_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -74,6 +92,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","block");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#estate_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -94,6 +121,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","block");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#asset_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -114,6 +150,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","block");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#money_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -134,6 +179,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","block");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#judicial_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -154,6 +208,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","block");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","block");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#wage_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -174,6 +237,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","block");
 			$(".otherinfo").css("display","none");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","block");
+			$(".otherinfo1").css("display","none");
 			});
 		$("#other_bottom").click(function(){
 			$("#all_bottom").removeClass();//删除样式
@@ -194,6 +266,15 @@ varid4=document.getElementById("id4");*/
 			$(".judicialinfo").css("display","none");
 			$(".wageinfo").css("display","none");
 			$(".otherinfo").css("display","block");
+			$(".allinfo1").css("display","none");
+			$(".capitalinfo1").css("display","none");
+			$(".equityinfo1").css("display","none");
+			$(".estateinfo1").css("display","none");
+			$(".assetinfo1").css("display","none");
+			$(".moneyinfo1").css("display","none");
+			$(".judicialinfo1").css("display","none");
+			$(".wageinfo1").css("display","none");
+			$(".otherinfo1").css("display","block");
 			});
 $("#time_distribution").click(function(){
 	$("#time_distribution").addClass("active");//删除样式

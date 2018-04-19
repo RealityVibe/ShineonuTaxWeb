@@ -121,8 +121,8 @@
                                                 <option value="1">全部</option>
                                             </select>
                                         </div>
-                                        <div class="layui-input-inline" >
-                                            <button data-method="notice10" class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                        <div class="layui-input-inline">
+                                            <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
                                         </div>
                                     </div>
                                 </form>
@@ -138,10 +138,11 @@
                                             <option value="1">融资</option>
                                             <option value="1">投融资</option>
                                             <option value="1">增资</option>
+                                            <option value="2">斥资</option>
                                         </select>
                                     </div>
-                                    <div class="layui-input-inline" id=layerDemo10>
-                                            <button data-method="notice10" class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
+                                    <div class="layui-input-inline">
+                                            <button class="layui-btn search-button" lay-submit="">&nbsp;修改关键字&nbsp;</button>
                                         </div>
                                 </div>
                             </form>
@@ -574,13 +575,6 @@
 	<script src="js/date.js"></script>
 	<script src="js/popup-window.js"></script>
 	<script>
-        function fun(){
-            var val = document.getElementById("val").value;
-            var txt = document.getElementById("txt").value;
-            var sel = document.getElementById("test");
-            var option = new Option(txt, val);      
-            sel.options.add(option);  
-        }
         layui.use('element', function(){
           var $ = layui.jquery
           ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
@@ -593,38 +587,6 @@
         layui.use('form', function(){
               var form = layui.form
         });
-        layui.use('layer', function(){ //独立版的layer无需执行这一句
-        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
-        //触发事件
-        var active = {
-            notice10: function(){
-              //示范一个公告层
-              layer.open({
-                type: 1
-                ,title: '提示：' //不显示标题栏
-                ,closeBtn: false
-                ,area: ['400px','400px']
-                ,shade: 0.8
-                ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
-                ,btn: ['提交', '取消']
-                ,btnAlign: 'c'
-                ,moveType: 1 //拖拽模式，0或者1
-                ,content: '<div style="padding:10px;"><h4>新增列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val"style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt"/></div><h4>修改列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val" placeholder="1" style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt" placeholder="全部"/></div><h4>删除列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val" placeholder="" style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt" placeholder=""/></div></div>'
-                ,success: function(layero){
-                  var btn = layero.find('.layui-layer-btn');
-                  btn.find('.layui-layer-btn0').attr({
-                    href: 'DataShowAdminAlter.html'
-                    ,target: '_parent'
-                  });
-                }
-              });
-            }
-        };
-        $('#layerDemo10 .layui-btn').on('click', function(){
-            var othis = $(this), method = othis.data('method');
-            active[method] ? active[method].call(this, othis) : '';
-        });
-    });
 
     </script>
 

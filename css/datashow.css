@@ -30,12 +30,14 @@
 	background: white;
 	margin-top:10px; 
 	padding-top: 20px;
-	padding-left: 30px;
 }
 .belong-to-type{
-	border-bottom: 1px dashed #cccccc;
+	border-bottom: 1px solid #f8f8f8;
 	padding-bottom:20px;
 	text-decoration: none;
+}
+.belong-to-type li,.belong-to-type span{
+	padding-left: 30px; 
 }
 .belong-to-type li:hover,.belong-to-type .active{
 	color:#fff;
@@ -57,10 +59,22 @@
 	width: 80px;
 	padding: 10px;
 }
+.key_words{
+	border-bottom: 1px solid #f8f8f8;
+	margin:-10px 0px 0px 0px;
+	padding-left: 15px;
+}
 .capitalinfo,.equityinfo,.estateinfo,.assetinfo,.moneyinfo,.judicialinfo,.wageinfo,.otherinfo{
 	display: none;
 }
 .allinfo,.capitalinfo,.equityinfo,.estateinfo,.assetinfo,.moneyinfo,.judicialinfo,.wageinfo,.otherinfo{
+	padding-top: 20px;
+	padding-bottom:10px;
+}
+.capitalinfo1,.equityinfo1,.estateinfo1,.assetinfo1,.moneyinfo1,.judicialinfo1,.wageinfo1,.otherinfo1{
+	display: none;
+}
+.allinfo1,.capitalinfo1,.equityinfo1,.estateinfo1,.assetinfo1,.moneyinfo1,.judicialinfo1,.wageinfo1,.otherinfo1{
 	padding-top: 20px;
 	padding-bottom:10px;
 }
@@ -78,8 +92,7 @@
 	margin-left: 55px;
 }
 .choose-time{
-	padding-top: 20px;
-	padding-bottom:10px;
+	padding: 10px 0px 10px 30px;
 }
 .search_results{
 	background-color: #fff;
