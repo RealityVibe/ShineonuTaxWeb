@@ -93,7 +93,7 @@ option1 = {
         {
             name:'数据类型',
             type:'pie',
-            radius: ['50%', '70%'],
+            radius: ['50%', '80%'],
             avoidLabelOverlap: false,
             label: {
                 normal: {

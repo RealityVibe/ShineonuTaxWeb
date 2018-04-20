@@ -538,7 +538,29 @@
                 </div>
             </div>
         </div>
-
+<div class = 'alert-modify-box'>
+    <div class="alert-box-line">
+        <b>新增列表项：</b>
+    </div>
+    <div class="alert-modify-box-item">
+        权重：<input type="" class='alert-box-input'>
+        内容：<input type="" class='alert-box-input'>
+    </div>
+    <div class="alert-box-line">
+        <b>修改列表项：</b>
+    </div>
+    <div class="alert-modify-box-item">
+        权重：<input type="" class='alert-box-input'>
+        内容：<input type="" class='alert-box-input'>
+    </div>
+    <div class="alert-box-line">
+        <b>删除列表项：</b>
+    </div>
+    <div class="alert-modify-box-item">
+        权重：<input type="" class='alert-box-input'>
+        内容：<input type="" class='alert-box-input'>
+    </div>
+</div>
 	<!--<script src="js/jquery-1.11.0.min.js"></script>-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/kitUtils.js"></script>
@@ -578,13 +600,13 @@
                         type: 1
                         ,title: '提示：' //不显示标题栏
                         ,closeBtn: false
-                        ,area: ['400px','400px']
+                        ,area: ['400px','300px']
                         ,shade: 0.8
                         ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
                         ,btn: ['提交', '取消']
                         ,btnAlign: 'c'
                         ,moveType: 1 //拖拽模式，0或者1
-                        ,content: '<div style="padding:10px;"><h4>新增列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val"style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt"/></div><h4>修改列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val" placeholder="1" style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt" placeholder="全部"/></div><h4>删除列表项：</h4><div style="padding:10px;"><span>值：</span><input type="text" id="val" placeholder="" style=margin-left:14px;"/></div><div style="padding:0 10px 10px 10px;"><span>内容：</span><input type="text" id="txt" placeholder=""/></div></div>'
+                        ,content: '<div class = "alert-modify-box"><div class="alert-box-line"><b>新增列表项：</b></div><div class="alert-modify-box-item">权重：<input type="" class="alert-box-input">内容：<input type="" class="alert-box-input"></div><div class="alert-box-line"><b>修改列表项：</b></div><div class="alert-modify-box-item">权重：<input type="" class="alert-box-input">内容：<input type="" class="alert-box-input"></div><div class="alert-box-line"><b>删除列表项：</b></div><div class="alert-modify-box-item">权重：<input type="" class="alert-box-input">内容：<input type="" class="alert-box-input"></div></div>'
                         ,success: function(layero){
                             var btn = layero.find('.layui-layer-btn');
                             btn.find('.layui-layer-btn0').attr({

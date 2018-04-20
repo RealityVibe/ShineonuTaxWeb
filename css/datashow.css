@@ -148,3 +148,53 @@ h4{
 	width: 16px;
 	margin-bottom: 5px;
 } */
+.alert-modify-box{
+	padding-top: 20px;
+}
+.alert-modify-box-item{
+	display: flex;
+  	justify-content: center;
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.alert-box-input{
+	margin-right: 5px;
+	width: 80px;
+}
+.alert-box-line{
+	margin-left: 18%;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: left;
+}
+
+.cont_title{
+	background: #DDDDDD;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 0 0;
+}
+.cont-box-item{
+	display:  flex;
+	justify-content: center;
+}
+.cont-box-title{
+	border: 1px  solid lightgray;
+	border-top: 0px;
+}
+.cont-box-content{
+	border-right: 1px  solid lightgray;
+	border-bottom: 1px  solid lightgray;
+}
+.cont-box-title1{
+	border: 1px  solid lightgray;
+}
+.cont-box-content1{
+	border: 1px  solid lightgray;
+	border-left: 0px;
+
+}
+.main_cont{
+	margin-top: 20px;
+}
