@@ -27,6 +27,8 @@
 	border-radius: 3px;
 }
 .choose-type{
+	border: 1px solid #c2ced8;
+	border-radius: 3px;
 	background: white;
 	margin-top:10px; 
 	padding-top: 20px;
@@ -95,6 +97,7 @@
 	padding: 10px 0px 10px 30px;
 }
 .search_results{
+	border: 1px solid #c2ced8;
 	background-color: #fff;
 	margin-top: 10px;
 }
@@ -136,9 +139,15 @@ h4{
 .site-demo-active{
 	margin-right: 15px; 
 }
-.collect{
+/* .collect{
 	margin-left: 3px;
 	margin-right: 15px; 
+} */
+.collect>img{
+	margin-right: 3px;
+}
+.three_link>a>img{
+	margin-right: 3px;
 }
 .bottom-link{
 	color: #337ab7;
@@ -172,7 +181,7 @@ h4{
 }
 
 .cont_title{
-	background: #DDDDDD;
+	background: #f8f8f8;
 	border: 1px solid #DDDDDD;
 	border-radius: 5px 5px 0 0;
 }
@@ -201,6 +210,6 @@ h4{
 }
 .search_results{
 
-	border: 1px solid #DDDDDD;
+	border: 1px solid #c2ced8;
 	border-radius: 5px;
 }
