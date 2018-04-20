@@ -137,7 +137,7 @@ option1 = {
 if (option1 && typeof option1 === "object") {
     myChart.setOption(option1, true);
 }
-    var data_url=['land_deals.html','country_policy.html','other_data.html','tax_law.html','news_notice.html']; 
+    var data_url=['land_dealsAdmin.html','country_policyAdmin.html','other_dataAdmin.html','tax_lawAdmin.html','news_noticeAdmin.html']; 
  
     function everyClick(param,i,txt,url){    //程序这边的url需要传入
     if(param.seriesIndex==0&&param.dataIndex==i){
