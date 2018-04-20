@@ -83,7 +83,9 @@ option1 = {
     legend: {
         orient: 'vertical',
         x: 'right',
-        data:['土地交易', '股权变动','其他数据','税务法规','新闻公告']
+        data:['土地交易', '股权变化','税务法规','司法关联'
+        , '资本变化 ', '不动产变化', '无形资产变化', '资金变动', '工资福利'
+        , ' 杂项','其他数据']
     },
     
     calculable : false,   //拖拽
@@ -112,11 +114,21 @@ option1 = {
                 }
             },
             data:[
+            /*'土地交易', '股权变化','税务法规','司法关联'
+        , '资本变化 ', '不动产变化', '无形资产变化', '资金变动', '工资福利'
+        , ' 杂项','其他数据'*/
                 {value:335, name:'土地交易'},
                 {value:310, name:'股权变动'},
-                {value:234, name:'其他数据'},
-                {value:135, name:'税务法规'},
-                {value:1548, name:'新闻公告'}
+                {value:234, name:'税务法规'},
+                {value:135, name:'司法关联'},
+                {value:90, name:'资本变化'},
+                {value:165, name:'不动产变化'},
+                {value:310, name:'无形资产变化'},
+                {value:534, name:'资金变动'},
+                {value:135, name:'工资福利'},
+                {value:848, name:'杂项'},
+                {value:165, name:'其他数据'},
+
             ]
         }
     ]
@@ -125,7 +137,7 @@ option1 = {
 if (option1 && typeof option1 === "object") {
     myChart.setOption(option1, true);
 }
-    var data_url=['land_deals.html','country_policy.html','other_data.html','tax_law.html','news_notice.html']; 
+    var data_url=['land_dealsAdmin.html','country_policyAdmin.html','other_dataAdmin.html','tax_lawAdmin.html','news_noticeAdmin.html']; 
  
     function everyClick(param,i,txt,url){    //程序这边的url需要传入
     if(param.seriesIndex==0&&param.dataIndex==i){
