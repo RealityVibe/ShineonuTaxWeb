@@ -198,3 +198,8 @@ h4{
 .main_cont{
 	margin-top: 20px;
 }
+.search_results{
+
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+}
